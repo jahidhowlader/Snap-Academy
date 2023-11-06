@@ -1,0 +1,12 @@
+@media (min-width: 1280px) {
+    .line-height {
+        line-height: 70px;
+    }
+}
+
+@media (min-width: 1520px) {
+    .line-height {
+        /* line-height: 900px; */
+        line-height: 150px;
+    }
+}
