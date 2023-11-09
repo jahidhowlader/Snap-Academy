@@ -8,3 +8,16 @@ body {
     background-color: #EDFFFD;
     font-family: 'Roboto', sans-serif;
 }
+
+#player{
+    border-radius: 10px;
+}
+
+.html5-video-player{
+    border-radius: 10px;
+
+}
+
+.html5-video-container{
+    border-radius: 10px;
+}

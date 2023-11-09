@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <Subscribation />
 
-            <nav className='bg-[#243531] pt-[145px] pb-[110px] text-white px-5'>
+            <nav className='bg-primary-color pt-[145px] pb-[110px] text-white px-5'>
 
                 <div className='max-w-[1520px] mx-auto '>
                     <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-5'>
