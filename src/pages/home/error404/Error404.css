@@ -1,0 +1,3 @@
+.animation {
+    animation: move 0.5s infinite ease alternate;
+}

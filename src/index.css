@@ -9,15 +9,18 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#player{
-    border-radius: 10px;
-}
+html {
+    scroll-behavior: smooth;
+  }
+  
 
-.html5-video-player{
-    border-radius: 10px;
-
-}
-
-.html5-video-container{
-    border-radius: 10px;
-}
+::-webkit-scrollbar {
+    height: 12px;
+    width: 5px;
+    background: var(--background);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #0F5259;
+    -webkit-border-radius: 1ex;
+  }

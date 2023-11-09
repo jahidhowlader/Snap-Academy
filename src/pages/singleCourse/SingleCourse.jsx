@@ -1,4 +1,5 @@
 import { Rating, ThinRoundedStar } from "@smastrom/react-rating";
+import { useState } from "react";
 import { HiArrowPath, HiMinusSmall, HiPlus } from "react-icons/hi2";
 
 const ratingStyle = {
@@ -8,6 +9,9 @@ const ratingStyle = {
 }
 
 const SingleCourse = () => {
+
+    const [tab, setTabs] = useState('DESCRIPTION')
+
     return (
         <section className="2xl:py-[90px]">
             <div className="grid lg:grid-cols-2 gap-[100px]">
@@ -69,6 +73,93 @@ const SingleCourse = () => {
                     </div> */}
                 </div>
             </div>
+
+            {/* PRODUCT DETAILS && ADITION INFORMATION && REVIEW*/}
+            {/* USE REACT TABS */}
+            <div className="2xl:pt-[150px] 2xl:pb-[100px] w-1/2 mx-auto cursor-pointer">
+
+                <div className="flex 2xl:items-center 2xl:justify-center text-primary-color font-medium">
+                    <div
+                        className={`py-2 ${tab === 'DESCRIPTION' ? 'border px-5 border-b-0 rounded-lg rounded-b-none' : 'border-b px-[50px]'} `}
+                        onClick={() => setTabs('DESCRIPTION')}
+                    >
+                        DESCRIPTION
+                    </div>
+
+                    <div
+                        className={`py-2 ${tab === 'ADDITIONAL' ? 'border px-5 border-b-0' : 'border-b px-[50px]'} `}
+                        onClick={() => setTabs('ADDITIONAL')}
+                    >ADDITIONAL INFORMATION</div>
+
+                    <div
+                        className={`py-2 ${tab === 'REVIEWS' ? 'border px-5 border-b-0' : 'border-b px-[50px]'} `}
+                        onClick={() => setTabs('REVIEWS')}
+                    >REVIEWS</div>
+                </div>
+
+                {
+                    tab === 'DESCRIPTION' ? (
+                        <>
+                            <div className="text-center pt-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nihil dolorum earum eaque, quasi sunt minus fugiat excepturi expedita odit corrupti consectetur nisi quisquam enim porro animi libero officia neque!</div>
+                        </>
+                    ) : tab === 'ADDITIONAL' ? (
+                        <>
+                        </>
+                    ) : tab === 'REVIEWS' ? (
+                        <>
+                            <div className="flex gap-5 pt-[100px]">
+                                {/* User Image */}
+                                <div className="w-[150px] h-auto">
+                                    <img src="/Oval.png" alt="Oval" className="w-[70px] h-[70px] rounded-full" />
+                                </div>
+
+                                {/* Content && date */}
+                                <div className="relative">
+
+                                    <div className="flex items-center gap-5 pb-5">
+                                        <h6 className="font-semibold">Petter pan</h6>
+                                        <p className="italic font-thin  text-sm">20/12/2023</p>
+                                    </div>
+                                    <p className="opacity-60">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+
+                                    {/* Review  Rating*/}
+                                    <div className="absolute top-0 right-0">
+                                        <Rating style={{ maxWidth: 100 }} value={4} itemStyles={ratingStyle} readOnly />
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div className="flex gap-5 pt-[100px]">
+                                {/* User Image */}
+                                <div className="w-[150px] h-auto">
+                                    <img src="/Oval.png" alt="Oval" className="w-[70px] h-[70px] rounded-full" />
+                                </div>
+
+                                {/* Content && date */}
+                                <div className="relative">
+
+                                    <div className="flex items-center gap-5 pb-5">
+                                        <h6 className="font-semibold">Petter pan</h6>
+                                        <p className="italic font-thin  text-sm">20/12/2023</p>
+                                    </div>
+                                    <p className="opacity-60">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+
+                                    {/* Review  Rating*/}
+                                    <div className="absolute top-0 right-0">
+                                        <Rating style={{ maxWidth: 100 }} value={4} itemStyles={ratingStyle} readOnly />
+
+                                    </div>
+                                </div>
+                            </div>
+                        </>
+                    ) : ''
+                }
+
+            </div>
+
         </section>
     );
 };
