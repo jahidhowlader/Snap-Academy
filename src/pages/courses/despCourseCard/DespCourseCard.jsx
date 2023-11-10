@@ -8,7 +8,7 @@ const ratingStyle = {
     inactiveFillColor: '#fbf1a9'
 }
 
-const DespCourseCaed = () => {
+const DespCourseCard = () => {
     return (
         <div className='bg-white rounded-xl p-[14px] cursor-pointer flex flex-col md:flex-row md:items-center md:gap-10 shadow-md'>
 
@@ -34,4 +34,4 @@ const DespCourseCaed = () => {
     );
 };
 
-export default DespCourseCaed;
+export default DespCourseCard;

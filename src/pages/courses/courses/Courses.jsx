@@ -2,11 +2,9 @@ import './Courses.css'
 import Control from '../control/Control';
 import Refferal from '../refferal/Refferal';
 import CourseCard from '../courseCard/CourseCard';
-import DespCourseCaed from '../despCourseCaed/DespCourseCaed';
 import { useState } from 'react';
 import { motion } from "framer-motion"
-
-
+import DespCourseCard from '../despCourseCard/DespCourseCard';
 
 const Courses = () => {
 
@@ -93,11 +91,10 @@ const Courses = () => {
                             ) : (
                                 <>
                                     <div className='space-y-5'>
-                                        <DespCourseCaed />
-                                        <DespCourseCaed />
-                                        <DespCourseCaed />
-                                        <DespCourseCaed />
-                                        <DespCourseCaed />
+                                        <DespCourseCard />
+                                        <DespCourseCard />
+                                        <DespCourseCard />
+                                        <DespCourseCard />
                                     </div>
                                 </>
                             )
