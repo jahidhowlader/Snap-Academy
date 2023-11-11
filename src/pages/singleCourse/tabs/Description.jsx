@@ -1,7 +1,7 @@
 
 const Description = () => {
     return (
-        <div className="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nihil dolorum earum eaque, quasi sunt minus fugiat excepturi expedita odit corrupti consectetur nisi quisquam enim porro animi libero officia neque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nihil dolorum earum eaque, quasi sunt minus fugiat excepturi expedita odit corrupti consectetur nisi quisquam enim porro animi libero officia neque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nihil dolorum earum eaque, quasi sunt minus fugiat excepturi expedita odit corrupti consectetur nisi quisquam enim porro animi libero officia neque!</div>
+        <div className="text-center">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus.</div>
     );
 };
 

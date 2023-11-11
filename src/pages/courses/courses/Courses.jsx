@@ -12,7 +12,7 @@ const Courses = () => {
 
     return (
         <>
-            <section className='pt-12 lg:pt-[60px] '>
+            <section className='mt-10 xl:pt-[60px] '>
 
                 <div className='grid lg:grid-cols-9 gap-2 lg:gap-5 items-end pb-3'>
 
@@ -23,7 +23,7 @@ const Courses = () => {
 
                     <div className='col-span-7 flex justify-between items-center'>
 
-                        {/* SHORT */}
+                        {/* SHORTING */}
                         <div className='flex items-center gap-2'>
                             <div>
                                 <img src="/courses/short.svg" alt="short" />

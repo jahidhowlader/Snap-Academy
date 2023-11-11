@@ -13,7 +13,7 @@ const Navbar = () => {
             {/* LOGO */}
             <div className="lg:text-xl xl:text-2xl flex items-center gap-2 text-primary-color">
                 <div>
-                    <img src="/public/logo.svg" alt="logo" className="w-8 lg:w-10 text-primary-color" />
+                    <img src="/logo.svg" alt="logo" className="w-8 lg:w-10 text-primary-color" />
                 </div>
                 <h3 className="font-bold uppercase"><Link to='/'>Snap Academy</Link></h3>
             </div>

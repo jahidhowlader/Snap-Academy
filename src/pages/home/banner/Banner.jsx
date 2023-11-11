@@ -1,5 +1,7 @@
 import { HiArrowLongRight } from 'react-icons/hi2';
 import './Banner.css'
+import { motion } from "framer-motion"
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -10,7 +12,15 @@ const Banner = () => {
                 <h1 className='text-3xl sm:text-5xl xl:text-[60px] 2xl:text-7xl font-extrabold line-height'><span className='text-primary-color'>Photography </span>is the only <span className='text-primary-color'>language </span> that can be understood.</h1>
                 <p className='lg:font-semibold text-[]'>Photography is an art of observation. It's about finding something interesting in an ordinary place... I've found it has little to do with the things you see and everything to do with the way you see them.</p>
 
-                <button className='bg-primary-color text-white py-2 px-5 xl:py-3 xl:px-7 rounded-[10px] 2xl:text-2xl font-semibold flex items-center gap-2'>Find Courses <HiArrowLongRight /></button>
+                <div>
+                    <Link to={'/courses'}>
+                        <motion.button
+                            whileTap={{ scale: 0.95 }}
+                            className='bg-primary-color text-white py-2 px-5 xl:py-3 xl:px-7 rounded-[10px] 2xl:text-2xl font-semibold flex items-center gap-2'
+                        >Find Courses <HiArrowLongRight />
+                        </motion.button>
+                    </Link>
+                </div>
             </div>
 
             {/* Image */}

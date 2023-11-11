@@ -1,7 +1,7 @@
 import ReactPlayer from "react-player";
 import { HiPlay } from "react-icons/hi2";
 
-const xs = window.innerWidth < 640 
+const xs = window.innerWidth < 640
 const sm = window.innerWidth < 768
 const md = window.innerWidth < 1024
 const lg = window.innerWidth < 1280
@@ -22,7 +22,7 @@ const VideoInformation = () => {
                         }
                     }}
                     width={xs ? 280 : sm ? 600 : md ? 700 : lg ? 480 : xl ? 600 : 690}
-                    height={xs ? 150 : sm ? 335 : md ? 390 :  lg ? 260 : xl ? 330 : 385}
+                    height={xs ? 150 : sm ? 335 : md ? 390 : lg ? 260 : xl ? 330 : 385}
                     light={true}
                     controls={true}
                     muted={true}
@@ -34,9 +34,14 @@ const VideoInformation = () => {
                 <h3 className="text-2xl sm:text-3xl xl:text-4xl 2xl:text-5xl text-primary-color font-bold">See Video For <br /> more information</h3>
 
                 <p className="2xl:text-lg pb-7 pt-4">Dive into the world of photography fundamentals in our latest video. Uncover the magic of visual storytelling, master composition, and harness the power of light. 📷✨ For a deeper exploration, visit snapacademy.com. Let's embark on a creative journey together</p>
+                {/* TODO: */}
+                <div className="border-2 border-primary-color text-primary-color font-semibold  2xl:text-2xl px-4 2xl:px-6 py-1 2xl:py-2 rounded-[10px] flex items-center gap-2">
+                    <button className="2xl:text-[30px]">
 
-                <button className="border-2 border-primary-color text-primary-color font-semibold  2xl:text-2xl px-4 2xl:px-6 py-1 2xl:py-2 rounded-[10px] flex items-center gap-2">
-                    <div className="2xl:text-[30px]"><HiPlay /></div> Watch Now</button>
+                        <HiPlay />
+
+                        Watch Now</button>
+                </div>
             </div>
         </section>
     );

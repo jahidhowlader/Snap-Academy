@@ -1,0 +1,35 @@
+[
+    {
+        "category": "Creative Composition Masterclass",
+        "title": "lorem Ipsum",
+        "description": "Learn the art of creative composition to capture compelling and visually appealing images.",
+        "Product Code": "45d5s7",
+        "Availability": "In Stock",
+        "duration": "10 weeks",
+        "lectures": "",
+        "instructors": [
+            "Emily Johnson",
+            "Michael Brown"
+        ],
+        "schedule": [
+            {
+                "day": "sat, Mon, Tue",
+                "time": "1:00 PM - 3:00 PM"
+            },
+            {
+                "day": "sat, Mon, Tue",
+                "time": "4:00 PM - 6:00 PM"
+            }
+        ],
+        "price": "$400",
+        "level": "Advanced",
+        "requirements": [
+            "DSLR Camera",
+            "Basic knowledge of exposure"
+        ],
+        "review": [{"userId": "54676143546"}, {"userId": "54676143546"} ],
+        "totalStudent": "200" ,
+        "Course Curriculum": "",
+        "discount": "40"
+    }
+]

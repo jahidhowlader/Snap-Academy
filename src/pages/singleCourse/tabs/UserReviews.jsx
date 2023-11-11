@@ -88,20 +88,9 @@ const UserReviews = () => {
                 <div>
                     <h5 className='text-primary-color font-bold text-xl text-center'>Add your review</h5>
 
-                    <div className='flex justify-center items-center gap-5 pt-5'>
+                    <div className='flex justify-center items-center gap-5 mt-12 mb-4'>
                         <h5 className='text-primary-color font-medium text-xl '>Your Rating</h5>
                         <Rating style={{ maxWidth: 100 }} value={0} itemStyles={ratingStyle} />
-
-                    </div>
-
-                    <div className='flex items-center justify-center gap-[50px] pt-5 pb-12'>
-                        <div className='flex-1'>
-                            <input type="text" className='border-primary-color border bg-[#EDFFFD] py-2 px-4 rounded w-full outline-primary-color' placeholder='Enter your name' />
-                        </div>
-
-                        <div className='flex-1'>
-                            <input type="email" className='border-primary-color border bg-[#EDFFFD] py-2 px-4 rounded w-full outline-primary-color' placeholder='Email' />
-                        </div>
                     </div>
 
                     <div>

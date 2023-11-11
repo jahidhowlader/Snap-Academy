@@ -29,8 +29,11 @@ const NavMobile = ({ isOpen, setIsOpen }) => {
                             </div>
 
                             {/* Website Name */}
-                            <div>
-                                <h3 className="font-bold uppercase text-right pt-20 pr-10 border-b text-xl">Snap Academy</h3>
+                            <div className="pt-20 pr-10 border-b flex items-center gap-2 pb-2">
+                                <div>
+                                    <img src="/logoWhite.svg" alt="logo" className="w-8 lg:w-10 " />
+                                </div>
+                                <h3 className="font-bold uppercase text-right  text-xl">Snap Academy</h3>
                             </div>
 
                             <ul className="text-xl text-right pt-5 pr-10 space-y-2 uppercase">
@@ -86,7 +89,7 @@ const NavMobile = ({ isOpen, setIsOpen }) => {
                                     initial={{ opacity: 0, scale: 0.5 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                     transition={{ delay: 0.9 }}
-                                    href={'https://www.github.com/jahidhowlader'} 
+                                    href={'https://www.github.com/jahidhowlader'}
                                     target="_blank"
                                 >
                                     <FaGithubSquare size={20} to={''} className="my-1" />
@@ -124,7 +127,7 @@ const NavMobile = ({ isOpen, setIsOpen }) => {
 };
 
 NavMobile.propTypes = {
-    isOpen : PropTypes.bool.isRequired, 
+    isOpen: PropTypes.bool.isRequired,
     setIsOpen: PropTypes.func.isRequired
 }
 

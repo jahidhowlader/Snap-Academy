@@ -5,6 +5,8 @@ import Courses from "../pages/courses/courses/Courses";
 import Instructor from "../pages/instructor/instructor/Instructor";
 import Error404 from "../pages/home/error404/Error404";
 import SingleCourse from "../pages/singleCourse/singleCourse/SingleCourse";
+import Signin from "../pages/auth/signin/Signin";
+import Signup from "../pages/auth/signup/Signup";
 
 
 export const router = createBrowserRouter([
@@ -31,7 +33,15 @@ export const router = createBrowserRouter([
       {
         path: 'instructor',
         element: <Instructor />
-      }
+      },
     ]
+  },
+  {
+    path: 'auth/signin',
+    element: <Signin />
+
+  }, {
+    path: 'auth/signup',
+    element: <Signup />
   },
 ]);
