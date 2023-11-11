@@ -68,7 +68,7 @@ const NavMobile = ({ isOpen, setIsOpen }) => {
                                     animate={{ x: 0, opacity: 1 }}
                                     transition={{ delay: .5, duration: 1 }}
                                 >
-                                    <Link to='/signin'>Signin</Link>
+                                    <Link to='/auth/signin'>Signin</Link>
                                 </motion.li>
                             </ul>
 

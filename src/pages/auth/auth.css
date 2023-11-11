@@ -1,9 +1,10 @@
 .glass-container {
-    background: url('/5.jpg') center/cover fixed no-repeat;
+    background: url('/authBG.jpg') center/cover fixed no-repeat;
     /* Add your background image */
     position: relative;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

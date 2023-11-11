@@ -2,33 +2,52 @@ import { Link } from 'react-router-dom';
 import SocialLogin from '../../../components/socialLogin/SocialLogin';
 import { useForm } from 'react-hook-form';
 import { HiEye, HiEyeSlash, HiMiniHome } from 'react-icons/hi2';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../../../providers/AuthProvider';
+import toast from 'react-hot-toast';
+
 
 const Signup = () => {
 
     // All State are here
     const [seePassword, setSeePassword] = useState(false)
     const [seeConfirmPassword, setSeeConfirmPassword] = useState(false)
+    const [submitLoading, setSubmitLoading] = useState(false)
+
+    // IMPORT AUTHCONTEXT
+    const { signUp } = useContext(AuthContext)
 
     // REACT HOOK FORM
     const { register, handleSubmit, watch, formState: { errors }, } = useForm()
 
-    // SUBMIT Or CREATE ACCOUnT
-    const onSubmit = (data) => {
+    // SUBMIT Or CREATE ACCOUNT
+    const onSubmit = async (data) => {
 
+        setSubmitLoading(true)
 
-        console.log(data)
+        const { name, email, password } = data
+
+        try {
+
+            await signUp(email, password)
+            // await
+            toast.success('Successfully Createed Account.');
+            setSubmitLoading(false)
+
+        } catch (e) {
+            toast.error(e.code);
+            console.log(e.code);
+            setSubmitLoading(false)
+        }
     }
-
-
 
     return (
         <div className="glass-container relative text-black">
 
             {/* Redirect Home Page */}
-            <Link to={'/'} className='absolute top-5 left-5 text-xl glass-effect p-2 text-black rounded-md'><HiMiniHome /></Link>
+            <Link to={'/'} className='absolute top-5 left-5 text-xl glass-effect p-2 text-black rounded-md z-10'><HiMiniHome /></Link>
 
-            <div className="glass-content flex flex-col items-center">
+            <div className="glass-content flex flex-col items-center mt-5">
                 <div className="lg:text-xl xl:text-2xl flex items-center gap-2 mt-5">
                     <div>
                         <img src="/logo.svg" alt="logo" className="w-8 lg:w-10 " />
@@ -53,8 +72,8 @@ const Signup = () => {
 
                         {/* Show Error on UI */}
                         {
-                            errors?.name?.type === 'required' ? <span className='text-error'>{errors?.name?.message}</span> :
-                                errors?.name?.type === 'maxLength' ? <span className='text-error'>{errors?.name?.message}</span> : ''
+                            errors?.name?.type === 'required' ? <span className='text-error font-medium'>{errors?.name?.message}</span> :
+                                errors?.name?.type === 'maxLength' ? <span className='text-error font-medium'>{errors?.name?.message}</span> : ''
                         }
                     </div>
 
@@ -134,13 +153,13 @@ const Signup = () => {
 
                         {/* Show Error on UI */}
                         {
-                            errors?.confirmPassword?.type === 'required' ? <span className='text-error'>{errors?.confirmPassword?.message}</span> :
-                                errors?.confirmPassword?.type === 'validate' ? <span className='text-error'>Password do not match </span> : ''
+                            errors?.confirmPassword?.type === 'required' ? <span className='text-error font-medium'>{errors?.confirmPassword?.message}</span> :
+                                errors?.confirmPassword?.type === 'validate' ? <span className='text-error font-medium'>Password do not match </span> : ''
                         }
                     </div>
 
                     {/* Submit */}
-                    <input type="submit" value={'Sign Up'} className='bg-primary-color text-white py-2 rounded-md w-full cursor-pointer' />
+                    <input type="submit" value={'Sign Up'} className={`bg-primary-color text-white py-2 rounded-md w-full ${submitLoading ? 'cursor-progress' : 'cursor-pointer'}`} disabled={submitLoading ? true : false}  />
                 </form>
 
                 <p className='mt-7 mb-16 opacity-100 font-bold text-primary-color'><span className=' font-normal text-black'>Don’t have an account? </span> <Link to={'/auth/signin'}>SignIn</Link></p>

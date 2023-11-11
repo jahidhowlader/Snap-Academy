@@ -7,6 +7,7 @@ import Error404 from "../pages/home/error404/Error404";
 import SingleCourse from "../pages/singleCourse/singleCourse/SingleCourse";
 import Signin from "../pages/auth/signin/Signin";
 import Signup from "../pages/auth/signup/Signup";
+import ForgotPassword from "../pages/auth/forgotPassword/ForgotPassword";
 
 
 export const router = createBrowserRouter([
@@ -43,5 +44,9 @@ export const router = createBrowserRouter([
   }, {
     path: 'auth/signup',
     element: <Signup />
+  },
+  {
+    path: 'auth/forgotPassword',
+    element: <ForgotPassword />
   },
 ]);

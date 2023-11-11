@@ -5,22 +5,22 @@
 @tailwind utilities;
 
 body {
-    background-color: #EDFFFD;
-    font-family: 'Roboto', sans-serif;
+  background-color: #EDFFFD;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
-  
+  scroll-behavior: smooth;
+}
+
 
 ::-webkit-scrollbar {
-    height: 12px;
-    width: 5px;
-    background: var(--background);
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #0F5259;
-    -webkit-border-radius: 1ex;
-  }
+  height: 12px;
+  width: 5px;
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0F5259;
+  -webkit-border-radius: 1ex;
+}
