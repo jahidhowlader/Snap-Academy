@@ -13,28 +13,36 @@ const Signup = () => {
     const [seePassword, setSeePassword] = useState(false)
     const [seeConfirmPassword, setSeeConfirmPassword] = useState(false)
     const [submitLoading, setSubmitLoading] = useState(false)
+    const [existEmailError, setExistEmailError] = useState(false)
 
     // IMPORT AUTHCONTEXT
-    const { signUp } = useContext(AuthContext)
+    const { signUp, updateUser } = useContext(AuthContext)
 
     // REACT HOOK FORM
-    const { register, handleSubmit, watch, formState: { errors }, } = useForm()
+    const { register, handleSubmit, reset, watch, formState: { errors }, } = useForm()
 
     // SUBMIT Or CREATE ACCOUNT
     const onSubmit = async (data) => {
 
         setSubmitLoading(true)
+        setExistEmailError(false)
 
         const { name, email, password } = data
 
         try {
 
             await signUp(email, password)
-            // await
+            await updateUser(name)
             toast.success('Successfully Createed Account.');
             setSubmitLoading(false)
+            reset()
 
         } catch (e) {
+
+            if (e.code === 'auth/email-already-in-use') {
+                setExistEmailError(true)
+            }
+
             toast.error(e.code);
             console.log(e.code);
             setSubmitLoading(false)
@@ -42,11 +50,15 @@ const Signup = () => {
     }
 
     return (
-        <div className="glass-container relative text-black">
+        <div className="glass-container text-black">
 
             {/* Redirect Home Page */}
             <Link to={'/'} className='absolute top-5 left-5 text-xl glass-effect p-2 text-black rounded-md z-10'><HiMiniHome /></Link>
 
+            {/* Background */}
+            <img src="/authBG.png" alt="background" className='absolute bottom-0 left-0' />
+
+            {/* Main Content */}
             <div className="glass-content flex flex-col items-center mt-5">
                 <div className="lg:text-xl xl:text-2xl flex items-center gap-2 mt-5">
                     <div>
@@ -83,7 +95,7 @@ const Signup = () => {
                         <input
                             type="email"
                             placeholder='Email'
-                            className={`bg-opacity-0 bg-black border  py-2 px-5 rounded-md w-full ${errors.email ? 'outline-error border border-error' : ''}`}
+                            className={`bg-opacity-0 bg-black border  py-2 px-5 rounded-md w-full ${(errors.email || existEmailError) ? 'outline-error border border-error' : ''}`}
                             {...register("email",
                                 {
                                     required: 'Email is required', pattern: {
@@ -96,7 +108,8 @@ const Signup = () => {
                         {/* Show Error on UI */}
                         {
                             errors?.email?.type === 'required' ? <span className='text-error font-medium'>{errors?.email?.message}</span> :
-                                errors?.email?.type === 'pattern' ? <span className='text-error font-medium'>{errors?.email?.message}</span> : ''
+                                errors?.email?.type === 'pattern' ? <span className='text-error font-medium'>{errors?.email?.message}</span> :
+                                    existEmailError ? <span className='text-error font-medium'>Email-already-in-use</span> : ''
                         }
                     </div>
 
@@ -159,7 +172,7 @@ const Signup = () => {
                     </div>
 
                     {/* Submit */}
-                    <input type="submit" value={'Sign Up'} className={`bg-primary-color text-white py-2 rounded-md w-full ${submitLoading ? 'cursor-progress' : 'cursor-pointer'}`} disabled={submitLoading ? true : false}  />
+                    <input type="submit" value={'Sign Up'} className={`bg-primary-color text-white py-2 rounded-md w-full ${submitLoading ? 'cursor-progress' : 'cursor-pointer'}`} disabled={submitLoading ? true : false} />
                 </form>
 
                 <p className='mt-7 mb-16 opacity-100 font-bold text-primary-color'><span className=' font-normal text-black'>Don’t have an account? </span> <Link to={'/auth/signin'}>SignIn</Link></p>

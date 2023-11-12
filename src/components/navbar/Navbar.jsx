@@ -1,11 +1,17 @@
 import { HiBars3BottomRight, HiMiniMagnifyingGlass, HiOutlineShoppingCart, HiOutlineUser } from "react-icons/hi2";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import NavMobile from "./NavMobile";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Navbar = () => {
 
+    // All State are here
     const [isOpen, setIsOpen] = useState(false)
+
+    // IMPORT AUTHCONTEXT
+    const { user } = useContext(AuthContext)
+    console.log('navbar14', user);
 
     return (
         <div className="flex justify-between items-center pt-2 z-50">

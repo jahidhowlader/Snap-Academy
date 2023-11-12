@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, FacebookAuthProvider, getAuth, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import { app } from "../config/firebase.config";
@@ -42,6 +42,14 @@ const AuthProvider = ({ children }) => {
         return signInWithPopup(auth, googleProvider)
     }
 
+    // Facebook Signin
+    const facebookProvider = new FacebookAuthProvider();
+    const facebookSignin = () => {
+
+        setLoading(true)
+        return signInWithPopup(auth, facebookProvider)
+    }
+
     // Log Out Function
     const logOut = () => {
         setLoading(true)
@@ -76,6 +84,7 @@ const AuthProvider = ({ children }) => {
         signIn,
         updateUser,
         googleSignin,
+        facebookSignin,
         resetPassword,
         logOut
     }

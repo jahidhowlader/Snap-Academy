@@ -14,9 +14,10 @@ const Signin = () => {
     // All State are here
     const [seePassword, setSeePassword] = useState(false)
     const [submitLoading, setSubmitLoading] = useState(false)
+    const [signinError, setSigninError] = useState(false)
 
     // IMPORT AUTHCONTEXT
-    const { user, signIn } = useContext(AuthContext)
+    const { signIn } = useContext(AuthContext)
 
     // REACT HOOK FORM
     const { register, handleSubmit, reset, formState: { errors }, } = useForm()
@@ -24,6 +25,7 @@ const Signin = () => {
     // SUBMIT Or SIGNIN ACCOUNT
     const onSubmit = async (data) => {
 
+        setSigninError(false)
         setSubmitLoading(true)
         const { email, password } = data
 
@@ -37,25 +39,28 @@ const Signin = () => {
         } catch (e) {
             toast.error(e.code);
             console.log(e.code);
+            setSigninError(true)
             setSubmitLoading(false)
         }
     }
 
-    console.log(user)
-
     return (
         <>
-            <div className="glass-container relative text-black">
+            <div className="glass-container text-black">
 
                 {/* Redirect Home Page */}
                 <Link to={'/'} className='absolute top-5 left-5 text-xl glass-effect p-2 text-black rounded-md z-10'><HiMiniHome /></Link>
 
-                <motion.div initial={{y: -300}} animate={{y: 0}} transition={{duration: .5}} className="glass-content flex flex-col items-center">
+                {/* Background */}
+                <img src="/authBG.png" alt="background" className='absolute bottom-0 left-0 ' />
+
+                {/* Main Content */}
+                <motion.div initial={{ y: -300 }} animate={{ y: 0 }} transition={{ duration: .5 }} className="glass-content flex flex-col items-center">
                     <div className="lg:text-xl xl:text-2xl flex items-center gap-2 mt-5">
                         <div>
                             <img src="/logo.svg" alt="logo" className="w-8 lg:w-10 " />
                         </div>
-                        <h3 className="font-bold uppercase"><Link to='/'>Snap Academy</Link></h3>
+                        <h3 className="font-bold uppercase text-primary-color"><Link to='/'>Snap Academy</Link></h3>
                     </div>
 
                     <p className='mt-10 mb-5 font-medium tracking-wider'>Welcome To Snap Academy</p>
@@ -69,7 +74,7 @@ const Signin = () => {
                             <input
                                 type="email"
                                 placeholder='Email'
-                                className={`bg-opacity-0 bg-black border  py-2 px-5 rounded-md w-full ${errors.email ? 'outline-error border border-error' : ''}`}
+                                className={`bg-opacity-0 bg-black border  py-2 px-5 rounded-md w-full ${(errors.email || signinError) ? 'outline-error border border-error' : ''}`}
                                 {...register("email",
                                     {
                                         required: 'Email is required', pattern: {
@@ -93,7 +98,7 @@ const Signin = () => {
                                 <input
                                     type={seePassword ? 'text' : 'password'}
                                     placeholder='Password'
-                                    className={`bg-opacity-0 bg-black border py-2 pl-5 pr-12 rounded-md w-full ${errors.password ? 'outline-error border border-error' : ''}`}
+                                    className={`bg-opacity-0 bg-black border py-2 pl-5 pr-12 rounded-md w-full ${(errors.password || signinError) ? 'outline-error border border-error' : ''}`}
                                     {...register("password", { required: 'Password is required' })} />
                                 {/* LOOK PASSWORD */}
                                 <div className='absolute right-2 top-1/2 -translate-y-1/2 text-lg cursor-pointer'>

@@ -9,43 +9,38 @@ import { motion } from "framer-motion"
 
 const ForgotPassword = () => {
 
-    // All State are here
-    const [seePassword, setSeePassword] = useState(false)
-    const [submitLoading, setSubmitLoading] = useState(false)
-
     // IMPORT AUTHCONTEXT
-    const { user, signIn } = useContext(AuthContext)
+    const { resetPassword } = useContext(AuthContext)
 
     // REACT HOOK FORM
     const { register, handleSubmit, reset, formState: { errors }, } = useForm()
 
-    // SUBMIT Or SIGNIN ACCOUNT
+    // SUBMIT Or SEND EMAIL FOR PASSWORD RESET
     const onSubmit = async (data) => {
-
-        setSubmitLoading(true)
-        const { email, password } = data
 
         try {
 
-            await signIn(email, password)
-            toast.success('Successfully Createed Account.');
-            setSubmitLoading(false)
+            await resetPassword(data.email)
+            toast.success('Please Check your gamil.');
             reset()
 
         } catch (e) {
             toast.error(e.code);
             console.log(e.code);
-            setSubmitLoading(false)
         }
     }
 
     return (
-        <div className="glass-container relative text-black">
+        <div className="glass-container text-black">
 
             {/* Redirect Home Page */}
-            <Link to={'/auth/signin'} className='absolute top-5 left-5 text-xl glass-effect p-2 text-black rounded-md'><HiArrowLongLeft /></Link>
+            <Link to={'/auth/signin'} className='absolute top-5 left-5 text-xl glass-effect p-2 text-black rounded-md z-10'><HiArrowLongLeft /></Link>
 
-            <motion.div initial={{y: 300}} animate={{y: 0}}  className="glass-content flex flex-col items-center">
+            {/* Background */}
+            <img src="/authBG.png" alt="background" className='absolute bottom-0 left-0 ' />
+
+            {/* Main Content */}
+            <motion.div initial={{ y: 300 }} animate={{ y: 0 }} className="glass-content flex flex-col items-center">
                 <div className="lg:text-xl xl:text-2xl flex items-center gap-2 mt-5">
                     <div>
                         <img src="/logo.svg" alt="logo" className="w-8 lg:w-10 " />
@@ -79,7 +74,7 @@ const ForgotPassword = () => {
                             errors?.email?.type === 'required' ? <span className='text-error font-medium'>{errors?.email?.message}</span> :
                                 errors?.email?.type === 'pattern' ? <span className='text-error font-medium'>{errors?.email?.message}</span> : ''
                         }
-                        <button className={` w-full py-2 rounded-md glass-effect text-black`}><HiArrowLongRight className='mx-auto' /></button>
+                        <button className={` w-full py-2 rounded-md bg-primary-color text-white text-2xl`}><HiArrowLongRight className='mx-auto' /></button>
                     </div>
 
 

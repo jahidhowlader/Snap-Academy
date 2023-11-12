@@ -13,7 +13,7 @@ const CourseCard = () => {
 
             {/* Card Image */}
             <div className='rounded-xl overflow-hidden'>
-                <img src="/home/course4.png" alt="" className=' rounded-xl 2xl:h-[170px] w-full hover:scale-125 duration-[2000ms]' />
+                <img src="/home/course2.png" alt="" className=' rounded-xl 2xl:h-[170px] w-full hover:scale-125 duration-[2000ms]' />
             </div>
 
             {/* Card Content */}
