@@ -6,7 +6,7 @@ const ratingStyle = {
     inactiveFillColor: '#d2d2d2'
 }
 
-const UserReviews = () => {
+const CourseReview = () => {
     return (
         <>
             <div className="flex gap-5 ">
@@ -107,4 +107,4 @@ const UserReviews = () => {
     );
 };
 
-export default UserReviews;
+export default CourseReview;

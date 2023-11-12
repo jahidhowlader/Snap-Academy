@@ -1,0 +1,18 @@
+#userCart td,
+th {
+    /* border-top: 1px solid #000; */
+    padding: 10px 5px;
+}
+
+
+#userCart tr:nth-child(even) {
+    background-color: #d7edec;
+}
+
+#userCart tr:hover {
+    background: #7ea8ab;
+}
+
+#hoverable:hover{
+    background: #000 !important;
+}

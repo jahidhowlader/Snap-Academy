@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import UserReviews from './UserReviews';
 import Description from './Description';
 import AdditionalInformation from './AdditionalInformation';
 

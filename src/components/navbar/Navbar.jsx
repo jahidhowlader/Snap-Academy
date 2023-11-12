@@ -10,8 +10,8 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     // IMPORT AUTHCONTEXT
-    const { user } = useContext(AuthContext)
-    console.log('navbar14', user);
+    // const { user } = useContext(AuthContext)
+    // console.log('navbar14', user);
 
     return (
         <div className="flex justify-between items-center pt-2 z-50">
@@ -42,9 +42,9 @@ const Navbar = () => {
                 <span>
                     <HiOutlineUser />
                 </span>
-                <span>
+                <Link to={'/dashboard/cart'}>
                     <HiOutlineShoppingCart />
-                </span>
+                </Link>
                 <span className="hidden sm:block">EN</span>
             </div>
 

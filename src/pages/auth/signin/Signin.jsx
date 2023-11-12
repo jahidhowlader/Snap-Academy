@@ -7,6 +7,7 @@ import '../auth.css'
 import { AuthContext } from '../../../providers/AuthProvider';
 import toast from 'react-hot-toast';
 import { motion } from "framer-motion"
+import { Helmet } from 'react-helmet-async';
 
 
 const Signin = () => {
@@ -46,6 +47,12 @@ const Signin = () => {
 
     return (
         <>
+
+            {/* Ttile */}
+            <Helmet>
+                <title>Signin | Snap Academy</title>
+            </Helmet>
+
             <div className="glass-container text-black">
 
                 {/* Redirect Home Page */}

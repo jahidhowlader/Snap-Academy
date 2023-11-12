@@ -5,13 +5,24 @@ import CourseCard from '../courseCard/CourseCard';
 import { useState } from 'react';
 import { motion } from "framer-motion"
 import DespCourseCard from '../despCourseCard/DespCourseCard';
+import { Helmet } from 'react-helmet-async';
+import useGetCourses from '../../../hooks/useGetCourses';
 
 const Courses = () => {
+
+    // use HOOK FOR GET ALL COURSES
+    const [courses, loading] = useGetCourses()
+    console.log('15', courses);
 
     const [layout, setLayout] = useState(true)
 
     return (
         <>
+            {/* Ttile */}
+            <Helmet>
+                <title>Courses | Snap Academy</title>
+            </Helmet>
+
             <section className='mt-10 xl:pt-[60px] '>
 
                 <div className='grid lg:grid-cols-9 gap-2 lg:gap-5 items-end pb-3'>
@@ -21,7 +32,7 @@ const Courses = () => {
                         <p className='xl:pl-1 opacity-70'>Search result for <span className='text-primary-color opacity-100 font-semibold'>‘TODO: Search’</span></p>
                     </div>
 
-                    <div className='col-span-7 flex justify-between items-center'>
+                    <div className='lg:col-span-7 flex justify-between items-center'>
 
                         {/* SHORTING */}
                         <div className='flex items-center gap-2'>
@@ -62,39 +73,29 @@ const Courses = () => {
 
                 <div className=' grid lg:grid-cols-9 gap-5'>
 
+                    {/* Filter Control */}
                     <Control />
-
 
                     <div className=' lg:col-span-7 rounded-xl '>
                         {
-                            !layout ? (
+                            loading ? 'loading' : !layout ? (
                                 <>
                                     <motion.div
                                         className='grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5'
                                         initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }}
                                     >
-                                        <CourseCard />
-                                        <CourseCard />
-                                        <CourseCard />
-                                        <CourseCard />
-                                        <CourseCard />
-                                        <CourseCard />
-                                        <CourseCard />
-                                        <CourseCard />
-                                        <CourseCard />
-                                        <CourseCard />
-                                        <CourseCard />
-                                        <CourseCard />
+                                        {
+                                            courses.map(course => <CourseCard key={course._id} course={course} button={true} />)
+                                        }
 
                                     </motion.div>
                                 </>
                             ) : (
                                 <>
                                     <div className='space-y-5'>
-                                        <DespCourseCard />
-                                        <DespCourseCard />
-                                        <DespCourseCard />
-                                        <DespCourseCard />
+                                        {
+                                            courses.map(course => <DespCourseCard key={course._id} course={course} />)
+                                        }
                                     </div>
                                 </>
                             )

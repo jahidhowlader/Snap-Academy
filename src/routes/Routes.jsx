@@ -8,13 +8,17 @@ import SingleCourse from "../pages/singleCourse/singleCourse/SingleCourse";
 import Signin from "../pages/auth/signin/Signin";
 import Signup from "../pages/auth/signup/Signup";
 import ForgotPassword from "../pages/auth/forgotPassword/ForgotPassword";
+import UserCart from "../pages/dashboard/userCart/UserCart";
+import DashboardLayout from "../layout/DashboardLayout";
 
 
 export const router = createBrowserRouter([
+  // ERROR 404
   {
     path: '*',
     element: <Error404 />
   },
+  // ROOT TOUTES
   {
     path: "/",
     element: <MainLayout />,
@@ -28,8 +32,9 @@ export const router = createBrowserRouter([
         element: <Courses />
       },
       {
-        path: 'course/:id',
-        element: <SingleCourse />
+        path: 'course/:_id',
+        element: <SingleCourse />,
+        loader: ({ params }) => fetch(`http://localhost:3000/course/${params._id}`)
       },
       {
         path: 'instructor',
@@ -37,16 +42,33 @@ export const router = createBrowserRouter([
       },
     ]
   },
+  // AUTHENTICATION
   {
-    path: 'auth/signin',
-    element: <Signin />
+    path: 'auth',
+    children: [
+      {
+        path: 'signin',
+        element: <Signin />
 
-  }, {
-    path: 'auth/signup',
-    element: <Signup />
+      }, {
+        path: 'signup',
+        element: <Signup />
+      },
+      {
+        path: 'forgotPassword',
+        element: <ForgotPassword />
+      },
+    ]
   },
+  // DASHBOARD ROUTES
   {
-    path: 'auth/forgotPassword',
-    element: <ForgotPassword />
-  },
+    path: 'dashboard',
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: 'cart',
+        element: <UserCart />
+      }
+    ]
+  }
 ]);

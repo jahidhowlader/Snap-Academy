@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Banner from "../banner/Banner";
 import Collection from "../collection/Collection";
 import Offer from "../offer/Offer";
@@ -7,9 +8,14 @@ import VideoInformation from "../videoInformation/VideoInformation";
 const Home = () => {
     return (
         <>
+            {/* Ttile */}
+            <Helmet>
+                <title>Home | Snap Academy</title>
+            </Helmet>
 
-            <img src="/bg1.png" alt="" className="fixed -left-20 -top-20 opacity-5 -z-10"/>
+            <img src="/bg1.png" alt="" className="fixed -left-20 -top-20 opacity-5 -z-10" />
             {/* <img src="/home/feature2.png" alt="" className="fixed -right-20 -bottom-20 opacity-5 -z-10"/> */}
+
 
             <Banner />
             <Offer />

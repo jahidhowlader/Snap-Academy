@@ -36,41 +36,19 @@ const NavMobile = ({ isOpen, setIsOpen }) => {
                                 <h3 className="font-bold uppercase text-right  text-xl">Snap Academy</h3>
                             </div>
 
-                            <ul className="text-xl text-right pt-5 pr-10 space-y-2 uppercase">
+                            <motion.ul
+                                onClick={() => setIsOpen(false)}
+                                className="text-xl text-right pt-5 pr-10 space-y-2 uppercase"
+                                initial={{ x: 100, opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ delay: .1, duration: 1 }}
+                            >
                                 {/* {navLink} */}
-
-                                <motion.li
-                                    initial={{ x: 100, opacity: 0 }}
-                                    animate={{ x: 0, opacity: 1 }}
-                                    transition={{ delay: .2, duration: 1 }}
-                                >
-                                    <Link to='/'  >Home</Link>
-                                </motion.li>
-
-                                <motion.li
-                                    initial={{ x: 100, opacity: 0 }}
-                                    animate={{ x: 0, opacity: 1 }}
-                                    transition={{ delay: .3, duration: 1 }}
-                                >
-                                    <Link to='/courses'>Courses</Link>
-                                </motion.li>
-
-                                <motion.li
-                                    initial={{ x: 100, opacity: 0 }}
-                                    animate={{ x: 0, opacity: 1 }}
-                                    transition={{ delay: .4, duration: 1 }}
-                                >
-                                    <Link to='/instructor'>Instructor</Link>
-                                </motion.li>
-
-                                <motion.li
-                                    initial={{ x: 100, opacity: 0 }}
-                                    animate={{ x: 0, opacity: 1 }}
-                                    transition={{ delay: .5, duration: 1 }}
-                                >
-                                    <Link to='/auth/signin'>Signin</Link>
-                                </motion.li>
-                            </ul>
+                                <li><Link to='/'  >Home</Link></li>
+                                <li><Link to='/courses'>Courses</Link></li>
+                                <li><Link to='/instructor'>Instructor</Link></li>
+                                <li><Link to='/auth/signin'>Signin</Link></li>
+                            </motion.ul>
 
                             <div className="flex flex-col items-center justify-center absolute bottom-0 left-7">
                                 <motion.a

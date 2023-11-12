@@ -1,12 +1,13 @@
 [
     {
-        "category": "Creative Composition Masterclass",
-        "title": "lorem Ipsum",
-        "description": "Learn the art of creative composition to capture compelling and visually appealing images.",
-        "Product Code": "45d5s7",
-        "Availability": "In Stock",
-        "duration": "10 weeks",
-        "lectures": "",
+        "category": "Creative Composition",
+        "photo": "https://i.ibb.co/dcQF5QV/design-concept-illustration-idea-style-creativity-projects-613284-3229.jpg",
+        "title": "Mastering Rule of Thirds: A Creative Approach",
+        "description": "In this course, immerse yourself in the art of composition by mastering the Rule of Thirds. Learn to break free from traditional constraints and creatively apply this fundamental principle to elevate your photography. Through hands-on exercises and real-world applications, discover how the Rule of Thirds can become a powerful tool in your creative toolkit.",
+        "productCode": "4rd5s7",
+        "availability": "10",
+        "duration": "8 weeks",
+        "lectures": "24",
         "instructors": [
             "Emily Johnson",
             "Michael Brown"
@@ -27,9 +28,752 @@
             "DSLR Camera",
             "Basic knowledge of exposure"
         ],
-        "review": [{"userId": "54676143546"}, {"userId": "54676143546"} ],
-        "totalStudent": "200" ,
-        "Course Curriculum": "",
+        "review": [
+            {
+                "rating": 5,
+                "userName": "Dmx Fahim",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 5,
+                "userName": "Raja Den",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "200",
         "discount": "40"
+    },
+    {
+        "category": "Creative Composition",
+        "photo": "https://i.ibb.co/F32x95G/adult-woman-exuding-elegance-studio-portrait-generative-ai-188544-12091.jpg",
+        "title": "Symmetry and Asymmetry in Composition",
+        "description": "Unleash the visual power of symmetry and asymmetry in your photographs. This course delves deep into the principles of balance, exploring how symmetrical and asymmetrical compositions can evoke different emotions and add depth to your images. Through practical assignments and critiques, refine your ability to create compelling and harmonious compositions.",
+        "productCode": "45dpp7",
+        "availability": "12",
+        "duration": "10 weeks",
+        "lectures": "30",
+        "instructors": [
+            "Emily Johnson",
+            "Michael Brown"
+        ],
+        "schedule": [
+            {
+                "day": "sat, Mon, Tue",
+                "time": "1:00 PM - 3:00 PM"
+            },
+            {
+                "day": "sat, Mon, Tue",
+                "time": "4:00 PM - 6:00 PM"
+            }
+        ],
+        "price": "$400",
+        "level": "Advanced",
+        "requirements": [
+            "DSLR Camera",
+            "Basic knowledge of exposure"
+        ],
+        "review": [
+            {
+                "rating": 5,
+                "userName": "Jhon Wick",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 5,
+                "userName": "Ibrahim Pasa",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "200",
+        "discount": "40"
+    },
+    {
+        "category": "Creative Composition",
+        "photo": "https://i.ibb.co/p4qZscq/camera-palm-leaf-gloves-father-s-day-23-2147631252.jpg",
+        "title": "Visual Storytelling through Composition Techniques",
+        "description": "Transform your photography into a captivating narrative. Explore composition techniques that serve as building blocks for visual storytelling. From sequencing shots to framing techniques, discover how to craft a compelling story through your images. Engage in interactive projects that challenge you to convey emotions and messages through your compositions.",
+        "productCode": "4tt5s7",
+        "availability": "0",
+        "duration": "10 weeks",
+        "lectures": "30",
+        "instructors": [
+            "Emily Johnson",
+            "Michael Brown"
+        ],
+        "schedule": [
+            {
+                "day": "sat, Mon, Tue",
+                "time": "1:00 PM - 3:00 PM"
+            },
+            {
+                "day": "sat, Mon, Tue",
+                "time": "4:00 PM - 6:00 PM"
+            }
+        ],
+        "price": "$400",
+        "level": "Advanced",
+        "requirements": [
+            "DSLR Camera",
+            "Basic knowledge of exposure"
+        ],
+        "review": [
+            {
+                "rating": 5,
+                "userName": "Naisuf Endi",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 5,
+                "userName": "Victoria",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "200",
+        "discount": "40"
+    },
+    {
+        "category": "Creative Composition",
+        "photo": "https://i.ibb.co/dcQF5QV/design-concept-illustration-idea-style-creativity-projects-613284-3229.jpg",
+        "title": "Beyond Basics: Advanced Framing Strategies",
+        "description": "Elevate your composition skills to the next level with advanced framing strategies. This course is designed for photographers seeking a deeper understanding of framing beyond the basics. Delve into topics such as framing within framing, layering, and unconventional approaches. Challenge yourself with complex assignments that push the boundaries of traditional framing techniques",
+        "productCode": "453us7",
+        "availability": "2",
+        "duration": "5 weeks",
+        "lectures": "20",
+        "instructors": [
+            "Emily Johnson",
+            "Michael Brown"
+        ],
+        "schedule": [
+            {
+                "day": "sat, Mon, Tue",
+                "time": "1:00 PM - 3:00 PM"
+            },
+            {
+                "day": "sat, Mon, Tue",
+                "time": "4:00 PM - 6:00 PM"
+            }
+        ],
+        "price": "$400",
+        "level": "Advanced",
+        "requirements": [
+            "DSLR Camera",
+            "Basic knowledge of exposure"
+        ],
+        "review": [
+            {
+                "rating": 5,
+                "userName": "Bali Be",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 5,
+                "userName": "Hurram Sultan",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "200",
+        "discount": "40"
+    },
+    {
+        "category": "Creative Composition",
+        "photo": "https://i.ibb.co/M8vVV7k/flowers-branches-with-camera-table-23-2148043930.jpg",
+        "title": "Dynamic Compositions in Landscape Photography",
+        "description": "Take your landscape photography to new heights by mastering dynamic compositions. Explore how to capture the grandeur of nature through innovative framing and perspective. From leading lines to foreground interest, learn techniques that breathe life into your landscape images. Engage in field trips and projects to apply your newfound skills in real-world settings.",
+        "productCode": "45dod7",
+        "availability": "20",
+        "duration": "10 weeks",
+        "lectures": "30",
+        "instructors": [
+            "Emily Johnson",
+            "Michael Brown"
+        ],
+        "schedule": [
+            {
+                "day": "sat, Mon, Tue",
+                "time": "1:00 PM - 3:00 PM"
+            },
+            {
+                "day": "sat, Mon, Tue",
+                "time": "4:00 PM - 6:00 PM"
+            }
+        ],
+        "price": "$400",
+        "level": "Advanced",
+        "requirements": [
+            "DSLR Camera",
+            "Basic knowledge of exposure"
+        ],
+        "review": [
+            {
+                "rating": 5,
+                "userName": "Kalvi Zen",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 5,
+                "userName": "Rimi Akter",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "200",
+        "discount": "40"
+    },
+    {
+        "category": "Advanced Lighting",
+        "photo": "https://i.ibb.co/Zcy6Cqx/arrangement-professional-photographer-equipment-23-2149033391.jpg",
+        "title": "Mastering Advanced Lighting Techniques",
+        "description": "Delve into the intricacies of advanced lighting techniques and elevate your photography to new heights. This course explores advanced concepts in natural and artificial lighting, guiding you through creative applications and real-world scenarios.",
+        "productCode": "ALM2023",
+        "availability": "15",
+        "duration": "10 weeks",
+        "lectures": "30",
+        "instructors": [
+            "Sophie Martinez",
+            "Daniel White"
+        ],
+        "schedule": [
+            {
+                "day": "Mon, Wed, Fri",
+                "time": "2:00 PM - 4:00 PM"
+            },
+            {
+                "day": "Tue, Thu",
+                "time": "6:00 PM - 8:00 PM"
+            }
+        ],
+        "price": "$500",
+        "level": "Advanced",
+        "requirements": [
+            "DSLR Camera",
+            "Intermediate knowledge of lighting"
+        ],
+        "review": [
+            {
+                "rating": 4.5,
+                "userName": "John Doe",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 5,
+                "userName": "Vicky Zahid",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "150",
+        "discount": "30"
+    },
+    {
+        "category": "Advanced Lighting",
+        "photo": "https://i.ibb.co/jyyDRf1/lamp-tripod-studio-23-2147785922.jpg",
+        "title": "Creative Lighting Innovations: Pushing Boundaries",
+        "description": "Unlock your creative potential with cutting-edge lighting innovations. This course introduces you to experimental lighting techniques, challenging norms, and fostering a unique style that sets your work apart.",
+        "productCode": "CLI2023",
+        "availability": "12",
+        "duration": "12 weeks",
+        "lectures": "36",
+        "instructors": [
+            "John Doe",
+            "Olivia Lee"
+        ],
+        "schedule": [
+            {
+                "day": "Tue, Thu",
+                "time": "3:00 PM - 5:00 PM"
+            },
+            {
+                "day": "Sat",
+                "time": "10:00 AM - 12:00 PM"
+            }
+        ],
+        "price": "$550",
+        "level": "Advanced",
+        "requirements": [
+            "DSLR Camera",
+            "Proficiency in lighting basics"
+        ],
+        "review": [
+            {
+                "rating": 5,
+                "userName": "Alif Petter",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 4.8,
+                "userName": "Mekichulu",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "180",
+        "discount": "25"
+    },
+    {
+        "category": "Advanced Lighting",
+        "photo": "https://i.ibb.co/Zcy6Cqx/arrangement-professional-photographer-equipment-23-2149033391.jpg",
+        "title": "Mastering Ambient Light: Techniques and Applications",
+        "description": "Explore the nuances of ambient light in photography. This course provides a deep dive into utilizing natural light sources effectively, enhancing your skills in capturing moments with subtlety and precision.",
+        "productCode": "ALM2023",
+        "availability": "20",
+        "duration": "8 weeks",
+        "lectures": "24",
+        "instructors": [
+            "Robert Miller",
+            "Emily Johnson"
+        ],
+        "schedule": [
+            {
+                "day": "Mon, Wed",
+                "time": "4:00 PM - 6:00 PM"
+            },
+            {
+                "day": "Sat",
+                "time": "1:00 PM - 3:00 PM"
+            }
+        ],
+        "price": "$450",
+        "level": "Advanced",
+        "requirements": [
+            "DSLR Camera",
+            "Intermediate knowledge of lighting"
+        ],
+        "review": [
+            {
+                "rating": 4.9,
+                "userName": "Meherima Sultan",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 4.7,
+                "userName": "Mahi Deran",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "170",
+        "discount": "35"
+    },
+    {
+        "category": "Advanced Lighting",
+        "photo": "https://i.ibb.co/7GNzT1G/photo-studio-with-white-panel-spotlights-107791-1163.jpg",
+        "title": "Mastering Strobe Lighting: Precision and Creativity",
+        "description": "Dive into the world of strobe lighting and master the art of precision and creativity. This course is designed for photographers seeking to harness the full potential of strobe lights in various settings and genres.",
+        "productCode": "SLT2023",
+        "availability": "11",
+        "duration": "10 weeks",
+        "lectures": "30",
+        "instructors": [
+            "Sophia Garcia"
+        ],
+        "schedule": [
+            {
+                "day": "Tue, Thu",
+                "time": "6:00 PM - 8:00 PM"
+            },
+            {
+                "day": "Sat",
+                "time": "2:00 PM - 4:00 PM"
+            }
+        ],
+        "price": "$480",
+        "level": "Advanced",
+        "requirements": [
+            "DSLR Camera",
+            "Proficiency in lighting basics"
+        ],
+        "review": [
+            {
+                "rating": 4.6,
+                "userName": "Michael Brown",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 4.8,
+                "userName": "Jahid Howlader",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "160",
+        "discount": "20"
+    },
+    {
+        "category": "Post-Processing",
+        "photo": "https://i.ibb.co/5jhWmt5/retoucher-putting-headset-working-project-drawing-with-stylus-pencil-482257-18779.jpg",
+        "title": "Mastering Advanced Photo Editing Techniques",
+        "description": "Unlock the full potential of your photographs through advanced editing techniques. This course delves into intricate post-processing methods, enabling you to enhance and transform your images with precision and creativity.",
+        "productCode": "APE2023",
+        "availability": "15",
+        "duration": "8 weeks",
+        "lectures": "25",
+        "instructors": [
+            "Emily Johnson"
+        ],
+        "schedule": [
+            {
+                "day": "Mon, Wed",
+                "time": "3:00 PM - 5:00 PM"
+            },
+            {
+                "day": "Sat",
+                "time": "10:00 AM - 12:00 PM"
+            }
+        ],
+        "price": "$450",
+        "level": "Advanced",
+        "requirements": [
+            "Laptop/Desktop with Photo Editing Software",
+            "Basic knowledge of photo editing"
+        ],
+        "review": [
+            {
+                "rating": 4.7,
+                "userName": "mostafa",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 4.9,
+                "userName": "Irun",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "130",
+        "discount": "25"
+    },
+    {
+        "category": "Post-Processing",
+        "photo": "https://i.ibb.co/g6tnLvQ/creative-videographer-editing-movie-computer-from-home-girlfriend-sofa-background-482257-31238.jpg",
+        "title": "Color Grading and Correction Workshop",
+        "description": "Immerse yourself in the world of color grading and correction. This workshop provides hands-on experience in enhancing the color balance, tone, and mood of your photographs. Discover techniques to achieve stunning visual effects.",
+        "productCode": "CGC2023",
+        "availability": "12",
+        "duration": "6 weeks",
+        "lectures": "20",
+        "instructors": [
+            "Sophie Martinez",
+            "Jahid Howlader"
+        ],
+        "schedule": [
+            {
+                "day": "Tue, Thu",
+                "time": "6:00 PM - 8:00 PM"
+            },
+            {
+                "day": "Sat",
+                "time": "2:00 PM - 4:00 PM"
+            }
+        ],
+        "price": "$380",
+        "level": "Intermediate",
+        "requirements": [
+            "Laptop/Desktop with Photo Editing Software",
+            "Basic knowledge of photo editing"
+        ],
+        "review": [
+            {
+                "rating": 4.8,
+                "userName": "Elena",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 4.5,
+                "userName": "Molly Zaman",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "110",
+        "discount": "20"
+    },
+    {
+        "category": "Post-Processing",
+        "photo": "https://i.ibb.co/5jhWmt5/retoucher-putting-headset-working-project-drawing-with-stylus-pencil-482257-18779.jpg",
+        "title": "Portrait Retouching Masterclass",
+        "description": "Refine your portrait photography with advanced retouching techniques. This masterclass focuses on perfecting skin tones, removing imperfections, and enhancing facial features to create professional-quality portraits.",
+        "productCode": "PRM2023",
+        "availability": "18",
+        "duration": "10 weeks",
+        "lectures": "30",
+        "instructors": [
+            "Daniel White",
+            "Vicky Zahid"
+        ],
+        "schedule": [
+            {
+                "day": "Mon, Wed, Fri",
+                "time": "4:00 PM - 6:00 PM"
+            },
+            {
+                "day": "Sat",
+                "time": "1:00 PM - 3:00 PM"
+            }
+        ],
+        "price": "$500",
+        "level": "Advanced",
+        "requirements": [
+            "Laptop/Desktop with Photo Editing Software",
+            "Intermediate knowledge of photo editing"
+        ],
+        "review": [
+            {
+                "rating": 4.9,
+                "userName": "Vicky Zahid",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 4.7,
+                "userName": "Jannatul ferdous",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "150",
+        "discount": "30"
+    },
+    {
+        "category": "Post-Processing",
+        "photo": "https://i.ibb.co/F32x95G/adult-woman-exuding-elegance-studio-portrait-generative-ai-188544-12091.jpg",
+        "title": "Photoshop for Photographers: Advanced Techniques",
+        "description": "Unlock the full potential of Adobe Photoshop in your photography workflow. This course covers advanced techniques for photo manipulation, compositing, and creative editing, empowering you to take your skills to the next level.",
+        "productCode": "PPP2023",
+        "availability": "20",
+        "duration": "12 weeks",
+        "lectures": "35",
+        "instructors": [
+            "Olivia Lee"
+        ],
+        "schedule": [
+            {
+                "day": "Tue, Thu",
+                "time": "3:00 PM - 5:00 PM"
+            },
+            {
+                "day": "Sat",
+                "time": "10:00 AM - 12:00 PM"
+            }
+        ],
+        "price": "$550",
+        "level": "Advanced",
+        "requirements": [
+            "Laptop/Desktop with Adobe Photoshop installed",
+            "Basic knowledge of photo editing"
+        ],
+        "review": [
+            {
+                "rating": 4.8,
+                "userName": "User Name",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 4.6,
+                "userName": "Carle Dom",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "180",
+        "discount": "25"
+    },
+    {
+        "category": "Portrait Photography Intensive", 
+        "photo": "https://i.ibb.co/g6tnLvQ/creative-videographer-editing-movie-computer-from-home-girlfriend-sofa-background-482257-31238.jpg",
+        "title": "Mastering Environmental Portraiture",
+        "description": "Refine your portrait photography with advanced retouching techniques. This masterclass focuses on perfecting skin tones, removing imperfections, and enhancing facial features to create professional-quality portraits.",
+        "productCode": "PRM2023",
+        "availability": "18",
+        "duration": "10 weeks",
+        "lectures": "30",
+        "instructors": [
+            "Daniel White",
+            "Vicky Zahid"
+        ],
+        "schedule": [
+            {
+                "day": "Mon, Wed, Fri",
+                "time": "4:00 PM - 6:00 PM"
+            },
+            {
+                "day": "Sat",
+                "time": "1:00 PM - 3:00 PM"
+            }
+        ],
+        "price": "$500",
+        "level": "Advanced",
+        "requirements": [
+            "Laptop/Desktop with Photo Editing Software",
+            "Intermediate knowledge of photo editing"
+        ],
+        "review": [
+            {
+                "rating": 4.9,
+                "userName": "Vicky Zahid",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 4.7,
+                "userName": "Jannatul ferdous",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "150",
+        "discount": "30"
+    },
+    {
+        "category": "Post-Processing",
+        "photo": "https://i.ibb.co/NVPJtx4/still-life-with-plants-deco-23-2149192206.jpg",
+        "title": "Creative Studio Portraiture: Beyond the Basics",
+        "description": "Unlock the full potential of Adobe Photoshop in your photography workflow. This course covers advanced techniques for photo manipulation, compositing, and creative editing, empowering you to take your skills to the next level.",
+        "productCode": "PPP2023",
+        "availability": "20",
+        "duration": "12 weeks",
+        "lectures": "35",
+        "instructors": [
+            "Olivia Lee"
+        ],
+        "schedule": [
+            {
+                "day": "Tue, Thu",
+                "time": "3:00 PM - 5:00 PM"
+            },
+            {
+                "day": "Sat",
+                "time": "10:00 AM - 12:00 PM"
+            }
+        ],
+        "price": "$550",
+        "level": "Advanced",
+        "requirements": [
+            "Laptop/Desktop with Adobe Photoshop installed",
+            "Basic knowledge of photo editing"
+        ],
+        "review": [
+            {
+                "rating": 4.8,
+                "userName": "User Name",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 4.6,
+                "userName": "Carle Dom",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "180",
+        "discount": "25"
+    },
+    {
+        "category": "Portrait Photography Intensive",
+        "photo": "https://i.ibb.co/y6v1L05/positive-female-tourist-with-photo-camera-travel-backpack-613910-7148.jpg",
+        "title": "Advertising Photography Essentials",
+        "description": "Refine your portrait photography with advanced retouching techniques. This masterclass focuses on perfecting skin tones, removing imperfections, and enhancing facial features to create professional-quality portraits.",
+        "productCode": "PRM2023",
+        "availability": "18",
+        "duration": "10 weeks",
+        "lectures": "30",
+        "instructors": [
+            "Daniel White",
+            "Vicky Zahid"
+        ],
+        "schedule": [
+            {
+                "day": "Mon, Wed, Fri",
+                "time": "4:00 PM - 6:00 PM"
+            },
+            {
+                "day": "Sat",
+                "time": "1:00 PM - 3:00 PM"
+            }
+        ],
+        "price": "$500",
+        "level": "Advanced",
+        "requirements": [
+            "Laptop/Desktop with Photo Editing Software",
+            "Intermediate knowledge of photo editing"
+        ],
+        "review": [
+            {
+                "rating": 4.9,
+                "userName": "Vicky Zahid",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 4.7,
+                "userName": "Jannatul ferdous",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "150",
+        "discount": "30"
+    },
+    {
+        "category": "Post-Processing",
+        "photo": "https://i.ibb.co/JFs8ZM0/young-woman-black-t-shirt-with-camera-140725-12997.jpg",
+        "title": "Corporate Headshots and Branding Photography",
+        "description": "Unlock the full potential of Adobe Photoshop in your photography workflow. This course covers advanced techniques for photo manipulation, compositing, and creative editing, empowering you to take your skills to the next level.",
+        "productCode": "PPP2023",
+        "availability": "20",
+        "duration": "12 weeks",
+        "lectures": "35",
+        "instructors": [
+            "Olivia Lee"
+        ],
+        "schedule": [
+            {
+                "day": "Tue, Thu",
+                "time": "3:00 PM - 5:00 PM"
+            },
+            {
+                "day": "Sat",
+                "time": "10:00 AM - 12:00 PM"
+            }
+        ],
+        "price": "$550",
+        "level": "Advanced",
+        "requirements": [
+            "Laptop/Desktop with Adobe Photoshop installed",
+            "Basic knowledge of photo editing"
+        ],
+        "review": [
+            {
+                "rating": 4.8,
+                "userName": "User Name",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "rating": 4.6,
+                "userName": "Carle Dom",
+                "userImage": "",
+                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+        ],
+        "totalStudent": "180",
+        "discount": "25"
     }
 ]
