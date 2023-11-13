@@ -2,52 +2,23 @@ import './Courses.css'
 import Control from '../control/Control';
 import Refferal from '../refferal/Refferal';
 import CourseCard from '../courseCard/CourseCard';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { motion } from "framer-motion"
 import DespCourseCard from '../despCourseCard/DespCourseCard';
 import { Helmet } from 'react-helmet-async';
 // import useGetCourses from '../../../hooks/useGetCourses';
 import Loader from '../../../components/loader/Loader';
+import useGetCourses from '../../../hooks/useGetCourses';
 
 const Courses = () => {
 
     // ALL STATE ARE HERE
-    const [layout, setLayout] = useState(true) // CHECK LAYOUT WHICH IS CHOOS USER
-    const [selectedCategories, setSelectedCategories] = useState(['Creative Composition', 'Advanced Lighting']); //FILTER COURSE BY CATEGORY
-    const [minPrice, setMinPrice] = useState(0)
-    const [maxPrice, setMaxPrice] = useState(0)
-    const [sortingCourses, setSortingCourses] = useState('default')
+    const [layout, setLayout] = useState(true)
+    const [selectedCategories, setSelectedCategories] = useState(['Creative Composition', 'Advanced Lighting']);
 
 
-
-    const [priceQuery, setPriceQuery] = useState('') // FILTER COURSE BY PRICE
-
-    // use HOOK FOR GET ALL COURSES
-    // const [courses, loading] = useGetCourses()
-
-    const [courses, setCourses] = useState([]);
-    const [courseLoading, setCourseLoading] = useState(true);
-
-
-    useEffect(() => {
-        fetch(`http://localhost:3000/courses?priceQuery=${priceQuery}`)
-            .then(res => res.json())
-            .then(data => {
-
-                setCourses(data.courses);
-                setMinPrice(data.minPrice)
-                setMaxPrice(data.maxPrice)
-                // setFindAscending(data.course)
-
-                setCourseLoading(false);
-            });
-    }, [priceQuery])
-
-    const handlerSortingCourses = (e) => {
-        console.log(e.target.value);
-        setSortingCourses(e.target.value)
-        // (e) => setFindSorting(e.target.value)
-    }
+    // use HOOK FOR GET ALL COURSES AND FUNCTIONALITY
+    const { courses, setCourses, minPrice, setMinPrice, maxPrice, setMaxPrice, sortingCourses, setSortingCourses, priceQuery, setPriceQuery, courseLoading, setCourseLoading, handlerSortingCourses } = useGetCourses()
 
     return (
         <>
@@ -146,8 +117,14 @@ const Courses = () => {
                                 <>
                                     <div className='space-y-5'>
                                         {
-                                            courses.map(course => <DespCourseCard key={course._id} course={course} />)
+                                            sortingCourses == 'accending' ?
+                                                courses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <DespCourseCard key={course._id} course={course} />) : sortingCourses === 'descending' ?
+                                                    courses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <DespCourseCard key={course._id} course={course} />) :
+                                                    courses.map(course => <DespCourseCard key={course._id} course={course} />)
                                         }
+                                        {/* {
+                                            courses.map(course => <DespCourseCard key={course._id} course={course} />)
+                                        } */}
                                     </div>
                                 </>
                             )

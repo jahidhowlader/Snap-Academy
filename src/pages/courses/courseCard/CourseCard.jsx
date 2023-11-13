@@ -54,7 +54,7 @@ CourseCard.propTypes = {
         _id: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
         photo: PropTypes.string.isRequired,
-        price: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
     }).isRequired,
     button: PropTypes.bool,
 };
