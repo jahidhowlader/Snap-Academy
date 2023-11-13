@@ -107,7 +107,9 @@ Control.propTypes = {
     selectedCategories: PropTypes.array.isRequired,
     setSelectedCategories: PropTypes.func.isRequired,
     priceQuery: PropTypes.string.isRequired,
-    setPriceQuery: PropTypes.func.isRequired
+    setPriceQuery: PropTypes.func.isRequired,
+    minPrice: PropTypes.string.isRequired,
+    maxPrice: PropTypes.string.isRequired
 };
 
 export default Control;

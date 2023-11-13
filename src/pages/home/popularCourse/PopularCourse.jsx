@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import useGetCourses from '../../../hooks/useGetCourses';
+// import useGetCourses from '../../../hooks/useGetCourses';
 import CourseCard from '../../courses/courseCard/CourseCard';
 import { useEffect, useState } from 'react';
 

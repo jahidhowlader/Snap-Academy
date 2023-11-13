@@ -15,7 +15,7 @@ const PriceRange = ({ priceQuery, setPriceQuery, minPrice, maxPrice }) => {
                 className='w-full cursor-pointer mt-6 volume-slider' />
 
             <div className='flex justify-between items-center px-1 text-xs xl:text-sm 2xl:text-base'>
-                <p>${priceQuery ? priceQuery :  0}</p>
+                <p>${priceQuery ? priceQuery : 0}</p>
                 <p>${maxPrice}</p>
             </div>
         </div>
@@ -24,6 +24,8 @@ const PriceRange = ({ priceQuery, setPriceQuery, minPrice, maxPrice }) => {
 
 PriceRange.propTypes = {
     priceQuery: PropTypes.string.isRequired,
-    setPriceQuery: PropTypes.func.isRequired
+    setPriceQuery: PropTypes.func.isRequired,
+    minPrice: PropTypes.string.isRequired,
+    maxPrice: PropTypes.string.isRequired,
 };
 export default PriceRange;

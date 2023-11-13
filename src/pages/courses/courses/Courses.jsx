@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { motion } from "framer-motion"
 import DespCourseCard from '../despCourseCard/DespCourseCard';
 import { Helmet } from 'react-helmet-async';
-import useGetCourses from '../../../hooks/useGetCourses';
+// import useGetCourses from '../../../hooks/useGetCourses';
 import Loader from '../../../components/loader/Loader';
 
 const Courses = () => {
@@ -16,6 +16,7 @@ const Courses = () => {
     const [selectedCategories, setSelectedCategories] = useState(['Creative Composition', 'Advanced Lighting']); //FILTER COURSE BY CATEGORY
     const [minPrice, setMinPrice] = useState(0)
     const [maxPrice, setMaxPrice] = useState(0)
+    const [sortingCourses, setSortingCourses] = useState('default')
 
 
 
@@ -27,6 +28,7 @@ const Courses = () => {
     const [courses, setCourses] = useState([]);
     const [courseLoading, setCourseLoading] = useState(true);
 
+
     useEffect(() => {
         fetch(`http://localhost:3000/courses?priceQuery=${priceQuery}`)
             .then(res => res.json())
@@ -35,14 +37,17 @@ const Courses = () => {
                 setCourses(data.courses);
                 setMinPrice(data.minPrice)
                 setMaxPrice(data.maxPrice)
+                // setFindAscending(data.course)
 
-                console.log(data);
                 setCourseLoading(false);
             });
     }, [priceQuery])
 
-    console.log(courses);
-    // console.log(maxPrice);
+    const handlerSortingCourses = (e) => {
+        console.log(e.target.value);
+        setSortingCourses(e.target.value)
+        // (e) => setFindSorting(e.target.value)
+    }
 
     return (
         <>
@@ -73,8 +78,13 @@ const Courses = () => {
                                 <div className='flex items-center'>
                                     <label htmlFor="orders" className='hidden lg:block'>Short by:</label>
 
-                                    <select name="order" id="order" className='lg:ml-[5px] pl-1 lg:pr-20 py-1 text-xs border rounded  border-primary-color'>
-                                        <option value="accending">Short by</option>
+                                    <select
+                                        name="order"
+                                        id="order"
+                                        className='lg:ml-[5px] pl-1 lg:pr-20 py-1 text-xs border rounded  border-primary-color'
+                                        onChange={handlerSortingCourses}
+                                    >
+                                        <option value="default">Short by</option>
                                         <option value="accending">a - z ( Accending )</option>
                                         <option value="descending">z - a ( Descending )</option>
                                     </select>
@@ -124,7 +134,10 @@ const Courses = () => {
                                         initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }}
                                     >
                                         {
-                                            courses.map(course => <CourseCard key={course._id} course={course} button={true} />)
+                                            sortingCourses == 'accending' ?
+                                                courses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <CourseCard key={course._id} course={course} button={true} />) : sortingCourses === 'descending' ?
+                                                    courses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <CourseCard key={course._id} course={course} button={true} />) :
+                                                    courses.map(course => <CourseCard key={course._id} course={course} button={true} />)
                                         }
 
                                     </motion.div>
@@ -144,7 +157,7 @@ const Courses = () => {
                     </div>
                 </div>
 
-            </section>
+            </section >
 
             <Refferal />
         </>
