@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Rating, ThinRoundedStar } from "@smastrom/react-rating";
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom";
@@ -28,7 +29,7 @@ const CourseCard = ({ course, button }) => {
 
                 {/* Card Content */}
                 <div className='py-5 text-center'>
-                    <h5 className='font-medium  lg:text-lg xl:text-xl  sm:text-2xl'>{course.title}</h5>
+                    <h5 className='font-medium  lg:text-lg xl:text-xl  sm:text-2xl'>{course.title.slice(0, 45)}...</h5>
                     <div className='flex justify-center my-2'>
                         <Rating style={{ maxWidth: 100 }} value={4} itemStyles={ratingStyle} readOnly />
 
@@ -39,13 +40,23 @@ const CourseCard = ({ course, button }) => {
                         button && <motion.button
                             whileTap={{ scale: 0.95 }}
                             className="bg-primary-color hover:bg-opacity-90 px-4 sm:px-6 py-1 sm:py-2 rounded-md text-white">
-                            Addmission
+                            Add to cart
                         </motion.button>
                     }
                 </div>
             </div>
         </Link>
     );
+};
+
+CourseCard.propTypes = {
+    course: PropTypes.shape({
+        _id: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        photo: PropTypes.string.isRequired,
+        price: PropTypes.string.isRequired,
+    }).isRequired,
+    button: PropTypes.bool,
 };
 
 export default CourseCard;

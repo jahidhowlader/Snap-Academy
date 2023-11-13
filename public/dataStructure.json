@@ -22,7 +22,8 @@
                 "time": "4:00 PM - 6:00 PM"
             }
         ],
-        "price": "$400",
+        "price": 400,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -32,13 +33,13 @@
             {
                 "rating": 5,
                 "userName": "Dmx Fahim",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/qxqBp8m/800-1.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 5,
                 "userName": "Raja Den",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/1LwtkcS/k1-instructors-skelby-640x640.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -68,7 +69,8 @@
                 "time": "4:00 PM - 6:00 PM"
             }
         ],
-        "price": "$400",
+        "price": 400,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -78,13 +80,13 @@
             {
                 "rating": 5,
                 "userName": "Jhon Wick",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/6w1ChbW/800-5.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 5,
                 "userName": "Ibrahim Pasa",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/8BcGfFx/800-4.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -114,7 +116,8 @@
                 "time": "4:00 PM - 6:00 PM"
             }
         ],
-        "price": "$400",
+        "price": 400,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -124,13 +127,13 @@
             {
                 "rating": 5,
                 "userName": "Naisuf Endi",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/vLvg1zt/800-6.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 5,
                 "userName": "Victoria",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/Kzfyv8y/k1-instructors-ladler-640x640.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -160,7 +163,8 @@
                 "time": "4:00 PM - 6:00 PM"
             }
         ],
-        "price": "$400",
+        "price": 400,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -170,13 +174,13 @@
             {
                 "rating": 5,
                 "userName": "Bali Be",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/wgr21yj/800-2.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 5,
                 "userName": "Hurram Sultan",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/QNH0H6X/k1-instructors-kgreer-640x640.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -206,7 +210,8 @@
                 "time": "4:00 PM - 6:00 PM"
             }
         ],
-        "price": "$400",
+        "price": 400,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -216,13 +221,13 @@
             {
                 "rating": 5,
                 "userName": "Kalvi Zen",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/0C5nY1j/k1-instructors-ksherk-640x640.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 5,
                 "userName": "Rimi Akter",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/9HzMhY4/800-3.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -252,7 +257,8 @@
                 "time": "6:00 PM - 8:00 PM"
             }
         ],
-        "price": "$500",
+        "price": 500,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -262,13 +268,13 @@
             {
                 "rating": 4.5,
                 "userName": "John Doe",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/qxqBp8m/800-1.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 5,
                 "userName": "Vicky Zahid",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/wgr21yj/800-2.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -298,7 +304,8 @@
                 "time": "10:00 AM - 12:00 PM"
             }
         ],
-        "price": "$550",
+        "price": 550,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -308,13 +315,13 @@
             {
                 "rating": 5,
                 "userName": "Alif Petter",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/wgr21yj/800-2.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.8,
                 "userName": "Mekichulu",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/qxqBp8m/800-1.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -344,7 +351,8 @@
                 "time": "1:00 PM - 3:00 PM"
             }
         ],
-        "price": "$450",
+        "price": 450,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -354,13 +362,13 @@
             {
                 "rating": 4.9,
                 "userName": "Meherima Sultan",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/0C5nY1j/k1-instructors-ksherk-640x640.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.7,
                 "userName": "Mahi Deran",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/Kzfyv8y/k1-instructors-ladler-640x640.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -389,7 +397,8 @@
                 "time": "2:00 PM - 4:00 PM"
             }
         ],
-        "price": "$480",
+        "price": 480,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -399,13 +408,13 @@
             {
                 "rating": 4.6,
                 "userName": "Michael Brown",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/1LwtkcS/k1-instructors-skelby-640x640.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.8,
                 "userName": "Jahid Howlader",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/6n0GS5c/Jahid-Howlader.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -434,7 +443,8 @@
                 "time": "10:00 AM - 12:00 PM"
             }
         ],
-        "price": "$450",
+        "price": 450,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Photo Editing Software",
@@ -444,13 +454,13 @@
             {
                 "rating": 4.7,
                 "userName": "mostafa",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/6n0GS5c/Jahid-Howlader.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.9,
                 "userName": "Irun",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/9HzMhY4/800-3.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -480,7 +490,8 @@
                 "time": "2:00 PM - 4:00 PM"
             }
         ],
-        "price": "$380",
+        "price": 380,
+        "oldPrice": "800",
         "level": "Intermediate",
         "requirements": [
             "Laptop/Desktop with Photo Editing Software",
@@ -490,13 +501,13 @@
             {
                 "rating": 4.8,
                 "userName": "Elena",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/9HzMhY4/800-3.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.5,
                 "userName": "Molly Zaman",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/QNH0H6X/k1-instructors-kgreer-640x640.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -526,7 +537,8 @@
                 "time": "1:00 PM - 3:00 PM"
             }
         ],
-        "price": "$500",
+        "price": 500,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Photo Editing Software",
@@ -536,13 +548,13 @@
             {
                 "rating": 4.9,
                 "userName": "Vicky Zahid",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/6n0GS5c/Jahid-Howlader.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.7,
                 "userName": "Jannatul ferdous",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/7b2bX9K/m-h-blog-img-1.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -571,7 +583,8 @@
                 "time": "10:00 AM - 12:00 PM"
             }
         ],
-        "price": "$550",
+        "price": 550,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Adobe Photoshop installed",
@@ -581,13 +594,13 @@
             {
                 "rating": 4.8,
                 "userName": "User Name",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/1rfRQDy/800.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.6,
                 "userName": "Carle Dom",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/vLvg1zt/800-6.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -617,7 +630,8 @@
                 "time": "1:00 PM - 3:00 PM"
             }
         ],
-        "price": "$500",
+        "price": 500,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Photo Editing Software",
@@ -627,13 +641,13 @@
             {
                 "rating": 4.9,
                 "userName": "Vicky Zahid",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/6n0GS5c/Jahid-Howlader.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.7,
                 "userName": "Jannatul ferdous",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/7b2bX9K/m-h-blog-img-1.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -662,7 +676,8 @@
                 "time": "10:00 AM - 12:00 PM"
             }
         ],
-        "price": "$550",
+        "price": 550,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Adobe Photoshop installed",
@@ -672,13 +687,13 @@
             {
                 "rating": 4.8,
                 "userName": "User Name",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/8BcGfFx/800-4.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.6,
                 "userName": "Carle Dom",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/1rfRQDy/800.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -708,7 +723,8 @@
                 "time": "1:00 PM - 3:00 PM"
             }
         ],
-        "price": "$500",
+        "price": 500,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Photo Editing Software",
@@ -718,13 +734,13 @@
             {
                 "rating": 4.9,
                 "userName": "Vicky Zahid",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/6n0GS5c/Jahid-Howlader.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.7,
                 "userName": "Jannatul ferdous",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/7b2bX9K/m-h-blog-img-1.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
@@ -753,7 +769,8 @@
                 "time": "10:00 AM - 12:00 PM"
             }
         ],
-        "price": "$550",
+        "price": 550,
+        "oldPrice": "800",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Adobe Photoshop installed",
@@ -763,13 +780,13 @@
             {
                 "rating": 4.8,
                 "userName": "User Name",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/vhDgHJ4/amw-01-v2.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.6,
                 "userName": "Carle Dom",
-                "userImage": "",
+                "userImage": "https://i.ibb.co/rsbrQg0/Jahid-Howlader.jpg",
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],

@@ -15,7 +15,7 @@ const Subscribation = () => {
                 </div>
             </div>
 
-            <img src="/public/bg1.png" alt="subscribation" className="absolute right-0 top-0 -mt-[85px] opacity-50 hidden lg:block mx-auto" />
+            <img src="/bg1.png" alt="subscribation" className="absolute right-0 top-0 -mt-[85px] opacity-50 hidden lg:block mx-auto" />
         </section>
     );
 };

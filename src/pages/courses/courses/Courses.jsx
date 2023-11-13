@@ -2,19 +2,47 @@ import './Courses.css'
 import Control from '../control/Control';
 import Refferal from '../refferal/Refferal';
 import CourseCard from '../courseCard/CourseCard';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from "framer-motion"
 import DespCourseCard from '../despCourseCard/DespCourseCard';
 import { Helmet } from 'react-helmet-async';
 import useGetCourses from '../../../hooks/useGetCourses';
+import Loader from '../../../components/loader/Loader';
 
 const Courses = () => {
 
-    // use HOOK FOR GET ALL COURSES
-    const [courses, loading] = useGetCourses()
-    console.log('15', courses);
+    // ALL STATE ARE HERE
+    const [layout, setLayout] = useState(true) // CHECK LAYOUT WHICH IS CHOOS USER
+    const [selectedCategories, setSelectedCategories] = useState(['Creative Composition', 'Advanced Lighting']); //FILTER COURSE BY CATEGORY
+    const [minPrice, setMinPrice] = useState(0)
+    const [maxPrice, setMaxPrice] = useState(0)
 
-    const [layout, setLayout] = useState(true)
+
+
+    const [priceQuery, setPriceQuery] = useState('') // FILTER COURSE BY PRICE
+
+    // use HOOK FOR GET ALL COURSES
+    // const [courses, loading] = useGetCourses()
+
+    const [courses, setCourses] = useState([]);
+    const [courseLoading, setCourseLoading] = useState(true);
+
+    useEffect(() => {
+        fetch(`http://localhost:3000/courses?priceQuery=${priceQuery}`)
+            .then(res => res.json())
+            .then(data => {
+
+                setCourses(data.courses);
+                setMinPrice(data.minPrice)
+                setMaxPrice(data.maxPrice)
+
+                console.log(data);
+                setCourseLoading(false);
+            });
+    }, [priceQuery])
+
+    console.log(courses);
+    // console.log(maxPrice);
 
     return (
         <>
@@ -35,34 +63,38 @@ const Courses = () => {
                     <div className='lg:col-span-7 flex justify-between items-center'>
 
                         {/* SHORTING */}
-                        <div className='flex items-center gap-2'>
-                            <div>
-                                <img src="/courses/short.svg" alt="short" />
+                        <div className='flex flex-col sm:flex-row sm:items-center gap-2'>
+                            <div className='flex items-center gap-2'>
+                                <div>
+                                    <img src="/courses/short.svg" alt="short" />
 
+                                </div>
+
+                                <div className='flex items-center'>
+                                    <label htmlFor="orders" className='hidden lg:block'>Short by:</label>
+
+                                    <select name="order" id="order" className='lg:ml-[5px] pl-1 lg:pr-20 py-1 text-xs border rounded  border-primary-color'>
+                                        <option value="accending">Short by</option>
+                                        <option value="accending">a - z ( Accending )</option>
+                                        <option value="descending">z - a ( Descending )</option>
+                                    </select>
+                                </div>
                             </div>
 
-                            <div className='flex items-center'>
-                                <label htmlFor="orders" className='hidden lg:block'>Short by:</label>
-
-                                <select name="order" id="order" className='lg:ml-[5px] pl-1 lg:pr-20 py-1 text-xs border rounded  border-primary-color'>
-                                    <option value="accending">Short by</option>
-                                    <option value="accending">a - z ( Accending )</option>
-                                    <option value="descending">z - a ( Descending )</option>
-                                </select>
-                            </div>
+                            <p>Total Courses: {courses.length}</p>
                         </div>
 
                         {/* LAYOUT VIEW */}
                         <div className='flex items-center gap-2 sm:gap-5  '>
                             <div>
                                 <button onClick={() => setLayout(true)}>
-                                    <img src="/courses/1grid.svg" alt="grid1" className='w-4 cursor-pointer' />
+                                    <img src="/courses/2grid.svg" alt="grid2" className='w-4 cursor-pointer' />
                                 </button>
                             </div>
 
                             <div>
                                 <button onClick={() => setLayout(false)}>
-                                    <img src="/courses/2grid.svg" alt="grid2" className='w-4 cursor-pointer' />
+                                    <img src="/courses/1grid.svg" alt="grid1" className='w-4 cursor-pointer' />
                                 </button>
                             </div>
                         </div>
@@ -74,11 +106,18 @@ const Courses = () => {
                 <div className=' grid lg:grid-cols-9 gap-5'>
 
                     {/* Filter Control */}
-                    <Control />
+                    <Control
+                        selectedCategories={selectedCategories}
+                        setSelectedCategories={setSelectedCategories}
+                        priceQuery={priceQuery}
+                        setPriceQuery={setPriceQuery}
+                        minPrice={minPrice}
+                        maxPrice={maxPrice}
+                    />
 
                     <div className=' lg:col-span-7 rounded-xl '>
                         {
-                            loading ? 'loading' : !layout ? (
+                            courseLoading ? <Loader /> : layout ? (
                                 <>
                                     <motion.div
                                         className='grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5'

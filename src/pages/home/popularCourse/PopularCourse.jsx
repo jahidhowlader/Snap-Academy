@@ -1,11 +1,26 @@
 import { Link } from 'react-router-dom';
 import useGetCourses from '../../../hooks/useGetCourses';
 import CourseCard from '../../courses/courseCard/CourseCard';
+import { useEffect, useState } from 'react';
 
 const PopularCourse = () => {
 
     // use HOOK FOR GET ALL COURSES
-    const [courses, loading] = useGetCourses()
+    // const [courses, loading] = useGetCourses()
+
+
+    const [courses, setCourses] = useState([]);
+
+    useEffect(() => {
+        fetch(`http://localhost:3000/courses?priceQuery=${''}`)
+            .then(res => res.json())
+            .then(data => {
+
+                setCourses(data.courses);
+            });
+    }, [])
+
+    console.log(courses);
 
     return (
         <section className='py-28'>

@@ -13,9 +13,8 @@ const Home = () => {
                 <title>Home | Snap Academy</title>
             </Helmet>
 
+            {/* FIxed Image */}
             <img src="/bg1.png" alt="" className="fixed -left-20 -top-20 opacity-5 -z-10" />
-            {/* <img src="/home/feature2.png" alt="" className="fixed -right-20 -bottom-20 opacity-5 -z-10"/> */}
-
 
             <Banner />
             <Offer />

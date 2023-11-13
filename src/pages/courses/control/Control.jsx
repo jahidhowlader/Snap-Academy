@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { HiOutlinePencilSquare } from 'react-icons/hi2';
 import Filter from './Filter';
@@ -19,10 +20,12 @@ const open = {
     }
 }
 
-const Control = () => {
+const Control = ({ selectedCategories, setSelectedCategories, priceQuery, setPriceQuery, minPrice, maxPrice }) => {
 
-    const [isOpen, setIsOpen] = useState(false)
+    // ALL STATE ARE HERE
+    const [isOpen, setIsOpen] = useState(false) // TOGGLE STATE FOR MOBILE VIEW FILTERING
 
+    // HANDLER TOGGLE FILTER
     const toggleFilter = () => {
         setIsOpen(!isOpen)
     }
@@ -49,15 +52,18 @@ const Control = () => {
                                 initial="initial"
                                 animate="animate"
                             >
-                                <Filter />
+                                {/* show CAtegory which are selected user */}
+                                <Filter selectedCategories={selectedCategories} />
 
                                 <hr className='my-7 border border-gray opacity-20' />
 
-                                <Category />
+                                {/* CAtegory Control */}
+                                <Category selectedCategories={selectedCategories} setSelectedCategories={setSelectedCategories} />
 
                                 <hr className='my-7 border border-gray opacity-20' />
 
-                                <PriceRange />
+                                {/* Price Control */}
+                                <PriceRange priceQuery={priceQuery} setPriceQuery={setPriceQuery} minPrice={minPrice} maxPrice={maxPrice} />
                             </motion.div>
                         </>
                     )
@@ -68,17 +74,17 @@ const Control = () => {
             <div className='shadow-md lg:col-span-2  bg-white rounded-xl hidden sm:block' >
 
                 {/* Filtering */}
-                <Filter />
+                <Filter selectedCategories={selectedCategories} />
 
                 <hr className='my-7 border border-gray opacity-20' />
 
                 {/* Category */}
-                <Category />
+                <Category selectedCategories={selectedCategories} setSelectedCategories={setSelectedCategories} />
 
                 <hr className='my-7 border border-gray opacity-20' />
 
                 {/* Price Range */}
-                <PriceRange />
+                <PriceRange priceQuery={priceQuery} setPriceQuery={setPriceQuery} minPrice={minPrice} maxPrice={maxPrice} />
 
                 <hr className='my-7 border border-gray opacity-20' />
 
@@ -95,6 +101,13 @@ const Control = () => {
             </div>
         </>
     );
+};
+
+Control.propTypes = {
+    selectedCategories: PropTypes.array.isRequired,
+    setSelectedCategories: PropTypes.func.isRequired,
+    priceQuery: PropTypes.string.isRequired,
+    setPriceQuery: PropTypes.func.isRequired
 };
 
 export default Control;

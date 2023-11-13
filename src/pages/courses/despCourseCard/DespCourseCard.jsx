@@ -1,6 +1,6 @@
 import { Rating, ThinRoundedStar } from '@smastrom/react-rating'
 import { motion } from "framer-motion"
-
+import PropTypes from "prop-types";
 import '@smastrom/react-rating/style.css'
 import { Link } from 'react-router-dom';
 
@@ -32,12 +32,23 @@ const DespCourseCard = ({ course }) => {
                     <motion.button
                         whileTap={{ scale: 0.95 }}
                         className="bg-primary-color hover:bg-opacity-90 px-4 sm:px-6 py-1 sm:py-2 rounded-md text-white">
-                        Addmission
+                        Add to cart
                     </motion.button>
                 </div>
             </div>
         </Link>
     );
+};
+
+DespCourseCard.propTypes = {
+    course: PropTypes.shape({
+        _id: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        photo: PropTypes.string.isRequired,
+        price: PropTypes.string.isRequired,
+    }).isRequired,
+    button: PropTypes.bool,
 };
 
 export default DespCourseCard;
