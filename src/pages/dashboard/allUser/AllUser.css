@@ -1,0 +1,20 @@
+#allUser thead{
+    border: 1px solid;
+}
+
+#allUsers th {
+    padding: 10px 20px;
+}
+
+#allUsers td {
+    padding: 20px 20px;
+    border-bottom: 1px solid #808080;
+}
+
+#allUsers tr:hover {
+    background-color: #cfdcde;
+}
+
+#allUserHead tr:first-child {
+    background-color: #0F5259;
+}

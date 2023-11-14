@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, FacebookAuthProvider, getAuth, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, deleteUser, FacebookAuthProvider, getAuth, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import { app } from "../config/firebase.config";
@@ -22,6 +22,12 @@ const AuthProvider = ({ children }) => {
     const signIn = (email, password) => {
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
+    }
+
+    // Password Reset
+    const resetPassword = (email) => {
+
+        return sendPasswordResetEmail(auth, email)
     }
 
     // User Updated
@@ -56,11 +62,12 @@ const AuthProvider = ({ children }) => {
         return signOut(auth)
     }
 
-    // Password Reset
-    const resetPassword = (email) => {
+    // Delete User
+    const deleteUserData = (user) => {
 
-        return sendPasswordResetEmail(auth, email)
+        return deleteUser(user)
     }
+
 
     // user ovserbation
     useEffect(() => {
@@ -86,6 +93,7 @@ const AuthProvider = ({ children }) => {
         googleSignin,
         facebookSignin,
         resetPassword,
+        deleteUserData,
         logOut
     }
     return (
@@ -96,7 +104,7 @@ const AuthProvider = ({ children }) => {
 };
 
 AuthProvider.propTypes = {
-    children: PropTypes.node.isRequired,    
+    children: PropTypes.node.isRequired,
 }
 
 

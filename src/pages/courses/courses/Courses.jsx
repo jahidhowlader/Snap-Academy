@@ -6,9 +6,8 @@ import { useState } from 'react';
 import { motion } from "framer-motion"
 import DespCourseCard from '../despCourseCard/DespCourseCard';
 import { Helmet } from 'react-helmet-async';
-// import useGetCourses from '../../../hooks/useGetCourses';
-import Loader from '../../../components/loader/Loader';
 import useGetCourses from '../../../hooks/useGetCourses';
+import ViewCourseCardSkeleton from '../../../components/skeleton/courseCardSkeleton/ViewCourseCardSkeleton';
 
 const Courses = () => {
 
@@ -98,39 +97,39 @@ const Courses = () => {
 
                     <div className=' lg:col-span-7 rounded-xl '>
                         {
-                            courseLoading ? <Loader /> : layout ? (
-                                <>
-                                    <motion.div
-                                        className='grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5'
-                                        initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }}
-                                    >
-                                        {
-                                            sortingCourses == 'accending' ?
-                                                courses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <CourseCard key={course._id} course={course} button={true} />) : sortingCourses === 'descending' ?
-                                                    courses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <CourseCard key={course._id} course={course} button={true} />) :
-                                                    courses.map(course => <CourseCard key={course._id} course={course} button={true} />)
-                                        }
+                            courseLoading ?
+                                <div
+                                    className='grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5'>
+                                    <ViewCourseCardSkeleton />
+                                </div>
+                                : layout ? (
+                                    <>
+                                        <motion.div
+                                            className='grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5'
+                                            initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }}
+                                        >
+                                            {
+                                                sortingCourses == 'accending' ?
+                                                    courses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <CourseCard key={course._id} course={course} button={true} />) : sortingCourses === 'descending' ?
+                                                        courses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <CourseCard key={course._id} course={course} button={true} />) :
+                                                        courses.map(course => <CourseCard key={course._id} course={course} button={true} />)
+                                            }
 
-                                    </motion.div>
-                                </>
-                            ) : (
-                                <>
-                                    <div className='space-y-5'>
-                                        {
-                                            sortingCourses == 'accending' ?
-                                                courses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <DespCourseCard key={course._id} course={course} />) : sortingCourses === 'descending' ?
-                                                    courses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <DespCourseCard key={course._id} course={course} />) :
-                                                    courses.map(course => <DespCourseCard key={course._id} course={course} />)
-                                        }
-                                        {/* {
-                                            courses.map(course => <DespCourseCard key={course._id} course={course} />)
-                                        } */}
-                                    </div>
-                                </>
-                            )
+                                        </motion.div>
+                                    </>
+                                ) : (
+                                    <>
+                                        <div className='space-y-5'>
+                                            {
+                                                sortingCourses == 'accending' ?
+                                                    courses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <DespCourseCard key={course._id} course={course} />) : sortingCourses === 'descending' ?
+                                                        courses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <DespCourseCard key={course._id} course={course} />) :
+                                                        courses.map(course => <DespCourseCard key={course._id} course={course} />)
+                                            }
+                                        </div>
+                                    </>
+                                )
                         }
-
-
                     </div>
                 </div>
 

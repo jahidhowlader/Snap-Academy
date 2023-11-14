@@ -25,7 +25,7 @@ const PriceRange = ({ priceQuery, setPriceQuery, minPrice, maxPrice }) => {
 PriceRange.propTypes = {
     priceQuery: PropTypes.string.isRequired,
     setPriceQuery: PropTypes.func.isRequired,
-    minPrice: PropTypes.string.isRequired,
-    maxPrice: PropTypes.string.isRequired,
+    minPrice: PropTypes.number.isRequired,
+    maxPrice: PropTypes.number.isRequired,
 };
 export default PriceRange;

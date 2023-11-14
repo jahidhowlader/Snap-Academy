@@ -8,8 +8,9 @@ import SingleCourse from "../pages/singleCourse/singleCourse/SingleCourse";
 import Signin from "../pages/auth/signin/Signin";
 import Signup from "../pages/auth/signup/Signup";
 import ForgotPassword from "../pages/auth/forgotPassword/ForgotPassword";
-import UserCart from "../pages/dashboard/userCart/UserCart";
 import DashboardLayout from "../layout/DashboardLayout";
+import MyCart from "../pages/cart/MyCart";
+import AllUser from "../pages/dashboard/allUser/AllUser";
 
 
 export const router = createBrowserRouter([
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
         path: 'instructor',
         element: <Instructor />
       },
+      {
+        path: 'myCart',
+        element: <MyCart />
+      }
     ]
   },
   // AUTHENTICATION
@@ -66,9 +71,13 @@ export const router = createBrowserRouter([
     element: <DashboardLayout />,
     children: [
       {
-        path: 'cart',
-        element: <UserCart />
+        path: 'allUsers',
+        element: <AllUser />
       }
+      // {
+      //   path: 'cart',
+      //   element: <UserCart />
+      // }
     ]
   }
 ]);

@@ -3,6 +3,8 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import NavMobile from "./NavMobile";
 import { AuthContext } from "../../providers/AuthProvider";
+import useAuth from "../../hooks/useAuth";
+import toast from "react-hot-toast";
 
 const Navbar = () => {
 
@@ -10,8 +12,20 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     // IMPORT AUTHCONTEXT
-    // const { user } = useContext(AuthContext)
-    // console.log('navbar14', user);
+    const { user, logOut } = useAuth()
+    console.log('navbar', user);
+
+    // Handler Logout
+    const handlerLogout = async () => {
+
+        try {
+            await logOut()
+            toast.success('Successfully Signout')
+
+        } catch (e) {
+            toast.error(e.code);
+        }
+    }
 
     return (
         <div className="flex justify-between items-center pt-2 z-50">
@@ -30,7 +44,11 @@ const Navbar = () => {
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/courses'>Courses</Link></li>
                     <li><Link to='/instructor'>Instructor</Link></li>
-                    <li><Link to='/auth/signin'>Signin</Link></li>
+                    {
+                        user ?
+                            <li onClick={handlerLogout}><Link to='/auth/signin'>Signout</Link></li> :
+                            <li><Link to='/auth/signin'>Signin</Link></li>
+                    }
                 </ul>
             </div>
 
@@ -42,7 +60,7 @@ const Navbar = () => {
                 <span>
                     <HiOutlineUser />
                 </span>
-                <Link to={'/dashboard/cart'}>
+                <Link to={'/myCart'}>
                     <HiOutlineShoppingCart />
                 </Link>
                 <span className="hidden sm:block">EN</span>

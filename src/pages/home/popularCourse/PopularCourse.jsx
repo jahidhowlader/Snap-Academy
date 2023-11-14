@@ -1,26 +1,12 @@
 import { Link } from 'react-router-dom';
-// import useGetCourses from '../../../hooks/useGetCourses';
+import useGetCourses from '../../../hooks/useGetCourses';
 import CourseCard from '../../courses/courseCard/CourseCard';
-import { useEffect, useState } from 'react';
+import ViewCourseCardSkeleton from '../../../components/skeleton/courseCardSkeleton/ViewCourseCardSkeleton';
 
 const PopularCourse = () => {
 
     // use HOOK FOR GET ALL COURSES
-    // const [courses, loading] = useGetCourses()
-
-
-    const [courses, setCourses] = useState([]);
-
-    useEffect(() => {
-        fetch(`http://localhost:3000/courses?priceQuery=${''}`)
-            .then(res => res.json())
-            .then(data => {
-
-                setCourses(data.courses);
-            });
-    }, [])
-
-    console.log(courses);
+    const { courses, courseLoading } = useGetCourses()
 
     return (
         <section className='py-28'>
@@ -31,7 +17,7 @@ const PopularCourse = () => {
 
             <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
                 {
-                    courses.slice(0, 8).map(course => <CourseCard key={course._id} course={course} />)
+                    courseLoading ? <ViewCourseCardSkeleton /> : courses.slice(0, 8).map(course => <CourseCard key={course._id} course={course} />)
                 }
             </div>
         </section>

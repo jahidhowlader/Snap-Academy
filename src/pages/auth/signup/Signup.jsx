@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../../../components/socialLogin/SocialLogin';
 import { useForm } from 'react-hook-form';
 import { HiEye, HiEyeSlash, HiMiniHome } from 'react-icons/hi2';
-import { useContext, useState } from 'react';
-import { AuthContext } from '../../../providers/AuthProvider';
+import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { Helmet } from 'react-helmet-async';
+import useAuth from '../../../hooks/useAuth';
 
 
 const Signup = () => {
@@ -16,8 +16,13 @@ const Signup = () => {
     const [submitLoading, setSubmitLoading] = useState(false)
     const [existEmailError, setExistEmailError] = useState(false)
 
+    // useNAVIGATE USE FOR REDIRECT USER AFTER LOGIN AND useLOCATION USE FOR TRACK URL PATH
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
+
     // IMPORT AUTHCONTEXT
-    const { signUp, updateUser } = useContext(AuthContext)
+    const { signUp, updateUser } = useAuth()
 
     // REACT HOOK FORM
     const { register, handleSubmit, reset, watch, formState: { errors }, } = useForm()
@@ -32,11 +37,34 @@ const Signup = () => {
 
         try {
 
+            // SIGNUP ON FIREBASE
             await signUp(email, password)
+
+            // UPDATE USERNAME AFTER SIGNUP ON FIREBASE
             await updateUser(name)
-            toast.success('Successfully Createed Account.');
-            setSubmitLoading(false)
-            reset()
+
+            // STORE USER DATA ON MongoDB
+            await fetch('http://localhost:3000/allUsers', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, role: 'user' })
+            })
+                .then(() => {
+
+                    toast.success('Successfully Createed Account.');
+                    reset()
+                    navigate(from, { replace: true });
+                    setSubmitLoading(false)
+
+                })
+                .catch(e => {
+
+                    toast.error(e);
+                    console.log(e);
+                    setSubmitLoading(false)
+                })
 
         } catch (e) {
 
@@ -56,7 +84,7 @@ const Signup = () => {
             <Helmet>
                 <title>Signup | Snap Academy</title>
             </Helmet>
-            
+
             <div className="glass-container text-black">
 
                 {/* Redirect Home Page */}
@@ -179,7 +207,7 @@ const Signup = () => {
                         </div>
 
                         {/* Submit */}
-                        <input type="submit" value={'Sign Up'} className={`bg-primary-color text-white py-2 rounded-md w-full ${submitLoading ? 'cursor-progress' : 'cursor-pointer'}`} disabled={submitLoading ? true : false} />
+                        <input type="submit" value={submitLoading ? 'Processing...' : 'SIgn up'} className={`bg-primary-color text-white py-2 rounded-md w-full ${submitLoading ? 'cursor-progress' : 'cursor-pointer'}`} disabled={submitLoading ? true : false} />
                     </form>
 
                     <p className='mt-7 mb-16 opacity-100 font-bold text-primary-color'><span className=' font-normal text-black'>Don’t have an account? </span> <Link to={'/auth/signin'}>SignIn</Link></p>

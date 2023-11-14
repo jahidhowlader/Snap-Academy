@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../../../components/socialLogin/SocialLogin';
 import { useForm } from 'react-hook-form';
 import { HiEye, HiEyeSlash, HiMiniHome } from 'react-icons/hi2';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import '../auth.css'
-import { AuthContext } from '../../../providers/AuthProvider';
 import toast from 'react-hot-toast';
 import { motion } from "framer-motion"
 import { Helmet } from 'react-helmet-async';
+import useAuth from '../../../hooks/useAuth';
 
 
 const Signin = () => {
@@ -17,8 +17,13 @@ const Signin = () => {
     const [submitLoading, setSubmitLoading] = useState(false)
     const [signinError, setSigninError] = useState(false)
 
+    // useNAVIGATE USE FOR REDIRECT USER AFTER LOGIN AND useLOCATION USE FOR TRACK URL PATH
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
+
     // IMPORT AUTHCONTEXT
-    const { signIn } = useContext(AuthContext)
+    const {signIn} = useAuth()
 
     // REACT HOOK FORM
     const { register, handleSubmit, reset, formState: { errors }, } = useForm()
@@ -34,8 +39,9 @@ const Signin = () => {
 
             await signIn(email, password)
             toast.success('Successfully Createed Account.');
-            setSubmitLoading(false)
             reset()
+            navigate(from, { replace: true });
+            setSubmitLoading(false)
 
         } catch (e) {
             toast.error(e.code);
@@ -120,7 +126,7 @@ const Signin = () => {
                         </div>
 
                         {/* Submit */}
-                        <input type="submit" value={'Sign In'} className={`bg-primary-color text-white py-2 rounded-md w-full ${submitLoading ? 'cursor-progress' : 'cursor-pointer'}`} disabled={submitLoading ? true : false} />
+                        <input type="submit" value={submitLoading ? 'Processing...' : 'SIgn In'} className={`bg-primary-color text-white py-2 rounded-md w-full ${submitLoading ? 'cursor-progress' : 'cursor-pointer'}`} disabled={submitLoading ? true : false} />
                     </form>
 
                     <p className='mt-7 mb-16 opacity-100 font-bold text-primary-color'><span className=' font-normal text-black'>Don’t have an account? </span> <Link to={'/auth/signup'}>SignUp</Link></p>

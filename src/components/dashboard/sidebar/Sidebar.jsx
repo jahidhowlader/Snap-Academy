@@ -1,4 +1,4 @@
-import { HiMiniHome, HiMiniShoppingCart, HiMiniUser } from "react-icons/hi2";
+import { HiMiniHome, HiMiniShoppingCart, HiMiniUser, HiMiniUsers } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import { BiHistory, BiSolidDashboard } from "react-icons/bi";
 
@@ -24,6 +24,10 @@ const Sidebar = () => {
                 <Link to={'/dashboard/cart'} className="flex items-center gap-2">
                     <HiMiniShoppingCart size={24}/>
                     <li className="hover:ml-2 duration-300 "> Cart</li>
+                </Link>
+                <Link to={'/dashboard/allUsers'} className="flex items-center gap-2">
+                    <HiMiniUsers size={24}/>
+                    <li className="hover:ml-2 duration-300 "> All User</li>
                 </Link>
                 {/* <li className="hover:ml-2 duration-300"><Link to={'/'} >Profile</Link></li>
                 <li className="hover:ml-2 duration-300"><Link to={'/'} >Payment History</Link></li>

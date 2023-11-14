@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { HiArrowLongLeft, HiArrowLongRight } from 'react-icons/hi2';
-import { useContext } from 'react';
-import { AuthContext } from '../../../providers/AuthProvider';
 import toast from 'react-hot-toast';
 import { motion } from "framer-motion"
 import { Helmet } from 'react-helmet-async';
 import '../auth.css'
+import useAuth from '../../../hooks/useAuth';
 
 const ForgotPassword = () => {
 
     // IMPORT AUTHCONTEXT
-    const { resetPassword } = useContext(AuthContext)
+    const { resetPassword } = useAuth()
 
     // REACT HOOK FORM
     const { register, handleSubmit, reset, formState: { errors }, } = useForm()
