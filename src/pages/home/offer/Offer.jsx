@@ -1,14 +1,22 @@
 import { HiArrowLongRight } from 'react-icons/hi2';
+import useGetCourses from '../../../hooks/useGetCourses';
 
 const Offer = () => {
+
+    // TODO: NEED OFFER COURSE
+    const { courses } = useGetCourses()
+
+    // console.log('courses', courses.slice(0, 2));
+
     return (
         <section >
             <h3 className='text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold text-green pb-8 lg:pb-12 2xl:pb-8'>Special Offer</h3>
 
             <div className='grid md:grid-cols-2 gap-10 md:gap-5 '>
 
-                <div 
-                className='bg-white shadow-lg md:shadow-xl 2xl:shadow-2xl p-5 2xl:p-10 rounded-[15px] flex flex-col lg:flex-row items-center xl:items-start gap-3 cursor-pointer'>
+               
+                <div
+                    className='bg-white shadow-lg md:shadow-xl 2xl:shadow-2xl p-5 2xl:p-10 rounded-[15px] flex flex-col lg:flex-row items-center xl:items-start gap-3 cursor-pointer'>
 
                     {/* Card Content */}
                     <div className='order-2 lg:order-1 flex flex-col justify-between gap-3 md:gap-5 h-full'>

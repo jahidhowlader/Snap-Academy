@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
-        <section className='flex flex-col md:flex-row justify-between items-center pb-16 md:pt-12 lg:pt-0 2xl:pt-10'>
+        <section className='flex flex-col md:flex-row justify-between items-center pb-16 md:pt-12 lg:pt-0 2xl:pt-10 lg:bg-black lg:text-white lg:p-10 lg:my-10'>
 
             {/* Banner Content */}
             <div className='flex-1 space-y-5 order-2 md:order-1'>
@@ -24,8 +24,12 @@ const Banner = () => {
             </div>
 
             {/* Image */}
-            <div className='flex-1 order-1 md:order-2'>
-                <img src="/public/home/banner1.png" alt="banner" className='mx-auto custom-animation' />
+            <div className='flex-1 order-1 md:order-2 lg:hidden'>
+                <img src="/home/banner1.svg" alt="banner" className='mx-auto custom-animation' />
+            </div>
+
+            <div className='flex-1 order-1 md:order-2 hidden lg:block'>
+                <img src="/home/download.svg" alt="banner" className='mx-auto custom-animation' />
             </div>
         </section>
     );

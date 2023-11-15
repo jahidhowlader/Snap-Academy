@@ -40,13 +40,13 @@ const Navbar = () => {
 
             {/* NAVLINK */}
             <div>
-                <ul className="hidden sm:flex items-center gap-5 lg:gap-10 xl:gap-20 2xl:gap-28 font-semibold xl:text-[18px] 2xl:text-xl">
+                <ul className="hidden sm:flex items-center gap-5 lg:gap-10 xl:gap-20 2xl:gap-28 font-semibold xl:text-[18px] 2xl:text-xl text-primary-color">
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/courses'>Courses</Link></li>
                     <li><Link to='/instructor'>Instructor</Link></li>
                     {
                         user ?
-                            <li onClick={handlerLogout}><Link to='/auth/signin'>Signout</Link></li> :
+                            <li onClick={handlerLogout}><Link to='/'>Signout</Link></li> :
                             <li><Link to='/auth/signin'>Signin</Link></li>
                     }
                 </ul>
@@ -57,10 +57,12 @@ const Navbar = () => {
                 <span>
                     <HiMiniMagnifyingGlass />
                 </span>
-                <span>
-                    <HiOutlineUser />
-                </span>
-                <Link to={'/myCart'}>
+                <Link to="/dashboard">
+                    <span>
+                        <HiOutlineUser />
+                    </span>
+                </Link>
+                <Link to={'/cart'}>
                     <HiOutlineShoppingCart />
                 </Link>
                 <span className="hidden sm:block">EN</span>

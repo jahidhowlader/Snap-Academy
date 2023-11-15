@@ -3,7 +3,7 @@ import Sidebar from '../components/dashboard/sidebar/Sidebar';
 
 const DashboardLayout = () => {
     return (
-        <div className='xl:grid xl:grid-cols-9 max-w-[1520px] mx-auto'>
+        <div className='grid lg:grid-cols-9 max-w-[1520px] mx-auto'>
 
             <div className='lg:col-span-2'>
                 <Sidebar />

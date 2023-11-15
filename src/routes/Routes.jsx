@@ -9,8 +9,12 @@ import Signin from "../pages/auth/signin/Signin";
 import Signup from "../pages/auth/signup/Signup";
 import ForgotPassword from "../pages/auth/forgotPassword/ForgotPassword";
 import DashboardLayout from "../layout/DashboardLayout";
-import MyCart from "../pages/cart/MyCart";
 import AllUser from "../pages/dashboard/allUser/AllUser";
+import Cart from "../pages/cart/Cart";
+import Profile from "../pages/dashboard/profile/Profile";
+import Reviews from "../pages/dashboard/reviews/Reviews";
+import AdminDashboard from "../pages/dashboard/adminDashboard/AdminDashboard";
+import UserDashboard from "../pages/dashboard/userDashBoard/UserDashboard";
 
 
 export const router = createBrowserRouter([
@@ -42,8 +46,8 @@ export const router = createBrowserRouter([
         element: <Instructor />
       },
       {
-        path: 'myCart',
-        element: <MyCart />
+        path: 'cart',
+        element: <Cart />
       }
     ]
   },
@@ -71,13 +75,30 @@ export const router = createBrowserRouter([
     element: <DashboardLayout />,
     children: [
       {
+        path: 'admin',
+        element: <AdminDashboard />
+      },
+      {
+        path: 'user',
+        element: <UserDashboard />
+      },
+      {
+        path: 'profile',
+        element: <Profile />
+      },
+      {
+        path: 'review',
+        element: <Reviews />
+      },
+      {
+        path: 'cart',
+        element: <Cart />
+      },
+      {
         path: 'allUsers',
         element: <AllUser />
       }
-      // {
-      //   path: 'cart',
-      //   element: <UserCart />
-      // }
+
     ]
   }
 ]);

@@ -1,7 +1,7 @@
+import PropTypes from "prop-types";
 import { Rating, ThinRoundedStar } from '@smastrom/react-rating';
-import { useState } from 'react';
-import { HiArrowPath, HiMinusSmall, HiPlus } from 'react-icons/hi2';
 import { motion } from "framer-motion"
+import { FaCartPlus } from "react-icons/fa";
 
 
 const ratingStyle = {
@@ -53,7 +53,7 @@ const ProductDetails = ({ course }) => {
                     </motion.button>
 
                     <div className="bg-white p-2 2xl:p-3 shadow-md rounded-lg">
-                        <HiArrowPath className="text-primary-color" />
+                        <FaCartPlus  className="text-primary-color"/>
                     </div>
                 </div>
 
@@ -68,6 +68,19 @@ const ProductDetails = ({ course }) => {
             </div>
         </div>
     );
+};
+
+ProductDetails.propTypes = {
+    course: PropTypes.shape({
+        _id: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        photo: PropTypes.string.isRequired,
+        availability: PropTypes.string.isRequired,
+        productCode: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
+    }).isRequired,
+    button: PropTypes.bool,
 };
 
 export default ProductDetails;

@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import PropTypes from "prop-types";
 import '@smastrom/react-rating/style.css'
 import { Link } from 'react-router-dom';
+import useAddToCart from '../../../hooks/useAddToCart';
 
 const ratingStyle = {
     itemShapes: ThinRoundedStar,
@@ -11,32 +12,42 @@ const ratingStyle = {
 }
 
 const DespCourseCard = ({ course }) => {
+
+    // IMPLEMENT ADD TO CART LOGIC WITH LOCAL STORAGE
+    const { storedCart, handlerAddToCart } = useAddToCart()
+
     return (
-        <Link to={`/course/${course._id}`}>
-            <div className='bg-white rounded-xl p-[14px] cursor-pointer grid grid-cols-5 md:gap-10 shadow-md mb-5'>
+        <div className='bg-white rounded-xl p-[14px] grid md:grid-cols-5 gap-5 md:gap-10 shadow-md mb-5'>
 
-                {/* Card Image */}
-                <div className='rounded-xl overflow-hidden col-span-2 xl:h-[230px] 2xl:h-[250px]'>
+            {/* Card Image */}
+            <div className='rounded-xl overflow-hidden md:col-span-2 xl:h-[230px] w-full 2xl:h-[250px]'>
+                <Link to={`/course/${course._id}`}>
                     <img src={course.photo} alt={course.title} className=' rounded-xl h-full w-full hover:scale-125 duration-[2000ms]' />
-                </div>
 
-                {/* Card Content */}
-                <div className=' text col-span-3'>
-                    <h5 className='font-medium  lg:text-lg xl:text-xl  sm:text-2xl'>{course.title}</h5>
-                    <p className='text-sm pt-2 opacity-80'>{course.description.slice(0, 150)}...</p>
-                    <div className=' my-2'>
-                        <Rating style={{ maxWidth: 100 }} value={4} itemStyles={ratingStyle} readOnly />
-                    </div>
-                    <h5 className='font-bold text-xl  sm:text-xl 2xl:text-2xl text-primary-color pb-4'>${course.price}</h5>
-
-                    <motion.button
-                        whileTap={{ scale: 0.95 }}
-                        className="bg-primary-color hover:bg-opacity-90 px-4 sm:px-6 py-1 sm:py-2 rounded-md text-white">
-                        Add to cart
-                    </motion.button>
-                </div>
+                </Link>
             </div>
-        </Link>
+
+            {/* Card Content */}
+            <div className=' text col-span-3'>
+                <Link to={`/course/${course._id}`}>
+                    <h5 className='font-medium  lg:text-lg xl:text-xl  sm:text-2xl hover:underline'>{course.title}</h5>
+                </Link>
+                <p className='text-sm pt-2 opacity-80'>{course.description.slice(0, 150)}...</p>
+                <div className=' my-2'>
+                    <Rating style={{ maxWidth: 100 }} value={4} itemStyles={ratingStyle} readOnly />
+                </div>
+                <h5 className='font-bold text-xl  sm:text-xl 2xl:text-2xl text-primary-color pb-4'>${course.price}</h5>
+
+                <motion.button
+                    whileTap={{ scale: 0.95 }}
+                    className={`${storedCart.includes(course._id) ? 'bg-black' : 'bg-primary-color hover:bg-opacity-90'} px-4 sm:px-6 py-1 sm:py-2 rounded-md text-white`}
+                    onClick={() => handlerAddToCart(course._id)}
+                    disabled={storedCart.includes(course._id)}
+                >
+                    Add to cart
+                </motion.button>
+            </div>
+        </div>
     );
 };
 

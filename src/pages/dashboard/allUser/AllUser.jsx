@@ -1,13 +1,9 @@
 import { FiSearch } from "react-icons/fi";
 import './AllUser.css'
 import useAllUser from "../../../hooks/useAllUser";
-import useAuth from "../../../hooks/useAuth";
 import toast from "react-hot-toast";
 
 const AllUser = () => {
-
-    // IMPORT AUTHCONTEXT
-    const { user, deleteUserData } = useAuth()
 
     const { allUser, refetch } = useAllUser()
 
@@ -49,6 +45,7 @@ const AllUser = () => {
     const handlerUserDelete = async (email) => {
 
         try {
+            // TODO:
             // Delete User From Firebase
             // await deleteUserData(user)
 
@@ -81,7 +78,7 @@ const AllUser = () => {
                 </div>
 
                 <div>
-                    <h5 className="text-xl font-semibold">Total Users: <span className="text-primary-color text-">215</span></h5>
+                    <h5 className="text-xl font-semibold">Total Users: <span className="text-primary-color text-">{allUser?.length}</span></h5>
                 </div>
             </div>
 

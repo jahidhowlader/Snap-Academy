@@ -5,7 +5,6 @@
         "title": "Mastering Rule of Thirds: A Creative Approach",
         "description": "In this course, immerse yourself in the art of composition by mastering the Rule of Thirds. Learn to break free from traditional constraints and creatively apply this fundamental principle to elevate your photography. Through hands-on exercises and real-world applications, discover how the Rule of Thirds can become a powerful tool in your creative toolkit.",
         "productCode": "4rd5s7",
-        "availability": "10",
         "duration": "8 weeks",
         "lectures": "24",
         "instructors": [
@@ -43,7 +42,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "200",
+        "enrolled": 200,
         "discount": "40"
     },
     {
@@ -52,7 +51,6 @@
         "title": "Symmetry and Asymmetry in Composition",
         "description": "Unleash the visual power of symmetry and asymmetry in your photographs. This course delves deep into the principles of balance, exploring how symmetrical and asymmetrical compositions can evoke different emotions and add depth to your images. Through practical assignments and critiques, refine your ability to create compelling and harmonious compositions.",
         "productCode": "45dpp7",
-        "availability": "12",
         "duration": "10 weeks",
         "lectures": "30",
         "instructors": [
@@ -90,7 +88,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "200",
+        "enrolled": 200,
         "discount": "40"
     },
     {
@@ -99,7 +97,6 @@
         "title": "Visual Storytelling through Composition Techniques",
         "description": "Transform your photography into a captivating narrative. Explore composition techniques that serve as building blocks for visual storytelling. From sequencing shots to framing techniques, discover how to craft a compelling story through your images. Engage in interactive projects that challenge you to convey emotions and messages through your compositions.",
         "productCode": "4tt5s7",
-        "availability": "0",
         "duration": "10 weeks",
         "lectures": "30",
         "instructors": [
@@ -137,7 +134,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "200",
+        "enrolled": 200,
         "discount": "40"
     },
     {
@@ -146,7 +143,6 @@
         "title": "Beyond Basics: Advanced Framing Strategies",
         "description": "Elevate your composition skills to the next level with advanced framing strategies. This course is designed for photographers seeking a deeper understanding of framing beyond the basics. Delve into topics such as framing within framing, layering, and unconventional approaches. Challenge yourself with complex assignments that push the boundaries of traditional framing techniques",
         "productCode": "453us7",
-        "availability": "2",
         "duration": "5 weeks",
         "lectures": "20",
         "instructors": [
@@ -184,7 +180,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "200",
+        "enrolled": 200,
         "discount": "40"
     },
     {
@@ -193,7 +189,6 @@
         "title": "Dynamic Compositions in Landscape Photography",
         "description": "Take your landscape photography to new heights by mastering dynamic compositions. Explore how to capture the grandeur of nature through innovative framing and perspective. From leading lines to foreground interest, learn techniques that breathe life into your landscape images. Engage in field trips and projects to apply your newfound skills in real-world settings.",
         "productCode": "45dod7",
-        "availability": "20",
         "duration": "10 weeks",
         "lectures": "30",
         "instructors": [
@@ -231,7 +226,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "200",
+        "enrolled": 200,
         "discount": "40"
     },
     {
@@ -240,7 +235,6 @@
         "title": "Mastering Advanced Lighting Techniques",
         "description": "Delve into the intricacies of advanced lighting techniques and elevate your photography to new heights. This course explores advanced concepts in natural and artificial lighting, guiding you through creative applications and real-world scenarios.",
         "productCode": "ALM2023",
-        "availability": "15",
         "duration": "10 weeks",
         "lectures": "30",
         "instructors": [
@@ -278,7 +272,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "150",
+        "enrolled": 150,
         "discount": "30"
     },
     {
@@ -287,7 +281,6 @@
         "title": "Creative Lighting Innovations: Pushing Boundaries",
         "description": "Unlock your creative potential with cutting-edge lighting innovations. This course introduces you to experimental lighting techniques, challenging norms, and fostering a unique style that sets your work apart.",
         "productCode": "CLI2023",
-        "availability": "12",
         "duration": "12 weeks",
         "lectures": "36",
         "instructors": [
@@ -325,7 +318,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "180",
+        "enrolled": 180,
         "discount": "25"
     },
     {
@@ -334,7 +327,6 @@
         "title": "Mastering Ambient Light: Techniques and Applications",
         "description": "Explore the nuances of ambient light in photography. This course provides a deep dive into utilizing natural light sources effectively, enhancing your skills in capturing moments with subtlety and precision.",
         "productCode": "ALM2023",
-        "availability": "20",
         "duration": "8 weeks",
         "lectures": "24",
         "instructors": [
@@ -372,7 +364,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "170",
+        "enrolled": 170,
         "discount": "35"
     },
     {
@@ -381,7 +373,6 @@
         "title": "Mastering Strobe Lighting: Precision and Creativity",
         "description": "Dive into the world of strobe lighting and master the art of precision and creativity. This course is designed for photographers seeking to harness the full potential of strobe lights in various settings and genres.",
         "productCode": "SLT2023",
-        "availability": "11",
         "duration": "10 weeks",
         "lectures": "30",
         "instructors": [
@@ -418,7 +409,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "160",
+        "enrolled": 160,
         "discount": "20"
     },
     {
@@ -427,7 +418,6 @@
         "title": "Mastering Advanced Photo Editing Techniques",
         "description": "Unlock the full potential of your photographs through advanced editing techniques. This course delves into intricate post-processing methods, enabling you to enhance and transform your images with precision and creativity.",
         "productCode": "APE2023",
-        "availability": "15",
         "duration": "8 weeks",
         "lectures": "25",
         "instructors": [
@@ -464,7 +454,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "130",
+        "enrolled": 130,
         "discount": "25"
     },
     {
@@ -473,7 +463,6 @@
         "title": "Color Grading and Correction Workshop",
         "description": "Immerse yourself in the world of color grading and correction. This workshop provides hands-on experience in enhancing the color balance, tone, and mood of your photographs. Discover techniques to achieve stunning visual effects.",
         "productCode": "CGC2023",
-        "availability": "12",
         "duration": "6 weeks",
         "lectures": "20",
         "instructors": [
@@ -511,7 +500,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "110",
+        "enrolled": 110,
         "discount": "20"
     },
     {
@@ -520,7 +509,6 @@
         "title": "Portrait Retouching Masterclass",
         "description": "Refine your portrait photography with advanced retouching techniques. This masterclass focuses on perfecting skin tones, removing imperfections, and enhancing facial features to create professional-quality portraits.",
         "productCode": "PRM2023",
-        "availability": "18",
         "duration": "10 weeks",
         "lectures": "30",
         "instructors": [
@@ -558,7 +546,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "150",
+        "enrolled": 150,
         "discount": "30"
     },
     {
@@ -567,7 +555,6 @@
         "title": "Photoshop for Photographers: Advanced Techniques",
         "description": "Unlock the full potential of Adobe Photoshop in your photography workflow. This course covers advanced techniques for photo manipulation, compositing, and creative editing, empowering you to take your skills to the next level.",
         "productCode": "PPP2023",
-        "availability": "20",
         "duration": "12 weeks",
         "lectures": "35",
         "instructors": [
@@ -604,7 +591,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "180",
+        "enrolled": 180,
         "discount": "25"
     },
     {
@@ -613,7 +600,6 @@
         "title": "Mastering Environmental Portraiture",
         "description": "Refine your portrait photography with advanced retouching techniques. This masterclass focuses on perfecting skin tones, removing imperfections, and enhancing facial features to create professional-quality portraits.",
         "productCode": "PRM2023",
-        "availability": "18",
         "duration": "10 weeks",
         "lectures": "30",
         "instructors": [
@@ -651,7 +637,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "150",
+        "enrolled": 150,
         "discount": "30"
     },
     {
@@ -660,7 +646,6 @@
         "title": "Creative Studio Portraiture: Beyond the Basics",
         "description": "Unlock the full potential of Adobe Photoshop in your photography workflow. This course covers advanced techniques for photo manipulation, compositing, and creative editing, empowering you to take your skills to the next level.",
         "productCode": "PPP2023",
-        "availability": "20",
         "duration": "12 weeks",
         "lectures": "35",
         "instructors": [
@@ -697,7 +682,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "180",
+        "enrolled": 180,
         "discount": "25"
     },
     {
@@ -706,7 +691,6 @@
         "title": "Advertising Photography Essentials",
         "description": "Refine your portrait photography with advanced retouching techniques. This masterclass focuses on perfecting skin tones, removing imperfections, and enhancing facial features to create professional-quality portraits.",
         "productCode": "PRM2023",
-        "availability": "18",
         "duration": "10 weeks",
         "lectures": "30",
         "instructors": [
@@ -744,7 +728,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "150",
+        "enrolled": 150,
         "discount": "30"
     },
     {
@@ -753,7 +737,6 @@
         "title": "Corporate Headshots and Branding Photography",
         "description": "Unlock the full potential of Adobe Photoshop in your photography workflow. This course covers advanced techniques for photo manipulation, compositing, and creative editing, empowering you to take your skills to the next level.",
         "productCode": "PPP2023",
-        "availability": "20",
         "duration": "12 weeks",
         "lectures": "35",
         "instructors": [
@@ -790,7 +773,7 @@
                 "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "totalStudent": "180",
+        "enrolled": 180,
         "discount": "25"
     }
 ]

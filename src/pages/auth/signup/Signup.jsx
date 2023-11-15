@@ -51,6 +51,7 @@ const Signup = () => {
                 },
                 body: JSON.stringify({ name, email, role: 'user' })
             })
+                .then(res => res.json())
                 .then(() => {
 
                     toast.success('Successfully Createed Account.');

@@ -1,17 +1,56 @@
-import { useContext } from "react";
-import { AuthContext } from "../../providers/AuthProvider";
 import toast from 'react-hot-toast';
+import { useLocation, useNavigate } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const SocialLogin = () => {
 
     // IMPORT AUTHCONTEXT
-    const { googleSignin, facebookSignin } = useContext(AuthContext)
+    // const { googleSignin, facebookSignin } = useContext(AuthContext)
+
+    // useNAVIGATE USE FOR REDIRECT USER AFTER LOGIN AND useLOCATION USE FOR TRACK URL PATH
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
+
+    // IMPORT AUTHCONTEXT
+    const { user, googleSignin, facebookSignin } = useAuth()
 
     // handler Google signin
     const handlerGoogleSignin = async () => {
 
         try {
+            // SIGNUP OR SIGNIN WITH GOOGLE
             await googleSignin()
+                .then(async (result) => {
+
+                    const loggedInUser = result.user;
+
+                    // STORE USER DATA ON MongoDB
+                    await fetch('http://localhost:3000/allUsers', {
+                        method: 'POST',
+                        headers: {
+                            'content-type': 'application/json'
+                        },
+                        body: JSON.stringify({ name: loggedInUser.displayName, email: loggedInUser.email, role: 'user' })
+                    })
+                        .then(res => res.json())
+                        .then(() => {
+
+                            toast.success('Successfully Signin.');
+                            navigate(from, { replace: true });
+                        })
+                        .catch(e => {
+                            toast.error(e);
+                            console.log(e);
+                        })
+                })
+                .catch(e => {
+                    toast.error(e);
+                    console.log(e);
+                })
+
+
+
         } catch (e) {
             console.log(e);
         }
@@ -35,11 +74,11 @@ const SocialLogin = () => {
 
             {/* Google */}
             <div>
-                <img 
-                src="/google.png" 
-                alt="google" 
-                className="w-6 h-6 cursor-pointer" 
-                onClick={handlerGoogleSignin}
+                <img
+                    src="/google.png"
+                    alt="google"
+                    className="w-6 h-6 cursor-pointer"
+                    onClick={handlerGoogleSignin}
                 />
             </div>
 

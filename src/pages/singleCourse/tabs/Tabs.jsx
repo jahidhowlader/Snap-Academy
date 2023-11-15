@@ -1,8 +1,10 @@
+import PropTypes from "prop-types";
 import { useState } from 'react';
 import Description from './Description';
 import AdditionalInformation from './AdditionalInformation';
+import CourseReviews from './CourseReviews';
 
-const Tabs = () => {
+const Tabs = ({ course }) => {
 
     const [tab, setTabs] = useState('DESCRIPTION')
 
@@ -33,11 +35,14 @@ const Tabs = () => {
             </div>
 
             {
-                tab === 'DESCRIPTION' ? <Description /> : '' //tab === 'ADDITIONAL' ? <AdditionalInformation /> : tab === 'REVIEWS' ? <UserReviews /> : ''
-
+                tab === 'DESCRIPTION' ? <Description description={course.description}/> : tab === 'ADDITIONAL' ? <AdditionalInformation /> : tab === 'REVIEWS' ? <CourseReviews review  ={course.review} /> : ''
             }
         </div>
     );
+};
+
+Tabs.propTypes = {
+    course: PropTypes.array.isRequired
 };
 
 export default Tabs;
