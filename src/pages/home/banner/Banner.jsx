@@ -1,7 +1,7 @@
 import { HiArrowLongRight } from 'react-icons/hi2';
-import './Banner.css'
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom';
+import './Banner.css'
 
 const Banner = () => {
     return (

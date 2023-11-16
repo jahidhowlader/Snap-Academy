@@ -34,7 +34,7 @@
 @media (min-width: 1024px) {
 
     #banner {
-        background-image: url('/home/dark3.jpg');
+        background-image: url('/home/banner.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         padding: 80px;
