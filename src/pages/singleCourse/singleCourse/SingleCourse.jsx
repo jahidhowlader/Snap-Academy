@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import ProductDetails from "../courseDetails/CourseDetails";
 import Tabs from "../tabs/Tabs";
+import { Helmet } from "react-helmet-async";
 
 const SingleCourse = () => {
 
@@ -8,16 +9,24 @@ const SingleCourse = () => {
     console.log(course);
 
     return (
-        <section className="2xl:py-[60px]">
+        <>
+            {/* Ttile */}
+            <Helmet>
+                <title>{course.title} | Snap Academy</title>
+            </Helmet>
 
-            {/* Poduct Details */}
-            <ProductDetails course={course} />
+            <section className="2xl:py-[60px]">
 
-            {/* DETAILS && ADITION INFORMATION && REVIEW*/}
-            {/* USE REACT TABS */}
+                {/* Poduct Details */}
+                <ProductDetails course={course} />
 
-            <Tabs course={course} />
-        </section>
+                {/* DETAILS && ADITION INFORMATION && REVIEW*/}
+                {/* USE REACT TABS */}
+
+                <Tabs course={course} />
+            </section>
+        </>
+
     );
 };
 

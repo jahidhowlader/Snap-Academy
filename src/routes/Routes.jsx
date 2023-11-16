@@ -15,6 +15,7 @@ import Profile from "../pages/dashboard/profile/Profile";
 import Reviews from "../pages/dashboard/reviews/Reviews";
 import AdminDashboard from "../pages/dashboard/adminDashboard/AdminDashboard";
 import UserDashboard from "../pages/dashboard/userDashBoard/UserDashboard";
+import EnrolledHistort from "../pages/dashboard/enrolledHistory/EnrolledHistort";
 
 
 export const router = createBrowserRouter([
@@ -89,6 +90,10 @@ export const router = createBrowserRouter([
       {
         path: 'review',
         element: <Reviews />
+      },
+      {
+        path: 'enrolledHistory',
+        element: <EnrolledHistort />
       },
       {
         path: 'cart',

@@ -21,7 +21,8 @@
             }
         ],
         "price": 400,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -66,7 +67,8 @@
             }
         ],
         "price": 400,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -111,7 +113,8 @@
             }
         ],
         "price": 400,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -156,7 +159,8 @@
             }
         ],
         "price": 400,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -201,7 +205,8 @@
             }
         ],
         "price": 400,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -246,7 +251,8 @@
             }
         ],
         "price": 500,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -291,7 +297,8 @@
             }
         ],
         "price": 550,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -336,7 +343,8 @@
             }
         ],
         "price": 450,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -381,7 +389,8 @@
             }
         ],
         "price": 480,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "yes",
         "level": "Advanced",
         "requirements": [
             "DSLR Camera",
@@ -426,7 +435,8 @@
             }
         ],
         "price": 450,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Photo Editing Software",
@@ -471,7 +481,8 @@
             }
         ],
         "price": 380,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Intermediate",
         "requirements": [
             "Laptop/Desktop with Photo Editing Software",
@@ -516,7 +527,8 @@
             }
         ],
         "price": 500,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Photo Editing Software",
@@ -561,7 +573,8 @@
             }
         ],
         "price": 550,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "yes",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Adobe Photoshop installed",
@@ -606,7 +619,8 @@
             }
         ],
         "price": 500,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Photo Editing Software",
@@ -651,7 +665,8 @@
             }
         ],
         "price": 550,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Adobe Photoshop installed",
@@ -696,7 +711,8 @@
             }
         ],
         "price": 500,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Photo Editing Software",
@@ -741,7 +757,8 @@
             }
         ],
         "price": 550,
-        "oldPrice": "800",
+        "oldPrice": 800,
+        "offer": "none",
         "level": "Advanced",
         "requirements": [
             "Laptop/Desktop with Adobe Photoshop installed",

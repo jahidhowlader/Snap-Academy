@@ -15,7 +15,7 @@ const PopularCourse = () => {
                 <Link to={'/courses'} className='2xl:text-xl border-b text-primary-color pt-5 sm:pt-0'>Explore More</Link>
             </div>
 
-            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
+            <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'>
                 {
                     courseLoading ? <ViewCourseCardSkeleton /> : courses.slice(0, 8).map(course => <CourseCard key={course._id} course={course} />)
                 }

@@ -43,7 +43,7 @@ const Sidebar = () => {
                             <MdAddToPhotos size={24} />
                             <li className="hover:ml-2 duration-300 "> Add Reviews</li>
                         </Link>
-                        <Link className="flex items-center gap-2">
+                        <Link to={`/dashboard/enrolledHistory`} className="flex items-center gap-2">
                             <BiHistory size={24} />
                             <li className="hover:ml-2 duration-300 "> Enrolled History</li>
                         </Link>

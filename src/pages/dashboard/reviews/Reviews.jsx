@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import useAuth from '../../../hooks/useAuth';
 import toast from 'react-hot-toast';
 import axios from 'axios';
+import { Helmet } from 'react-helmet-async';
 
 
 const ratingStyle = {
@@ -66,55 +67,63 @@ const Reviews = () => {
 
 
     return (
-        <section className='bg-primary-color bg-opacity-10 p-10'>
+        <>
+            {/* Ttile */}
+            <Helmet>
+                <title>Reviews | Snap Academy</title>
+            </Helmet>
 
-            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col justify-between items-center gap-6'>
-                <h4 className='lg:text-2xl'>Rate Us!</h4>
-                <Rating
-                    style={{ maxWidth: 200 }}
-                    value={rating || 3}
-                    {...register("rating")}
-                    onChange={setRating} itemStyles={ratingStyle} />
+            <section className='bg-primary-color bg-opacity-10 p-10'>
 
-                <div>
+                <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col justify-between items-center gap-6'>
+                    <h4 className='lg:text-2xl'>Rate Us!</h4>
+                    <Rating
+                        style={{ maxWidth: 200 }}
+                        value={rating || 3}
+                        {...register("rating")}
+                        onChange={setRating} itemStyles={ratingStyle} />
 
-                    <div className='flex flex-col'>
-                        <p>Do you have any suggestion for us?</p>
-                        <input
-                            type="text"
-                            placeholder='Suggetion'
-                            className={`bg-white px-5 py-2 w-full sm:w-[400px] rounded-md mt-2 ${errors.suggetion ? 'outline-error border border-error' : 'border border-primary-color outline-primary-color'}`}
-                            {...register("suggetion",
-                                { maxLength: { value: 50, message: 'This field length should be less than 50 characters' } }
-                            )}
-                        />
-                        {
-                            errors?.suggetion?.type === 'maxLength' ? <span className='text-error font-medium'>{errors?.suggetion?.message}</span> : ''
-                        }
-                    </div>
+                    <div>
 
-
-                    <div className='my-5'>
-                        <p>Kindly express your care in a short way! <span className='text-error'>*</span></p>
                         <div className='flex flex-col'>
-                            <textarea
-                                {...register("comment",
-                                    { required: 'This Field is required', maxLength: { value: 200, message: 'This field length should be less than 200 characters' } }
+                            <p>Do you have any suggestion for us?</p>
+                            <input
+                                type="text"
+                                placeholder='Suggetion'
+                                className={`bg-white px-5 py-2 w-full sm:w-[400px] rounded-md mt-2 ${errors.suggetion ? 'outline-error border border-error' : 'border border-primary-color outline-primary-color'}`}
+                                {...register("suggetion",
+                                    { maxLength: { value: 50, message: 'This field length should be less than 50 characters' } }
                                 )}
-                                className={`py-2 px-4 rounded mt-2 w-full sm:w-[400px] ${errors.comment ? 'outline-error border border-error' : 'border border-primary-color outline-primary-color'}`} placeholder='Reveiw in details' rows={5}>
-
-                            </textarea>
+                            />
                             {
-                                errors?.comment?.type === 'required' ? <span className='text-error font-medium'>{errors?.comment?.message}</span> :
-                                    errors?.comment?.type === 'maxLength' ? <span className='text-error font-medium'>{errors?.comment?.message}</span> : ''
+                                errors?.suggetion?.type === 'maxLength' ? <span className='text-error font-medium'>{errors?.suggetion?.message}</span> : ''
                             }
                         </div>
-                    </div>
 
-                </div>
-                <input type="submit" value={submitLoading ? 'Proccessing...' : 'Submit Review'} className='bg-primary-color px-5 py-2 rounded-md text-white cursor-pointer' />
-            </form>
-        </section>
+
+                        <div className='my-5'>
+                            <p>Kindly express your care in a short way! <span className='text-error'>*</span></p>
+                            <div className='flex flex-col'>
+                                <textarea
+                                    {...register("comment",
+                                        { required: 'This Field is required', maxLength: { value: 200, message: 'This field length should be less than 200 characters' } }
+                                    )}
+                                    className={`py-2 px-4 rounded mt-2 w-full sm:w-[400px] ${errors.comment ? 'outline-error border border-error' : 'border border-primary-color outline-primary-color'}`} placeholder='Reveiw in details' rows={5}>
+
+                                </textarea>
+                                {
+                                    errors?.comment?.type === 'required' ? <span className='text-error font-medium'>{errors?.comment?.message}</span> :
+                                        errors?.comment?.type === 'maxLength' ? <span className='text-error font-medium'>{errors?.comment?.message}</span> : ''
+                                }
+                            </div>
+                        </div>
+
+                    </div>
+                    <input type="submit" value={submitLoading ? 'Proccessing...' : 'Submit Review'} className='bg-primary-color px-5 py-2 rounded-md text-white cursor-pointer' />
+                </form>
+            </section>
+        </>
+
     );
 };
 

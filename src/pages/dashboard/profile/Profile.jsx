@@ -2,6 +2,7 @@ import { useForm } from 'react-hook-form';
 import useAuth from '../../../hooks/useAuth';
 import toast from 'react-hot-toast';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Profile = () => {
 
@@ -74,6 +75,11 @@ const Profile = () => {
 
     return (
         <>
+            {/* Ttile */}
+            <Helmet>
+                <title>Profile | Snap Academy</title>
+            </Helmet>
+
             <section className='grid lg:gap-5 my-container px-2 lg:px-0 my-5 lg:my-0'>
 
                 <div className='rounded-md text-black text-opacity-80'>

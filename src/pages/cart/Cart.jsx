@@ -5,6 +5,7 @@ import './Cart.css'
 import { useState } from 'react';
 import ViewCartSkeleton from '../../components/skeleton/cartSkeleton/ViewCartSkeleton';
 import CartSkeleton from '../../components/skeleton/cartSkeleton/CartSkeleton';
+import toast from 'react-hot-toast';
 
 const Cart = () => {
 
@@ -29,6 +30,19 @@ const Cart = () => {
         setUpdatedCartListCart(newCartList)
         localStorage.setItem('cart', JSON.stringify(newCartList))
 
+    }
+
+    // HANDLER COURSE PURCHEH
+    const handlerCoursePurchase = (id) => {
+
+        toast('This feature is under construction, please wait!!')
+
+
+    }
+
+    // Handler Purchase All
+    const handlerPurchaseAll = (id) => {
+        toast('This feature is under construction, please wait!!')
     }
 
     return (
@@ -87,7 +101,7 @@ const Cart = () => {
                                                                 <td>{course.instructor}</td>
                                                                 <td>${course.price}</td>
                                                                 <td>
-                                                                    <button className="bg-primary-color px-2 text-white rounded-md text-sm">Purchase</button>
+                                                                    <button onClick={() => handlerCoursePurchase(course._id)} className="bg-primary-color px-2 text-white rounded-md text-sm">Purchase</button>
                                                                 </td>
                                                                 <td>
                                                                     <button onClick={() => handlerRemoveCourseItem(course._id)} className="border rounded-full hover:text-error">
@@ -124,7 +138,7 @@ const Cart = () => {
 
                                                     {/* Order Button */}
                                                     <div>
-                                                        <button className="bg-primary-color text-white px-5 py-2 rounded-md flex items-center gap-2 lg:my-0">PLACE TO ORDER <HiArrowLongRight /></button>
+                                                        <button onClick={() => handlerPurchaseAll} className="bg-primary-color text-white px-5 py-2 rounded-md flex items-center gap-2 lg:my-0">Purchase All <HiArrowLongRight /></button>
                                                     </div>
                                                 </div>
                                             </div>

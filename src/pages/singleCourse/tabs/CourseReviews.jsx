@@ -15,7 +15,7 @@ const CourseReviews = ({ review }) => {
                     <>
                         <div key={idx} className="flex gap-5 ">
                             <div className="w-[150px] h-auto">
-                                <img src={StudentReview.userImage} alt="Oval" className="w-[70px] h-[70px] rounded-full" />
+                                <img src={StudentReview.userImage} alt={StudentReview.userName} className="w-[70px] h-[70px] rounded-full object-cover object-cover" />
                             </div>
 
                             {/* Content && date */}

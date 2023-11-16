@@ -38,7 +38,7 @@ const ProductDetails = ({ course }) => {
                 {/* PRICE */}
                 <div className="flex items-center gap-5 pb-5">
                     <h4 className="text-primary-color font-bold 2xl:text-3xl">${course.price}</h4>
-                    <h4 className=" 2xl:text-[28px] font-extralight line-through">$70.00</h4>
+                    <h4 className=" 2xl:text-[28px] font-extralight line-through">${course.oldPrice}</h4>
                 </div>
 
                 <div className="w-[100px] flex items-center shadow-lg rounded-md">
@@ -79,6 +79,7 @@ ProductDetails.propTypes = {
         availability: PropTypes.string.isRequired,
         productCode: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
+        oldPrice: PropTypes.number.isRequired,
     }).isRequired,
     button: PropTypes.bool,
 };

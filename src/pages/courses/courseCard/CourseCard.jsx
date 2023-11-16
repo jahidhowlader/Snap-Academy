@@ -28,13 +28,13 @@ const CourseCard = ({ course, button }) => {
                 button ? (
                     <Link to={`/course/${course._id}`}>
                         <div className='rounded-xl overflow-hidden'>
-                            <img src={course.photo} alt="" className=' rounded-xl 2xl:h-[170px] w-full hover:scale-125 duration-[2000ms]' />
+                            <img src={course.photo} alt="" className=' rounded-xl h-[190px] sm:h-[220px] lg:h-[180px] xl:h-[200px] 2xl:h-[180px] w-full hover:scale-125 duration-[2000ms] object-cover' />
                         </div>
                     </Link>
                 ) : (
                     <Link to={`/course/${course._id}`}>
                         <div className='rounded-xl overflow-hidden'>
-                            <img src={course.photo} alt={course.title} className=' rounded-xl 2xl:h-[250px] w-full hover:scale-125 duration-[2000ms]' />
+                            <img src={course.photo} alt={course.title} className=' rounded-xl h-[190px] sm:h-[220px] xl:h-[190px] 2xl:h-[220px] w-full hover:scale-125 duration-[2000ms] object-cover' />
                         </div>
                     </Link>
 
@@ -44,7 +44,7 @@ const CourseCard = ({ course, button }) => {
             {/* Card Content */}
             <div className='py-5 text-center'>
                 <Link to={`/course/${course._id}`}>
-                    <h5 className='font-medium  text-lg xl:text-xl  sm:text-2xl hover:underline'>{course.title.slice(0, 45)}...</h5>
+                    <h5 className='font-medium  text-lg xl:text-xl hover:underline'>{course.title.slice(0, 45)}...</h5>
                 </Link>
                 <div className='flex justify-center my-2'>
                     <Rating style={{ maxWidth: 100 }} value={courseReview / course.review.length} itemStyles={ratingStyle} readOnly />
