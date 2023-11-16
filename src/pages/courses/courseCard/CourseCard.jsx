@@ -21,20 +21,20 @@ const CourseCard = ({ course, button }) => {
     // console.log(course.review.length);
 
     return (
-        <div className='bg-white rounded-xl p-[14px] shadow-md'>
+        <div className='bg-white p-2 shadow-sm border border-gray border-opacity-30 rounded xl:rounded-md'>
 
             {/* Card Image */}
             {
                 button ? (
                     <Link to={`/course/${course._id}`}>
-                        <div className='rounded-xl overflow-hidden'>
-                            <img src={course.photo} alt="" className=' rounded-xl h-[190px] sm:h-[220px] lg:h-[180px] xl:h-[200px] 2xl:h-[180px] w-full hover:scale-125 duration-[2000ms] object-cover' />
+                        <div className=' overflow-hidden'>
+                            <img src={course.photo} alt="" className=' h-[190px] sm:h-[220px] lg:h-[180px] xl:h-[200px] 2xl:h-[180px] w-full hover:scale-125 duration-[2000ms] object-cover rounded ' />
                         </div>
                     </Link>
                 ) : (
                     <Link to={`/course/${course._id}`}>
-                        <div className='rounded-xl overflow-hidden'>
-                            <img src={course.photo} alt={course.title} className=' rounded-xl h-[190px] sm:h-[220px] xl:h-[190px] 2xl:h-[220px] w-full hover:scale-125 duration-[2000ms] object-cover' />
+                        <div className=' overflow-hidden'>
+                            <img src={course.photo} alt={course.title} className='  h-[190px] sm:h-[220px] xl:h-[190px] 2xl:h-[220px] w-full hover:scale-105 duration-[2000ms] object-cover rounded ' />
                         </div>
                     </Link>
 

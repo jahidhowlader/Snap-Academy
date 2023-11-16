@@ -62,16 +62,16 @@ const Signin = () => {
             <div className="glass-container text-black">
 
                 {/* Redirect Home Page */}
-                <Link to={'/'} className='absolute top-5 left-5 text-xl glass-effect p-2 text-black rounded-md z-10'><HiMiniHome /></Link>
+                {/* <Link to={'/'} className='absolute top-5 left-5 text-xl glass-effect p-2 text-black rounded-md z-10'><HiMiniHome /></Link> */}
 
                 {/* Background */}
                 <img src="/authBG.png" alt="background" className='absolute bottom-0 left-0 ' />
 
                 {/* Main Content */}
-                <motion.div initial={{ y: -300 }} animate={{ y: 0 }} transition={{ duration: .5 }} className="glass-content flex flex-col items-center">
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }} className="glass-content flex flex-col items-center shadow-sm border border-gray border-opacity-30 rounded xl:rounded-md">
                     <div className="lg:text-xl xl:text-2xl flex items-center gap-2 mt-5">
                         <div>
-                            <img src="/logo.svg" alt="logo" className="w-8 lg:w-10 " />
+                            <img src="/logo.svg" alt="logo" className="w-8 lg:w-10 bg-primary-color" />
                         </div>
                         <h3 className="font-bold uppercase text-primary-color"><Link to='/'>Snap Academy</Link></h3>
                     </div>

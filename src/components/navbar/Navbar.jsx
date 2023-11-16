@@ -28,19 +28,19 @@ const Navbar = () => {
     }
 
     return (
-        <div className="flex justify-between items-center pt-2 z-50">
+        <div className="flex justify-between items-center py-5 sm:py-5 z-50 my-container ">
 
             {/* LOGO */}
-            <div className="lg:text-xl xl:text-2xl flex items-center gap-2 text-primary-color">
+            <div className="lg:text-xl xl:text-2xl flex items-center gap-2 text-white">
                 <div>
-                    <img src="/logo.svg" alt="logo" className="w-8 lg:w-10 text-primary-color" />
+                    <img src="/public/test1.svg" alt="logo" className="w-8 lg:w-12 shadow-2xl bg-white " />
                 </div>
                 <h3 className="font-bold uppercase"><Link to='/'>Snap Academy</Link></h3>
             </div>
 
             {/* NAVLINK */}
             <div>
-                <ul className="hidden sm:flex items-center gap-5 lg:gap-10 xl:gap-20 2xl:gap-28 font-semibold xl:text-[18px] 2xl:text-xl text-primary-color">
+                <ul className="hidden md:flex items-center gap-5 lg:gap-10 xl:gap-20 xl:text-[18px] 2xl:text-xl text-white">
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/courses'>Courses</Link></li>
                     <li><Link to='/instructor'>Instructor</Link></li>
@@ -53,27 +53,32 @@ const Navbar = () => {
             </div>
 
             {/* SEACRCH USER AND CART */}
-            <div className="flex items-center gap-3 sm:gap-5 xl:text-xl font-semibold text-primary-color">
+            <div className="flex items-center gap-3 sm:gap-5 xl:text-xl font-semibold text-white">
                 <span>
-                    <HiMiniMagnifyingGlass />
+                    {/* <HiMiniMagnifyingGlass /> */}
                 </span>
+
+                <Link to={'/cart'}>
+                    <HiOutlineShoppingCart className="w-6 h-6" />
+                </Link>
+
                 <Link to="/dashboard">
-                    <span className="w-5 h-5">
-                        <img src={user?.photoURL || '/user.png'} alt="profile" className='w-5 h-5 rounded-full' />
+                    <span className="w-6 h-6">
+                        <img src={user?.photoURL || '/user.png'} alt="profile" className='w-6 h-6 rounded-full' />
                     </span>
                 </Link>
-                <Link to={'/cart'}>
-                    <HiOutlineShoppingCart />
-                </Link>
-                <span className="hidden sm:block">EN</span>
+
+                {/* Hemburger and Nablink For Mobile */}
+                <button
+                    className={` md:hidden`}
+                >
+                    <HiBars3BottomRight onClick={() => setIsOpen(true)} className="text-white w-6 h-6 rounded-full" />
+                </button>
+
+                <span className="hidden md:block">EN</span>
             </div>
 
-            {/* Hemburger and Nablink For Mobile */}
-            <button
-                className={` sm:hidden`}
-            >
-                <HiBars3BottomRight onClick={() => setIsOpen(true)} className="text-primary-color  rounded-full" />
-            </button>
+
 
             <NavMobile isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>

@@ -28,7 +28,7 @@ const Courses = () => {
                 <title>Courses | Snap Academy</title>
             </Helmet>
 
-            <section className='mt-10 xl:pt-[60px] '>
+            <section className='mt-10 xl:pt-[40px] my-container'>
 
                 <div className='grid lg:grid-cols-9 gap-2 lg:gap-5 items-end pb-3'>
 

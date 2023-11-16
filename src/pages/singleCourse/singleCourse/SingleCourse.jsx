@@ -15,7 +15,7 @@ const SingleCourse = () => {
                 <title>{course.title} | Snap Academy</title>
             </Helmet>
 
-            <section className="2xl:py-[60px]">
+            <section className="2xl:py-[40px] my-container">
 
                 {/* Poduct Details */}
                 <ProductDetails course={course} />

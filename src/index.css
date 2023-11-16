@@ -13,8 +13,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.my-container {
+  @apply max-w-[1520px] mx-auto px-3 sm:px-10
+}
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   height: 12px;
   width: 5px;
   background: var(--background);
@@ -23,5 +26,5 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #0F5259;
   -webkit-border-radius: 1ex;
-}
+} */
 

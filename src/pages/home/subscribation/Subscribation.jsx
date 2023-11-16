@@ -46,7 +46,7 @@ const Subscribation = () => {
                         <input
                             name="email"
                             type="email"
-                            className="bg-white px-6 2xl:px-6 py-2 2xl:py-4 w-full sm:w-[380px] xl:w-[480px] rounded 2xl:rounded-[10px] outline-primary-color"
+                            className="bg-white px-6 2xl:px-6 py-2 2xl:py-4 w-full sm:w-[380px] xl:w-[480px] rounded outline-primary-color"
                             placeholder="E-mail"
                             {...register("email",
                                 {
@@ -59,7 +59,7 @@ const Subscribation = () => {
                             required
                         />
 
-                        <button className='bg-primary-color text-white py-2 px-5 md:py-2.5 2xl:py-3 xl:px-7 rounded 2xl:rounded-[10px] text-sm 2xl:text-2xl font-semibold flex items-center gap-2'>Subscribe <HiArrowLongRight /></button>
+                        <button className='bg-primary-color text-white py-2 px-5 md:py-2.5 2xl:py-3 xl:px-7 rounded text-sm 2xl:text-2xl font-semibold flex items-center gap-2'>Subscribe <HiArrowLongRight /></button>
                     </form>
                 </div>
             </div>

@@ -6,6 +6,7 @@ import { useState } from 'react';
 import ViewCartSkeleton from '../../components/skeleton/cartSkeleton/ViewCartSkeleton';
 import CartSkeleton from '../../components/skeleton/cartSkeleton/CartSkeleton';
 import toast from 'react-hot-toast';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
 
@@ -52,7 +53,7 @@ const Cart = () => {
                 <title>Cart | Snap Academy</title>
             </Helmet>
 
-            <section className="my-[60px] overflow-scroll">
+            <section className="my-[60px] overflow-scroll my-container">
 
                 <div className={`w-full ${!updatedCartList?.length ? 'lg:h-[calc(100vh-500px)]' : 'lg:h-[calc(100vh-100px)]'}`}>
 
@@ -92,7 +93,7 @@ const Cart = () => {
                                                                             <img src={course.photo} alt="Course Image" className="w-full" />
                                                                         </div>
                                                                         <div className="">
-                                                                            <div className="font-bold">{course.title}</div>
+                                                                            <div className="font-bold"><Link to={`/course/${course._id}`}>{course.title}</Link></div>
                                                                             <div className="text-sm opacity-50">REVIEW</div>
                                                                         </div>
                                                                     </div>

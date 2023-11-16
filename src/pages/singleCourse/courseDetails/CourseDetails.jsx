@@ -17,8 +17,8 @@ const ProductDetails = ({ course }) => {
         <div className="grid lg:grid-cols-2 gap-5 lg:gap-10 xl:gap-14 2xl:gap-[80px] mt-10 mb-10">
 
             {/* Product Photo */}
-            <div className="overflow-hidden rounded-xl">
-                <img src={course.photo} alt={course.title} className='w-full mx-auto rounded-xl hover:scale-125 duration-[2000ms] max-h-[426px]' />
+            <div className="overflow-hidden rounded xl:rounded-md">
+                <img src={course.photo} alt={course.title} className='w-full mx-auto rounded xl:rounded-md hover:scale-105 duration-[2000ms] max-h-[426px]' />
             </div>
 
             {/* Product Information */}
@@ -48,11 +48,11 @@ const ProductDetails = ({ course }) => {
                 <div className="flex items-center gap-5 pt-5">
                     <motion.button
                         whileTap={{ scale: 0.95 }}
-                        className="bg-primary-color hover:bg-opacity-90 px-4 sm:px-6 py-1 sm:py-2 rounded-md text-white">
+                        className="bg-primary-color hover:bg-opacity-90 px-4 sm:px-6 py-1 sm:py-2 rounded xl:rounded-md text-white">
                         Addmission
                     </motion.button>
 
-                    <div className="bg-white p-2 2xl:p-3 shadow-md rounded-lg">
+                    <div className="bg-white p-2 2xl:p-3 shadow-sm border border-gray border-opacity-30 rounded xl:rounded-md">
                         <FaCartPlus  className="text-primary-color"/>
                     </div>
                 </div>

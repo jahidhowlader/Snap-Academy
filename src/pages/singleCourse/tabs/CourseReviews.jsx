@@ -51,22 +51,22 @@ const CourseReviews = ({ review }) => {
 
                     </div>
 
-                    <div className='flex items-center justify-center gap-[50px] pt-5 pb-12'>
+                    <div className='flex items-center justify-center gap-[50px] pt-10 pb-12'>
                         <div className='flex-1'>
-                            <input type="text" className='border-primary-color border bg-[#EDFFFD] py-2 px-4 rounded w-full outline-primary-color' placeholder='Enter your name' />
+                            <input type="text" className='border-primary-color border bg-primary-color bg-opacity-10 py-2 px-4 rounded w-full outline-primary-color' placeholder='Enter your name' />
                         </div>
 
                         <div className='flex-1'>
-                            <input type="email" className='border-primary-color border bg-[#EDFFFD] py-2 px-4 rounded w-full outline-primary-color' placeholder='Email' />
+                            <input type="email" className='border-primary-color border bg-primary-color bg-opacity-10 py-2 px-4 rounded w-full outline-primary-color' placeholder='Email' />
                         </div>
                     </div>
 
                     <div>
-                        <textarea className='border-primary-color border bg-[#EDFFFD] py-2 px-4 rounded w-full outline-primary-color' placeholder='Write your comment' rows={5}></textarea>
+                        <textarea className='border-primary-color border bg-primary-color bg-opacity-10 py-2 px-4 rounded w-full outline-primary-color' placeholder='Write your comment' rows={5}></textarea>
                     </div>
 
                     <div className='mt-2 flex justify-end'>
-                        <button className='bg-primary-color text-white px-9 py-2 rounded-md '>Submit</button>
+                        <button className='bg-primary-color text-white px-9 py-2 rounded xl:rounded-md '>Submit</button>
                     </div>
                 </div>
             </div>

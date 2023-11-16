@@ -73,7 +73,7 @@ const Reviews = () => {
                 <title>Reviews | Snap Academy</title>
             </Helmet>
 
-            <section className='bg-primary-color bg-opacity-10 p-10'>
+            <section className='bg-primary-color bg-opacity-10 p-10 lg:rounded xl:rounded-md'>
 
                 <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col justify-between items-center gap-6'>
                     <h4 className='lg:text-2xl'>Rate Us!</h4>
@@ -90,7 +90,7 @@ const Reviews = () => {
                             <input
                                 type="text"
                                 placeholder='Suggetion'
-                                className={`bg-white px-5 py-2 w-full sm:w-[400px] rounded-md mt-2 ${errors.suggetion ? 'outline-error border border-error' : 'border border-primary-color outline-primary-color'}`}
+                                className={`bg-white px-5 py-2 w-full sm:w-[400px] rounded xl:rounded-md mt-2 ${errors.suggetion ? 'outline-error border border-error' : 'border border-primary-color outline-primary-color'}`}
                                 {...register("suggetion",
                                     { maxLength: { value: 50, message: 'This field length should be less than 50 characters' } }
                                 )}
@@ -108,7 +108,7 @@ const Reviews = () => {
                                     {...register("comment",
                                         { required: 'This Field is required', maxLength: { value: 200, message: 'This field length should be less than 200 characters' } }
                                     )}
-                                    className={`py-2 px-4 rounded mt-2 w-full sm:w-[400px] ${errors.comment ? 'outline-error border border-error' : 'border border-primary-color outline-primary-color'}`} placeholder='Reveiw in details' rows={5}>
+                                    className={`py-2 px-4 rounded xl:rounded-md mt-2 w-full sm:w-[400px] ${errors.comment ? 'outline-error border border-error' : 'border border-primary-color outline-primary-color'}`} placeholder='Reveiw in details' rows={5}>
 
                                 </textarea>
                                 {

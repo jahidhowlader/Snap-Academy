@@ -5,11 +5,11 @@ import { MdAddToPhotos } from "react-icons/md";
 
 const Sidebar = () => {
 
-    const admin = false
+    const admin = true
     return (
-        <div className='bg-primary-color lg:h-screen text-white p-10 relative'>
+        <div className='bg-primary-color lg:h-screen text-white p-5 xl:p-10 relative'>
             {/* Redirect Home Page */}
-            <Link to={'/'} className='absolute top-5 left-10 text-xl glass-effect p-2 text-black rounded-md z-10'><HiMiniHome /></Link>
+            <Link to={'/'} className='absolute top-5 left-10 text-xl glass-effect p-2 text-black z-10 rounded xl:rounded-md'><HiMiniHome /></Link>
 
             <ul className="space-y-5 mt-20 uppercase">
 

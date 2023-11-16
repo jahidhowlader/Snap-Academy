@@ -6,12 +6,12 @@ const MainLayout = () => {
     return (
         < >
 
-            <div className='mx-5'>
-                <nav className='max-w-[1520px] mx-auto'>
+            <div className='mx-0'>
+                <nav className=' bg-primary-color '>
                     <Navbar />
                 </nav>
 
-                <main className='max-w-[1520px] mx-auto'>
+                <main className=' mx-auto'>
                     <Outlet />
                 </main>
             </div>

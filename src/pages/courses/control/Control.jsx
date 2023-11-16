@@ -47,7 +47,7 @@ const Control = ({ selectedCategories, setSelectedCategories, priceQuery, setPri
                     isOpen && (
                         <>
                             <motion.div
-                                className='bg-white absolute top-8 rounded-xl shadow w-full z-30 border border-gray border-opacity-20'
+                                className='bg-white absolute top-8 rounded shadow w-full z-30 border border-gray border-opacity-20'
                                 variants={open}
                                 initial="initial"
                                 animate="animate"
@@ -71,7 +71,7 @@ const Control = ({ selectedCategories, setSelectedCategories, priceQuery, setPri
             </div>
 
 
-            <div className='shadow-md lg:col-span-2  bg-white rounded-xl hidden sm:block' >
+            <div className='shadow-sm border border-gray border-opacity-30 lg:col-span-2  bg-white rounded xl:rounded-md hidden sm:block' >
 
                 {/* Filtering */}
                 <Filter selectedCategories={selectedCategories} />

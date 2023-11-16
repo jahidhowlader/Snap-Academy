@@ -3,7 +3,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 const Collection = () => {
 
     return (
-        <section className="grid lg:grid-cols-3 gap-8 my-36">
+        <section className="grid lg:grid-cols-3 gap-8 my-36 my-container">
             <div className="py-11 px-14 2xl:py-16 2xl:px-7 flex justify-end items-end  border-gray shadow-xl border-opacity-10 rounded-lg bg-gray bg-opacity-20 relative overflow-hidden">
                 <img src="/home/feature2.png" alt="feature" className='absolute rotate-180 opacity-30 sm:opacity-70 -top-40 sm:-top-80 lg:-top-48  2xl:-top-48 -left-56 lg:-left-24 2xl:-left-20 ' />
                 <div className="flex flex-col justify-end items-end">

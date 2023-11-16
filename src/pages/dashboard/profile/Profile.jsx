@@ -80,7 +80,7 @@ const Profile = () => {
                 <title>Profile | Snap Academy</title>
             </Helmet>
 
-            <section className='grid lg:gap-5 my-container px-2 lg:px-0 my-5 lg:my-0'>
+            <section className='grid lg:gap-5 my-container p- lg:px-0 my-5 lg:my-0'>
 
                 <div className='rounded-md text-black text-opacity-80'>
 
@@ -96,7 +96,7 @@ const Profile = () => {
 
                             <div className='flex items-center gap-3'>
                                 {/* <button  className='border-primary-color border border-opacity-50 px-3 py-1 rounded-md text-sm'>cancel</button> */}
-                                <button className='bg-primary-color text-white px-3 py-1 rounded-md text-sm'>{submitLoading ? 'Proccessing...' : 'Save Changes'} </button>
+                                <button className='bg-primary-color text-white px-3 py-1 rounded xl:rounded-md text-sm'>{submitLoading ? 'Proccessing...' : 'Save Changes'} </button>
                             </div>
 
                         </div>
@@ -104,12 +104,12 @@ const Profile = () => {
                         <hr className='border opacity-5 my-5 ' />
 
                         {/* change Name field */}
-                        <div className='grid lg:grid-cols-9 items-start '>
-                            <div className='col-span-4'>
+                        <div className='sm:grid lg:grid-cols-9 items-start '>
+                            <div className='sm:col-span-4'>
                                 <h6 className='font-semibold'>Name</h6>
                             </div>
 
-                            <div className='col-span-5'>
+                            <div className='sm:col-span-5'>
                                 <div className='flex flex-col sm:flex-row items-start gap-5'>
 
                                     <div className='flex-1 flex flex-col'>
@@ -119,7 +119,7 @@ const Profile = () => {
                                             {...register("firstname",
                                                 { maxLength: { value: 10, message: 'First Name length should be less than 10 characters' } }
                                             )}
-                                            className={`block px-3 py-1 rounded-md w-full bg-transparent border-opacity-50 ${errors.firstname ? 'outline-error border border-error' : 'border border-primary-color outline-primary-color'}`} />
+                                            className={`block px-3 py-1 rounded xl:rounded-md w-full bg-transparent border-opacity-50 ${errors.firstname ? 'outline-error border border-error' : 'border border-primary-color outline-primary-color'}`} />
                                         {
                                             errors?.firstname?.type === 'maxLength' ? <span className='text-error font-medium'>{errors?.firstname?.message}</span> : ''
                                         }
@@ -131,7 +131,7 @@ const Profile = () => {
                                             {...register("lastname",
                                                 { maxLength: { value: 10, message: 'lastname length should be less than 10 characters' } }
                                             )}
-                                            className={`block px-3 py-1 rounded-md w-full bg-transparent border-opacity-50 ${errors.lastname ? 'outline-error border border-error' : ' border border-primary-color outline-primary-color'}`}
+                                            className={`block px-3 py-1 rounded xl:rounded-md w-full bg-transparent border-opacity-50 ${errors.lastname ? 'outline-error border border-error' : ' border border-primary-color outline-primary-color'}`}
                                         />
                                         {
                                             errors?.lastname?.type === 'maxLength' ? <span className='text-error font-medium'>{errors?.lastname?.message}</span> : ''
@@ -145,7 +145,7 @@ const Profile = () => {
                         <hr className='border opacity-5 my-5 ' />
 
                         {/* change Email Field*/}
-                        <div className='grid grid-cols-9 items-center '>
+                        <div className='sm:grid grid-cols-9 items-center '>
                             <div className='col-span-4'>
                                 <h6 className='font-semibold'>Email</h6>
                             </div>
@@ -156,7 +156,7 @@ const Profile = () => {
                                     name="email"
                                     placeholder="Email"
                                     defaultValue={user?.email}
-                                    className={`block px-3 py-1 border border-primary-color outline-primary-color rounded-md w-full bg-transparent border-opacity-50 ${errors ? 'border-red focus:border-red focus:outline-red' : ''}`} disabled />
+                                    className={`block px-3 py-1 border border-primary-color outline-primary-color rounded xl:rounded-md w-[280px] sm:w-full bg-transparent border-opacity-50 ${errors ? 'border-red focus:border-red focus:outline-red' : ''}`} disabled />
                             </div>
                         </div>
 
@@ -178,7 +178,7 @@ const Profile = () => {
                                         </div>
                                     </div>
 
-                                    <div className='border border-primary-color border-opacity-50 rounded-md text-center lg:col-span-7 p-5'>
+                                    <div className='border border-primary-color border-opacity-50 rounded xl:rounded-md text-center lg:col-span-7 p-5'>
                                         <div ></div>
                                         <div>
 

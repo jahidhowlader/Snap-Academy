@@ -49,27 +49,39 @@ export const router = createBrowserRouter([
       {
         path: 'cart',
         element: <Cart />
+      },
+      {
+        path: 'auth/signin',
+        element: <Signin />
+
+      }, {
+        path: 'auth/signup',
+        element: <Signup />
+      },
+      {
+        path: 'auth/forgotPassword',
+        element: <ForgotPassword />
       }
     ]
   },
   // AUTHENTICATION
-  {
-    path: 'auth',
-    children: [
-      {
-        path: 'signin',
-        element: <Signin />
+  // {
+  //   path: 'auth',
+  //   children: [
+  //     {
+  //       path: 'signin',
+  //       element: <Signin />
 
-      }, {
-        path: 'signup',
-        element: <Signup />
-      },
-      {
-        path: 'forgotPassword',
-        element: <ForgotPassword />
-      },
-    ]
-  },
+  //     }, {
+  //       path: 'signup',
+  //       element: <Signup />
+  //     },
+  //     {
+  //       path: 'forgotPassword',
+  //       element: <ForgotPassword />
+  //     },
+  //   ]
+  // },
   // DASHBOARD ROUTES
   {
     path: 'dashboard',
