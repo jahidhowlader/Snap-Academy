@@ -4,6 +4,10 @@ const ViewCartSkeleton = () => {
     return (
         <>
             <CartSkeleton />
+            <CartSkeleton />
+            <CartSkeleton />
+            <CartSkeleton />
+            <CartSkeleton />
         </>
     );
 };

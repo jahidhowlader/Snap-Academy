@@ -8,14 +8,14 @@ import { motion } from "framer-motion"
 
 const open = {
     initial: {
-        x: -400,
+        // x: -400,
         opacity: 0
     },
     animate: {
-        x: 0,
+        // x: 0,
         opacity: 1,
         transition: {
-            duration: .5
+            duration: .3
         }
     }
 }
@@ -47,7 +47,7 @@ const Control = ({ selectedCategories, setSelectedCategories, priceQuery, setPri
                     isOpen && (
                         <>
                             <motion.div
-                                className='bg-white absolute top-8 rounded-xl shadow-2xl w-full z-30'
+                                className='bg-white absolute top-8 rounded-xl shadow w-full z-30 border border-gray border-opacity-20'
                                 variants={open}
                                 initial="initial"
                                 animate="animate"

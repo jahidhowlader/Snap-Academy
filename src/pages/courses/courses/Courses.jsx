@@ -8,6 +8,8 @@ import DespCourseCard from '../despCourseCard/DespCourseCard';
 import { Helmet } from 'react-helmet-async';
 import useGetCourses from '../../../hooks/useGetCourses';
 import ViewCourseCardSkeleton from '../../../components/skeleton/courseCardSkeleton/ViewCourseCardSkeleton';
+import { BiSolidDashboard } from 'react-icons/bi';
+import { HiBars3BottomLeft } from 'react-icons/hi2';
 
 const Courses = () => {
 
@@ -41,7 +43,7 @@ const Courses = () => {
                         <div className='flex flex-col sm:flex-row sm:items-center gap-2'>
                             <div className='flex items-center gap-2'>
                                 <div>
-                                    <img src="/courses/short.svg" alt="short" />
+                                    <HiBars3BottomLeft size={20} className='text-primary-color' />
 
                                 </div>
 
@@ -68,7 +70,7 @@ const Courses = () => {
                         <div className='flex items-center gap-2 sm:gap-5  '>
                             <div>
                                 <button onClick={() => setLayout(true)}>
-                                    <img src="/courses/2grid.svg" alt="grid2" className='w-4 cursor-pointer' />
+                                    <BiSolidDashboard size={20} className='text-primary-color' />
                                 </button>
                             </div>
 

@@ -58,8 +58,8 @@ const Navbar = () => {
                     <HiMiniMagnifyingGlass />
                 </span>
                 <Link to="/dashboard">
-                    <span>
-                        <HiOutlineUser />
+                    <span className="w-5 h-5">
+                        <img src={user?.photoURL || '/user.png'} alt="profile" className='w-5 h-5 rounded-full' />
                     </span>
                 </Link>
                 <Link to={'/cart'}>

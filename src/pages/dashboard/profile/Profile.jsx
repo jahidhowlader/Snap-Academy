@@ -7,33 +7,67 @@ const Profile = () => {
 
     // ALL STATE ARE HERE
     const [submitLoading, setSubmitLoading] = useState(false)
+    const [imgUrl, setImgUrl] = useState(null)
 
     // IMPORT AUTHCONTEXT
     const { user, updateUser } = useAuth()
 
     // REACT HOOK FORM
-    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, setValue, formState: { errors } } = useForm();
+
+    // ADD UPLOAD IMAGE WITH IMGBB
+    const uploadImage = async (event) => {
+        const formData = new FormData();
+        if (!event.target.files[0]) return;
+        formData.append("image", event.target.files[0]);
+
+        try {
+            setSubmitLoading(true)
+            const res = await fetch(
+                `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_IMGBB_STOREIMG}`,
+                {
+                    method: "POST",
+                    body: formData,
+                }
+            );
+            if (!res.ok) throw new Error("Failed to upload image");
+
+            const data = await res.json();
+
+            setValue("photo", data.data.url);
+            setImgUrl(data.data.url);
+            setSubmitLoading(false)
+
+        } catch (error) {
+            console.log(error);
+            setSubmitLoading(false)
+        }
+    }
 
     // SUBMIT FOR UPDATE USER INFO
     const onSubmit = async (data) => {
 
         setSubmitLoading(true)
 
-        const { firstname, secondname } = data
-        const fullName = `${firstname} ${secondname}`
+        const { firstname, lastname } = data
+        let fullName = `${firstname} ${lastname}`
+
+        if (fullName.length <= 1) {
+            fullName = user?.displayName
+        }
 
         try {
 
             // UPDATE USERNAME AFTER SIGNUP ON FIREBASE
-            await updateUser(fullName)
+            await updateUser(fullName, imgUrl)
             reset()
             toast.success('Successfully Update your Profile')
             setSubmitLoading(false)
 
         } catch (e) {
 
-            toast.error(e.code);
-            console.log(e.code);
+            toast.error('Something Error, Try again');
+            console.log(e);
             setSubmitLoading(false)
         }
     }
@@ -44,7 +78,7 @@ const Profile = () => {
 
                 <div className='rounded-md text-black text-opacity-80'>
 
-                    <h3 className='text-2xl uppercase mb-10'><span className='font-bold'>{user?.displayName} </span>Profile</h3>
+                    <h3 className='text-2xl uppercase mb-10'><span className='font-bold'>{user?.displayName} </span> Profile</h3>
 
                     <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -74,31 +108,27 @@ const Profile = () => {
 
                                     <div className='flex-1 flex flex-col'>
                                         {/* Name Input */}
-                                        <input type="firsttextName"
-                                            name="firstName"
+                                        <input type="text"
                                             placeholder="First Name"
                                             {...register("firstname",
-                                                { required: 'Firstame is required', maxLength: { value: 10, message: 'First Name length should be less than 10 characters' } }
+                                                { maxLength: { value: 10, message: 'First Name length should be less than 10 characters' } }
                                             )}
                                             className={`block px-3 py-1 rounded-md w-full bg-transparent border-opacity-50 ${errors.firstname ? 'outline-error border border-error' : 'border border-primary-color outline-primary-color'}`} />
                                         {
-                                            errors?.firstname?.type === 'required' ? <span className='text-error font-medium'>{errors?.firstname?.message}</span> :
-                                                errors?.firstname?.type === 'maxLength' ? <span className='text-error font-medium'>{errors?.firstname?.message}</span> : ''
+                                            errors?.firstname?.type === 'maxLength' ? <span className='text-error font-medium'>{errors?.firstname?.message}</span> : ''
                                         }
                                     </div>
 
                                     <div className='flex-1 flex flex-col'>
                                         <input type="text"
-                                            name="secondName"
                                             placeholder="Second Name"
-                                            {...register("secondname",
-                                                { required: 'Secondname is required', maxLength: { value: 10, message: 'Secondname length should be less than 10 characters' } }
+                                            {...register("lastname",
+                                                { maxLength: { value: 10, message: 'lastname length should be less than 10 characters' } }
                                             )}
-                                            className={`block px-3 py-1 rounded-md w-full bg-transparent border-opacity-50 ${errors.secondname ? 'outline-error border border-error' : ' border border-primary-color outline-primary-color'}`}
+                                            className={`block px-3 py-1 rounded-md w-full bg-transparent border-opacity-50 ${errors.lastname ? 'outline-error border border-error' : ' border border-primary-color outline-primary-color'}`}
                                         />
                                         {
-                                            errors?.secondname?.type === 'required' ? <span className='text-error font-medium'>{errors?.secondname?.message}</span> :
-                                                errors?.secondname?.type === 'maxLength' ? <span className='text-error font-medium'>{errors?.secondname?.message}</span> : ''
+                                            errors?.lastname?.type === 'maxLength' ? <span className='text-error font-medium'>{errors?.lastname?.message}</span> : ''
                                         }
                                     </div>
                                 </div>
@@ -138,15 +168,15 @@ const Profile = () => {
                                     <div className='lg:col-span-2'>
 
                                         <div className='w-20 h-20 border border-primary-color border-opacity-50 rounded-full my-5 lg:my-0'>
-                                            <img src={user?.photoUrl || '/home/feature2.png'} alt="profile" className='w-20 h-20 rounded-full' />
+                                            <img src={imgUrl || user?.photoURL || '/user.png'} alt="profile" className='w-20 h-20 rounded-full object-cover' />
                                         </div>
                                     </div>
 
                                     <div className='border border-primary-color border-opacity-50 rounded-md text-center lg:col-span-7 p-5'>
                                         <div ></div>
                                         <div>
-                                            {/* TODO: */}
-                                            <input type="file" className='block' />
+
+                                            <input onChange={uploadImage} type="file" className='block' />
                                         </div>
 
                                         <h6 className='font-semibold'>Click to upload</h6>

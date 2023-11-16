@@ -1,33 +1,53 @@
 import { motion } from "framer-motion";
-import  { useState } from "react";
+import { useEffect, useState } from "react";
+import useGetCourses from "../../../hooks/useGetCourses";
 
 const Instructor = () => {
 
     const [isSlideVisible, setSlideVisible] = useState(false);
 
-    const variants = {
-        hidden: { x: -400 },
-        visible: { x: 0 },
-    };
+    const { courses } = useGetCourses()
 
-    const toggleSlide = () => {
-        setSlideVisible(!isSlideVisible);
-    };
+    // const variants = {
+    //     hidden: { x: -400 },
+    //     visible: { x: 0 },
+    // };
+
+    // const toggleSlide = () => {
+    //     setSlideVisible(!isSlideVisible);
+    // };
 
     return (
-        <div>
-            <motion.div
+        <div className="columns-2 lg:columns-5 space-y-5 rounded-md gap-5 py-[60px] z-20">
+            {/* <motion.div
                 initial="hidden"
                 animate={isSlideVisible ? "visible" : "hidden"}
                 variants={variants}
                 transition={{ duration: .6, stiffness: 300 }}
                 style={{ width: "100%", height: "100%", background: "lightblue" }}
             >
-                {/* Your content inside the sliding div */}
                 <h1>This is sliding content</h1>
             </motion.div>
 
-            <button onClick={toggleSlide}>Toggle Slide</button>
+            <button onClick={toggleSlide}>Toggle Slide</button> */}
+
+            {
+                courses.map(course => <div
+                    key={course._id}
+                    className="relative group overflow-hidden cursor-pointer"
+                >
+                    <div>
+                        <img src={course.instructorImage} alt="insructor" className="w-full h-auto  cover rounded-md" />
+                    </div>
+                    <div className="absolute bottom-0 left-0 w-full h-0 bg-primary-color bg-opacity-80 text-white group-hover:h-full transition-height duration-700 flex justify-center items-center rounded-md">
+                        <div className="hidden group-hover:block p-2">
+                            <h5 className="lg:text-2xl">{course.instructor}</h5>
+                            <p className="text-xs lg:text-sm">INSTRUCTOR</p>
+                            <p className="text-xs lg:text-sm">Total Students: {course.enrolled}</p>
+                        </div>
+                    </div>
+                </div>)
+            }
         </div>
     );
 };

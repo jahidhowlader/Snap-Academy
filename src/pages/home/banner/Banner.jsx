@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
-        <section className='flex flex-col md:flex-row justify-between items-center pb-16 md:pt-12 lg:pt-0 2xl:pt-10 lg:bg-black lg:text-white lg:p-10 lg:my-10'>
+        <section className='flex flex-col md:flex-row justify-between items-center pb-16 md:pt-12 lg:pt-0 2xl:pt-10 lg:bg-black lg:text-white lg:px-10 lg:pb-0 lg:my-10 lg:rounded-xl '>
 
             {/* Banner Content */}
             <div className='flex-1 space-y-5 order-2 md:order-1'>

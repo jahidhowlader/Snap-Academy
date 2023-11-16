@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../../hooks/useAuth';
 import toast from 'react-hot-toast';
+import axios from 'axios';
 
 
 const ratingStyle = {
@@ -15,10 +16,11 @@ const Reviews = () => {
 
     // ALL STATE ARE HERE
     const [submitLoading, setSubmitLoading] = useState(false)
-    const [rating, setRating] = useState(3);
+    const [rating, setRating] = useState(5);
 
     // IMPORT AUTHCONTEXT
     const { user } = useAuth()
+    console.log(user);
 
     // REACT HOOK FORM
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -33,7 +35,23 @@ const Reviews = () => {
 
         try {
 
-            // UPDATE USERNAME AFTER SIGNUP ON FIREBASE
+            if (!user) {
+                setSubmitLoading(false)
+                return toast.error('SIGNIN FIRST')
+            }
+
+            // USER REVEW ABOUT WEBSITE
+            await axios.post(`http://localhost:3000/reviews/${user?.email}`,
+                {
+                    email: user?.email,
+                    userName: user?.displayname,
+                    photo: user?.photoURL || '',
+                    rating: data.rating,
+                    suggetion: data.suggetion || '',
+                    review: data.comment,
+                    name: user?.displayName
+                }
+            )
             reset()
             toast.success('We Appriciate your opinion')
             setSubmitLoading(false)
@@ -54,7 +72,7 @@ const Reviews = () => {
                 <h4 className='lg:text-2xl'>Rate Us!</h4>
                 <Rating
                     style={{ maxWidth: 200 }}
-                    value={rating}
+                    value={rating || 3}
                     {...register("rating")}
                     onChange={setRating} itemStyles={ratingStyle} />
 
@@ -94,7 +112,7 @@ const Reviews = () => {
                     </div>
 
                 </div>
-                <input type="submit" value={submitLoading? 'Proccessing...' : 'Submit Review'} className='bg-primary-color px-5 py-2 rounded-md text-white cursor-pointer' />
+                <input type="submit" value={submitLoading ? 'Proccessing...' : 'Submit Review'} className='bg-primary-color px-5 py-2 rounded-md text-white cursor-pointer' />
             </form>
         </section>
     );

@@ -4,13 +4,12 @@
         "photo": "https://i.ibb.co/dcQF5QV/design-concept-illustration-idea-style-creativity-projects-613284-3229.jpg",
         "title": "Mastering Rule of Thirds: A Creative Approach",
         "description": "In this course, immerse yourself in the art of composition by mastering the Rule of Thirds. Learn to break free from traditional constraints and creatively apply this fundamental principle to elevate your photography. Through hands-on exercises and real-world applications, discover how the Rule of Thirds can become a powerful tool in your creative toolkit.",
+        "instructor": "Jane Doe",
+        "instructorEmail" : "janeDoe@gmail.com",
+        "instructorImage": "https://i.ibb.co/FhDh2rt/young-woman-forest-beauty-nature-generated-by-ai-188544-54423.jpg",
         "productCode": "4rd5s7",
         "duration": "8 weeks",
         "lectures": "24",
-        "instructors": [
-            "Emily Johnson",
-            "Michael Brown"
-        ],
         "schedule": [
             {
                 "day": "sat, Mon, Tue",
@@ -33,13 +32,13 @@
                 "rating": 5,
                 "userName": "Dmx Fahim",
                 "userImage": "https://i.ibb.co/qxqBp8m/800-1.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 5,
                 "userName": "Raja Den",
                 "userImage": "https://i.ibb.co/1LwtkcS/k1-instructors-skelby-640x640.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 200,
@@ -50,13 +49,12 @@
         "photo": "https://i.ibb.co/F32x95G/adult-woman-exuding-elegance-studio-portrait-generative-ai-188544-12091.jpg",
         "title": "Symmetry and Asymmetry in Composition",
         "description": "Unleash the visual power of symmetry and asymmetry in your photographs. This course delves deep into the principles of balance, exploring how symmetrical and asymmetrical compositions can evoke different emotions and add depth to your images. Through practical assignments and critiques, refine your ability to create compelling and harmonious compositions.",
+        "instructor": "Robert Smith",
+        "instructorEmail" : "rovertsmith@gmail.com",
+        "instructorImage": "https://i.ibb.co/fv0NsVQ/close-up-new-york-fashionable-man-with-yellow-costume-23-2150868116.jpg",
         "productCode": "45dpp7",
         "duration": "10 weeks",
         "lectures": "30",
-        "instructors": [
-            "Emily Johnson",
-            "Michael Brown"
-        ],
         "schedule": [
             {
                 "day": "sat, Mon, Tue",
@@ -79,16 +77,16 @@
                 "rating": 5,
                 "userName": "Jhon Wick",
                 "userImage": "https://i.ibb.co/6w1ChbW/800-5.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 5,
                 "userName": "Ibrahim Pasa",
                 "userImage": "https://i.ibb.co/8BcGfFx/800-4.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "enrolled": 200,
+        "enrolled": 205,
         "discount": "40"
     },
     {
@@ -96,13 +94,12 @@
         "photo": "https://i.ibb.co/p4qZscq/camera-palm-leaf-gloves-father-s-day-23-2147631252.jpg",
         "title": "Visual Storytelling through Composition Techniques",
         "description": "Transform your photography into a captivating narrative. Explore composition techniques that serve as building blocks for visual storytelling. From sequencing shots to framing techniques, discover how to craft a compelling story through your images. Engage in interactive projects that challenge you to convey emotions and messages through your compositions.",
+        "instructor": "Emily Johnson",
+        "instructorEmail": "emilyjohnson@gmail.com",
+        "instructorImage": "https://i.ibb.co/q9zrCXw/2150903249.jpg",
         "productCode": "4tt5s7",
         "duration": "10 weeks",
         "lectures": "30",
-        "instructors": [
-            "Emily Johnson",
-            "Michael Brown"
-        ],
         "schedule": [
             {
                 "day": "sat, Mon, Tue",
@@ -125,16 +122,16 @@
                 "rating": 5,
                 "userName": "Naisuf Endi",
                 "userImage": "https://i.ibb.co/vLvg1zt/800-6.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 5,
                 "userName": "Victoria",
                 "userImage": "https://i.ibb.co/Kzfyv8y/k1-instructors-ladler-640x640.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
-        "enrolled": 200,
+        "enrolled": 315,
         "discount": "40"
     },
     {
@@ -142,13 +139,12 @@
         "photo": "https://i.ibb.co/dcQF5QV/design-concept-illustration-idea-style-creativity-projects-613284-3229.jpg",
         "title": "Beyond Basics: Advanced Framing Strategies",
         "description": "Elevate your composition skills to the next level with advanced framing strategies. This course is designed for photographers seeking a deeper understanding of framing beyond the basics. Delve into topics such as framing within framing, layering, and unconventional approaches. Challenge yourself with complex assignments that push the boundaries of traditional framing techniques",
+        "instructor": "Michael Brown",
+        "instructorEmail": "michelbown@gmail.com",
+        "instructorImage": "https://i.ibb.co/4Z3QXkr/29249.jpg",
         "productCode": "453us7",
         "duration": "5 weeks",
         "lectures": "20",
-        "instructors": [
-            "Emily Johnson",
-            "Michael Brown"
-        ],
         "schedule": [
             {
                 "day": "sat, Mon, Tue",
@@ -171,13 +167,13 @@
                 "rating": 5,
                 "userName": "Bali Be",
                 "userImage": "https://i.ibb.co/wgr21yj/800-2.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 5,
                 "userName": "Hurram Sultan",
                 "userImage": "https://i.ibb.co/QNH0H6X/k1-instructors-kgreer-640x640.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 200,
@@ -188,13 +184,12 @@
         "photo": "https://i.ibb.co/M8vVV7k/flowers-branches-with-camera-table-23-2148043930.jpg",
         "title": "Dynamic Compositions in Landscape Photography",
         "description": "Take your landscape photography to new heights by mastering dynamic compositions. Explore how to capture the grandeur of nature through innovative framing and perspective. From leading lines to foreground interest, learn techniques that breathe life into your landscape images. Engage in field trips and projects to apply your newfound skills in real-world settings.",
+        "instructor": "Jessica Davis",
+        "instructorEmail": "jeccivadavis",
+        "instructorImage": "https://i.ibb.co/NYdGxZP/131222.jpg",
         "productCode": "45dod7",
         "duration": "10 weeks",
         "lectures": "30",
-        "instructors": [
-            "Emily Johnson",
-            "Michael Brown"
-        ],
         "schedule": [
             {
                 "day": "sat, Mon, Tue",
@@ -217,13 +212,13 @@
                 "rating": 5,
                 "userName": "Kalvi Zen",
                 "userImage": "https://i.ibb.co/0C5nY1j/k1-instructors-ksherk-640x640.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 5,
                 "userName": "Rimi Akter",
                 "userImage": "https://i.ibb.co/9HzMhY4/800-3.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 200,
@@ -234,13 +229,12 @@
         "photo": "https://i.ibb.co/Zcy6Cqx/arrangement-professional-photographer-equipment-23-2149033391.jpg",
         "title": "Mastering Advanced Lighting Techniques",
         "description": "Delve into the intricacies of advanced lighting techniques and elevate your photography to new heights. This course explores advanced concepts in natural and artificial lighting, guiding you through creative applications and real-world scenarios.",
+        "instructor": "William Taylor",
+        "instructorEmail": "williamtaylor@gmail.com",
+        "instructorImage": "https://i.ibb.co/wyfX5qT/2150911641.jpg",
         "productCode": "ALM2023",
         "duration": "10 weeks",
         "lectures": "30",
-        "instructors": [
-            "Sophie Martinez",
-            "Daniel White"
-        ],
         "schedule": [
             {
                 "day": "Mon, Wed, Fri",
@@ -263,13 +257,13 @@
                 "rating": 4.5,
                 "userName": "John Doe",
                 "userImage": "https://i.ibb.co/qxqBp8m/800-1.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 5,
                 "userName": "Vicky Zahid",
                 "userImage": "https://i.ibb.co/wgr21yj/800-2.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 150,
@@ -280,13 +274,12 @@
         "photo": "https://i.ibb.co/jyyDRf1/lamp-tripod-studio-23-2147785922.jpg",
         "title": "Creative Lighting Innovations: Pushing Boundaries",
         "description": "Unlock your creative potential with cutting-edge lighting innovations. This course introduces you to experimental lighting techniques, challenging norms, and fostering a unique style that sets your work apart.",
+        "instructor": "Olivia Anderson",
+        "instructorEmail": "olaviaanerson@gmail.com",
+        "instructorImage": "https://i.ibb.co/0ZHmp6W/2150911623.jpg",
         "productCode": "CLI2023",
         "duration": "12 weeks",
         "lectures": "36",
-        "instructors": [
-            "John Doe",
-            "Olivia Lee"
-        ],
         "schedule": [
             {
                 "day": "Tue, Thu",
@@ -309,13 +302,13 @@
                 "rating": 5,
                 "userName": "Alif Petter",
                 "userImage": "https://i.ibb.co/wgr21yj/800-2.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.8,
                 "userName": "Mekichulu",
                 "userImage": "https://i.ibb.co/qxqBp8m/800-1.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 180,
@@ -326,13 +319,12 @@
         "photo": "https://i.ibb.co/Zcy6Cqx/arrangement-professional-photographer-equipment-23-2149033391.jpg",
         "title": "Mastering Ambient Light: Techniques and Applications",
         "description": "Explore the nuances of ambient light in photography. This course provides a deep dive into utilizing natural light sources effectively, enhancing your skills in capturing moments with subtlety and precision.",
+        "instructor": "James Wilson",
+        "instructorEmail": "jameswillson@gmail.com",
+        "instructorImage": "https://i.ibb.co/b29hcqm/2150911625.jpg",
         "productCode": "ALM2023",
         "duration": "8 weeks",
         "lectures": "24",
-        "instructors": [
-            "Robert Miller",
-            "Emily Johnson"
-        ],
         "schedule": [
             {
                 "day": "Mon, Wed",
@@ -355,13 +347,13 @@
                 "rating": 4.9,
                 "userName": "Meherima Sultan",
                 "userImage": "https://i.ibb.co/0C5nY1j/k1-instructors-ksherk-640x640.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.7,
                 "userName": "Mahi Deran",
                 "userImage": "https://i.ibb.co/Kzfyv8y/k1-instructors-ladler-640x640.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 170,
@@ -372,12 +364,12 @@
         "photo": "https://i.ibb.co/7GNzT1G/photo-studio-with-white-panel-spotlights-107791-1163.jpg",
         "title": "Mastering Strobe Lighting: Precision and Creativity",
         "description": "Dive into the world of strobe lighting and master the art of precision and creativity. This course is designed for photographers seeking to harness the full potential of strobe lights in various settings and genres.",
+        "instructor": "Sophia Moore",
+        "instructorEmail": "sopiamoore@gmail.com",
+        "instructorImage": "https://i.ibb.co/jMZDYSd/33148.jpg",
         "productCode": "SLT2023",
         "duration": "10 weeks",
         "lectures": "30",
-        "instructors": [
-            "Sophia Garcia"
-        ],
         "schedule": [
             {
                 "day": "Tue, Thu",
@@ -400,13 +392,13 @@
                 "rating": 4.6,
                 "userName": "Michael Brown",
                 "userImage": "https://i.ibb.co/1LwtkcS/k1-instructors-skelby-640x640.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.8,
                 "userName": "Jahid Howlader",
                 "userImage": "https://i.ibb.co/6n0GS5c/Jahid-Howlader.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 160,
@@ -417,12 +409,12 @@
         "photo": "https://i.ibb.co/5jhWmt5/retoucher-putting-headset-working-project-drawing-with-stylus-pencil-482257-18779.jpg",
         "title": "Mastering Advanced Photo Editing Techniques",
         "description": "Unlock the full potential of your photographs through advanced editing techniques. This course delves into intricate post-processing methods, enabling you to enhance and transform your images with precision and creativity.",
+        "instructor": "Benjamin Lee",
+        "instructorEmail": "benjaminlee@gmail.com",
+        "instructorImage": "https://i.ibb.co/ZR9Cr0q/2150880478.jpg",
         "productCode": "APE2023",
         "duration": "8 weeks",
         "lectures": "25",
-        "instructors": [
-            "Emily Johnson"
-        ],
         "schedule": [
             {
                 "day": "Mon, Wed",
@@ -445,13 +437,13 @@
                 "rating": 4.7,
                 "userName": "mostafa",
                 "userImage": "https://i.ibb.co/6n0GS5c/Jahid-Howlader.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.9,
                 "userName": "Irun",
                 "userImage": "https://i.ibb.co/9HzMhY4/800-3.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 130,
@@ -462,13 +454,12 @@
         "photo": "https://i.ibb.co/g6tnLvQ/creative-videographer-editing-movie-computer-from-home-girlfriend-sofa-background-482257-31238.jpg",
         "title": "Color Grading and Correction Workshop",
         "description": "Immerse yourself in the world of color grading and correction. This workshop provides hands-on experience in enhancing the color balance, tone, and mood of your photographs. Discover techniques to achieve stunning visual effects.",
+        "instructor": "Emma Martinez",
+        "instructorEmail": "emmamartinex@gmail.com",
+        "instructorImage": "https://i.ibb.co/Vt9dW0m/close-up-man-smiling-cafe-23-2150771121.jpg",
         "productCode": "CGC2023",
         "duration": "6 weeks",
         "lectures": "20",
-        "instructors": [
-            "Sophie Martinez",
-            "Jahid Howlader"
-        ],
         "schedule": [
             {
                 "day": "Tue, Thu",
@@ -491,13 +482,13 @@
                 "rating": 4.8,
                 "userName": "Elena",
                 "userImage": "https://i.ibb.co/9HzMhY4/800-3.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.5,
                 "userName": "Molly Zaman",
                 "userImage": "https://i.ibb.co/QNH0H6X/k1-instructors-kgreer-640x640.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 110,
@@ -508,13 +499,12 @@
         "photo": "https://i.ibb.co/5jhWmt5/retoucher-putting-headset-working-project-drawing-with-stylus-pencil-482257-18779.jpg",
         "title": "Portrait Retouching Masterclass",
         "description": "Refine your portrait photography with advanced retouching techniques. This masterclass focuses on perfecting skin tones, removing imperfections, and enhancing facial features to create professional-quality portraits.",
+        "instructor": "Samuel Harris",
+        "instructorEmail": "samuelharris@gmail.com",
+        "instructorImage": "https://i.ibb.co/xMFLFtk/confident-businesswoman-suit-elegance-beauty-generated-by-ai-24640-81238.jpg",
         "productCode": "PRM2023",
         "duration": "10 weeks",
         "lectures": "30",
-        "instructors": [
-            "Daniel White",
-            "Vicky Zahid"
-        ],
         "schedule": [
             {
                 "day": "Mon, Wed, Fri",
@@ -537,13 +527,13 @@
                 "rating": 4.9,
                 "userName": "Vicky Zahid",
                 "userImage": "https://i.ibb.co/6n0GS5c/Jahid-Howlader.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.7,
                 "userName": "Jannatul ferdous",
                 "userImage": "https://i.ibb.co/7b2bX9K/m-h-blog-img-1.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 150,
@@ -554,12 +544,12 @@
         "photo": "https://i.ibb.co/F32x95G/adult-woman-exuding-elegance-studio-portrait-generative-ai-188544-12091.jpg",
         "title": "Photoshop for Photographers: Advanced Techniques",
         "description": "Unlock the full potential of Adobe Photoshop in your photography workflow. This course covers advanced techniques for photo manipulation, compositing, and creative editing, empowering you to take your skills to the next level.",
+        "instructor": "Ava White",
+        "instructorEmail": "avawhite@gmail.com",
+        "instructorImage": "https://i.ibb.co/WKT39X7/man-front-empire-state-building-23-2150897511.jpg",
         "productCode": "PPP2023",
         "duration": "12 weeks",
         "lectures": "35",
-        "instructors": [
-            "Olivia Lee"
-        ],
         "schedule": [
             {
                 "day": "Tue, Thu",
@@ -582,30 +572,29 @@
                 "rating": 4.8,
                 "userName": "User Name",
                 "userImage": "https://i.ibb.co/1rfRQDy/800.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.6,
                 "userName": "Carle Dom",
                 "userImage": "https://i.ibb.co/vLvg1zt/800-6.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 180,
         "discount": "25"
     },
     {
-        "category": "Portrait Photography Intensive", 
+        "category": "Portrait Photography Intensive",
         "photo": "https://i.ibb.co/g6tnLvQ/creative-videographer-editing-movie-computer-from-home-girlfriend-sofa-background-482257-31238.jpg",
         "title": "Mastering Environmental Portraiture",
         "description": "Refine your portrait photography with advanced retouching techniques. This masterclass focuses on perfecting skin tones, removing imperfections, and enhancing facial features to create professional-quality portraits.",
+        "instructor": "Daniel Clark",
+        "instructorEmail": "danielclark@gmail.com",
+        "instructorImage": "https://i.ibb.co/KmjYbFg/portrait-handsome-man-23-2150770971.jpg",
         "productCode": "PRM2023",
         "duration": "10 weeks",
         "lectures": "30",
-        "instructors": [
-            "Daniel White",
-            "Vicky Zahid"
-        ],
         "schedule": [
             {
                 "day": "Mon, Wed, Fri",
@@ -628,13 +617,13 @@
                 "rating": 4.9,
                 "userName": "Vicky Zahid",
                 "userImage": "https://i.ibb.co/6n0GS5c/Jahid-Howlader.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.7,
                 "userName": "Jannatul ferdous",
                 "userImage": "https://i.ibb.co/7b2bX9K/m-h-blog-img-1.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 150,
@@ -645,12 +634,12 @@
         "photo": "https://i.ibb.co/NVPJtx4/still-life-with-plants-deco-23-2149192206.jpg",
         "title": "Creative Studio Portraiture: Beyond the Basics",
         "description": "Unlock the full potential of Adobe Photoshop in your photography workflow. This course covers advanced techniques for photo manipulation, compositing, and creative editing, empowering you to take your skills to the next level.",
+        "instructor": "Mia Turner",
+        "instructorEmail": "miaturn@gmail.com",
+        "instructorImage": "https://i.ibb.co/7Y4hyNx/portrait-smiling-man-front-painting-23-2150771171.jpg",
         "productCode": "PPP2023",
         "duration": "12 weeks",
         "lectures": "35",
-        "instructors": [
-            "Olivia Lee"
-        ],
         "schedule": [
             {
                 "day": "Tue, Thu",
@@ -673,13 +662,13 @@
                 "rating": 4.8,
                 "userName": "User Name",
                 "userImage": "https://i.ibb.co/8BcGfFx/800-4.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.6,
                 "userName": "Carle Dom",
                 "userImage": "https://i.ibb.co/1rfRQDy/800.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 180,
@@ -690,13 +679,12 @@
         "photo": "https://i.ibb.co/y6v1L05/positive-female-tourist-with-photo-camera-travel-backpack-613910-7148.jpg",
         "title": "Advertising Photography Essentials",
         "description": "Refine your portrait photography with advanced retouching techniques. This masterclass focuses on perfecting skin tones, removing imperfections, and enhancing facial features to create professional-quality portraits.",
+        "instructor": "Christopher Parker",
+        "instructorEmail": "christoerpakerv@gmail.com",
+        "instructorImage": "https://i.ibb.co/6nvdfmT/close-up-businessman-smiling-23-2150771063.jpg",
         "productCode": "PRM2023",
         "duration": "10 weeks",
         "lectures": "30",
-        "instructors": [
-            "Daniel White",
-            "Vicky Zahid"
-        ],
         "schedule": [
             {
                 "day": "Mon, Wed, Fri",
@@ -719,13 +707,13 @@
                 "rating": 4.9,
                 "userName": "Vicky Zahid",
                 "userImage": "https://i.ibb.co/6n0GS5c/Jahid-Howlader.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.7,
                 "userName": "Jannatul ferdous",
                 "userImage": "https://i.ibb.co/7b2bX9K/m-h-blog-img-1.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 150,
@@ -736,12 +724,12 @@
         "photo": "https://i.ibb.co/JFs8ZM0/young-woman-black-t-shirt-with-camera-140725-12997.jpg",
         "title": "Corporate Headshots and Branding Photography",
         "description": "Unlock the full potential of Adobe Photoshop in your photography workflow. This course covers advanced techniques for photo manipulation, compositing, and creative editing, empowering you to take your skills to the next level.",
+        "instructor": "Lily King",
+        "instructorEmail": "lilyking@gmail.com",
+        "instructorImage": "https://i.ibb.co/TM3r93H/person-walking-new-york-city-23-2150863393.jpg",
         "productCode": "PPP2023",
         "duration": "12 weeks",
         "lectures": "35",
-        "instructors": [
-            "Olivia Lee"
-        ],
         "schedule": [
             {
                 "day": "Tue, Thu",
@@ -764,16 +752,32 @@
                 "rating": 4.8,
                 "userName": "User Name",
                 "userImage": "https://i.ibb.co/vhDgHJ4/amw-01-v2.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             },
             {
                 "rating": 4.6,
                 "userName": "Carle Dom",
                 "userImage": "https://i.ibb.co/rsbrQg0/Jahid-Howlader.jpg",
-                "reviewDecp" : "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+                "reviewDecp": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
             }
         ],
         "enrolled": 180,
         "discount": "25"
     }
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

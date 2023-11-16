@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
       {
         path: 'course/:_id',
         element: <SingleCourse />,
-        loader: ({ params }) => fetch(`http://localhost:3000/course/${params._id}`)
+        loader: ({ params }) => fetch(`https://snap-academy-server.vercel.app/course/${params._id}`)
       },
       {
         path: 'instructor',

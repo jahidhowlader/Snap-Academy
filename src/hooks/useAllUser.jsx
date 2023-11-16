@@ -7,7 +7,7 @@ const useAllUser = () => {
         queryKey: ['allUsers'],
         queryFn: async () => {
 
-            const result = await fetch('http://localhost:3000/allusers')
+            const result = await fetch('https://snap-academy-server.vercel.app/allusers')
             // setUserLoading(false)
             return result.json()
         }
