@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { HiOutlinePencilSquare } from 'react-icons/hi2';
 import Filter from './Filter';
-import Category from './category';
+import Category from './Category';
 import PriceRange from './PriceRange';
 import { motion } from "framer-motion"
 
