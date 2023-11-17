@@ -11,7 +11,7 @@ const MainLayout = () => {
                     <Navbar />
                 </nav>
 
-                <main className=' mx-auto'>
+                <main className='mx-auto'>
                     <Outlet />
                 </main>
             </div>

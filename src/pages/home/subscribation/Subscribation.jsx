@@ -12,8 +12,6 @@ const Subscribation = () => {
     // SUBMIT FOR SBSCRIBRATION
     const onSubmit = async (data) => {
 
-        console.log(data.email);
-
         try {
 
             await fetch('https://snap-academy-server.vercel.app/subscribation', {

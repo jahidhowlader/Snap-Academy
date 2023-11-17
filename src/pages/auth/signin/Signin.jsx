@@ -70,9 +70,9 @@ const Signin = () => {
                 {/* Main Content */}
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }} className="glass-content flex flex-col items-center shadow-sm border border-gray border-opacity-30 rounded xl:rounded-md">
                     <div className="lg:text-xl xl:text-2xl flex items-center gap-2 mt-5">
-                        <div>
+                        <Link to={'/'}>
                             <img src="/logo.svg" alt="logo" className="w-8 lg:w-10 bg-primary-color" />
-                        </div>
+                        </Link>
                         <h3 className="font-bold uppercase text-primary-color"><Link to='/'>Snap Academy</Link></h3>
                     </div>
 

@@ -6,7 +6,6 @@ import { Helmet } from "react-helmet-async";
 const SingleCourse = () => {
 
     const course = useLoaderData()
-    console.log(course);
 
     return (
         <>

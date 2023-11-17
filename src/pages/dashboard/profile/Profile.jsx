@@ -48,10 +48,15 @@ const Profile = () => {
     // SUBMIT FOR UPDATE USER INFO
     const onSubmit = async (data) => {
 
-        setSubmitLoading(true)
-
         const { firstname, lastname } = data
         let fullName = `${firstname} ${lastname}`
+
+        if(fullName.length <= 1 && !data?.photo){
+            return toast.error('You have no change.')
+        }
+
+        setSubmitLoading(true)
+
 
         if (fullName.length <= 1) {
             fullName = user?.displayName
@@ -80,15 +85,15 @@ const Profile = () => {
                 <title>Profile | Snap Academy</title>
             </Helmet>
 
-            <section className='grid lg:gap-5 my-container p- lg:px-0 my-5 lg:my-0'>
+            <section className='grid lg:gap-5 my-container lg:px-0 my-5 lg:my-0'>
 
-                <div className='rounded-md text-black text-opacity-80'>
+                <div className='rounded-md text-black text-opacity-80 mx-3'>
 
                     <h3 className='text-2xl uppercase mb-10'><span className='font-bold'>{user?.displayName} </span> Profile</h3>
 
                     <form onSubmit={handleSubmit(onSubmit)}>
 
-                        <div className='flex items-center justify-between gap-5'>
+                        <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5'>
                             <div>
                                 <h6 className='font-semibold'>Personal Info</h6>
                                 <p className='text-xs opacity-70'>Update your photo and personal details here</p>
@@ -156,14 +161,14 @@ const Profile = () => {
                                     name="email"
                                     placeholder="Email"
                                     defaultValue={user?.email}
-                                    className={`block px-3 py-1 border border-primary-color outline-primary-color rounded xl:rounded-md w-[280px] sm:w-full bg-transparent border-opacity-50 ${errors ? 'border-red focus:border-red focus:outline-red' : ''}`} disabled />
+                                    className={`block px-3 py-1 border border-primary-color outline-primary-color rounded xl:rounded-md w-[250px] sm:w-full bg-transparent border-opacity-50 ${errors ? 'border-red focus:border-red focus:outline-red' : ''}`} disabled />
                             </div>
                         </div>
 
                         <hr className='border opacity-5 my-5 ' />
 
                         {/* Change Photo Field */}
-                        <div className='lg:grid lg:grid-cols-9 '>
+                        <div className='grid lg:grid-cols-9 '>
                             <div className='lg:col-span-4'>
                                 <h6 className='font-semibold'>Your Photo</h6>
                                 <p className='text-xs opacity-70'>This photo will be displayed on your profile</p>
@@ -182,7 +187,7 @@ const Profile = () => {
                                         <div ></div>
                                         <div>
 
-                                            <input onChange={uploadImage} type="file" className='block' />
+                                            <input onChange={uploadImage} type="file" className='max-w-[200px] sm:w-full' />
                                         </div>
 
                                         <h6 className='font-semibold'>Click to upload</h6>

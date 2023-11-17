@@ -32,8 +32,8 @@ const ProductDetails = ({ course }) => {
                 </div>
                 <p>{course.description}</p>
 
-                <p><span className="text-primary-color font-medium">Product Code:</span> {course.productCode}</p>
-                <p><span className="text-primary-color font-medium">Availability:</span> {course.availability}</p>
+                <p><span className="text-primary-color font-semibold uppercase">instructor:</span> {course.instructor}</p>
+                <p><span className="text-primary-color font-semibold uppercase">Course Code:</span> {course.productCode}</p>
 
                 {/* PRICE */}
                 <div className="flex items-center gap-5 pb-5">
@@ -53,7 +53,7 @@ const ProductDetails = ({ course }) => {
                     </motion.button>
 
                     <div className="bg-white p-2 2xl:p-3 shadow-sm border border-gray border-opacity-30 rounded xl:rounded-md">
-                        <FaCartPlus  className="text-primary-color"/>
+                        <FaCartPlus className="text-primary-color" />
                     </div>
                 </div>
 
@@ -76,7 +76,7 @@ ProductDetails.propTypes = {
         title: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         photo: PropTypes.string.isRequired,
-        availability: PropTypes.string.isRequired,
+        instructor: PropTypes.string.isRequired,
         productCode: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
         oldPrice: PropTypes.number.isRequired,

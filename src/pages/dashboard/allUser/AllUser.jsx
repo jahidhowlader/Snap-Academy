@@ -66,14 +66,17 @@ const AllUser = () => {
     }
 
     return (
-        <section className="p-5 lg:p-0">
-            <div className="flex items-end justify-between">
-                <div className="relative cursor-pointer">
-                    {/* TODO: Search Implement */}
-                    <input type="text" className="border py-1 px-5 rounded-md outline-primary-color w-[250px]" placeholder="Search User" />
+        <section className="p-5 lg:p-0 overflow-auto">
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5">
+                <div className=" cursor-pointer">
+                    <div className="relative inline">
 
-                    <div className="h-full text-white absolute right-0 top-1/2 -translate-y-1/2 text pl-5">
-                        <FiSearch className="my-auto bg-primary-color h-full rounded-md rounded-l-none w-8 px-2" />
+                    {/* TODO: Search Implement */}
+                    <input type="text" className="border py-1 pl-8 pr-5 rounded-md outline-primary-color w-[250px]" placeholder="Search User" />
+
+                    <div className="h-full absolute left-0 top-1/2 -translate-y-1/2 text ">
+                        <FiSearch className="my-auto h-full rounded-md rounded-l-none w-8 px-2" />
+                    </div>
                     </div>
                 </div>
 

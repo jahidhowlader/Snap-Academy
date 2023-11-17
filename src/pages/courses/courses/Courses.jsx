@@ -15,11 +15,14 @@ const Courses = () => {
 
     // ALL STATE ARE HERE
     const [layout, setLayout] = useState(true)
-    const [selectedCategories, setSelectedCategories] = useState(['Creative Composition', 'Advanced Lighting']);
+    const [selectedCategories, setSelectedCategories] = useState([]);
 
 
     // use HOOK FOR GET ALL COURSES AND FUNCTIONALITY
-    const { courses, setCourses, minPrice, setMinPrice, maxPrice, setMaxPrice, sortingCourses, setSortingCourses, priceQuery, setPriceQuery, courseLoading, setCourseLoading, handlerSortingCourses } = useGetCourses()
+    const { courses, minPrice, setMinPrice, maxPrice, setMaxPrice, sortingCourses, setSortingCourses, priceQuery, setPriceQuery, courseLoading, setCourseLoading, handlerSortingCourses } = useGetCourses()
+
+    const filteredCourses = courses.filter(course => selectedCategories.includes(course.category))
+    // console.log(test);
 
     return (
         <>
@@ -63,7 +66,7 @@ const Courses = () => {
                                 </div>
                             </div>
 
-                            <p>Total Courses: {courses.length}</p>
+                            <p className='font-medium'>Total Courses: { selectedCategories.length === 0 ? courses.length : filteredCourses.length}</p>
                         </div>
 
                         {/* LAYOUT VIEW */}
@@ -113,8 +116,9 @@ const Courses = () => {
                                             {
                                                 sortingCourses == 'accending' ?
                                                     courses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <CourseCard key={course._id} course={course} button={true} />) : sortingCourses === 'descending' ?
-                                                        courses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <CourseCard key={course._id} course={course} button={true} />) :
-                                                        courses.map(course => <CourseCard key={course._id} course={course} button={true} />)
+                                                        courses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <CourseCard key={course._id} course={course} button={true} />) : selectedCategories.length >= 1 ?
+                                                            filteredCourses.map(course => <CourseCard key={course._id} course={course} button={true} />) :
+                                                            courses.map(course => <CourseCard key={course._id} course={course} button={true} />)
                                             }
 
                                         </motion.div>

@@ -10,8 +10,6 @@ const Offer = () => {
 
     const offerCourse = courses.filter(course => course.offer === 'yes')
 
-    console.log('offer', offerCourse);
-
     return (
         <section className='my-container sm:my-16 xl:my-24 2xl:my-32'>
             <h3 className='text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold text-green pb-3 lg:pb-8'>Special Offer</h3>

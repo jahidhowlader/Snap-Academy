@@ -1,37 +1,46 @@
+import { space } from 'postcss/lib/list';
 import PropTypes from 'prop-types';
 import { HiOutlineXMark } from 'react-icons/hi2';
 
-const Filter = ({ selectedCategories }) => {
+const Filter = ({ selectedCategories, setSelectedCategories }) => {
+
+    // HANDLER CLEAR FILTER
+    const handlerClearFilter = () => {
+        setSelectedCategories([])
+    }
+
+    // handlerRemoveFilter
+    const handlerRemoveFilter = (category) => {
+
+        setSelectedCategories(selectedCategories.filter((v) => v !== category));
+    }
 
     return (
-        <div className='p-5 pb-0 2xl:p-10 2xl:pb-0'>
+        <div className='p-5 pb-0 2xl:p-10 2xl:pb-0 h-56 sm:h-40 md:h-32 lg:h-64 2xl:h-72 overflow-hidden'>
             <div className='flex justify-between items-center'>
                 <h3 className='lg:text-lg 2xl:text-xl text-primary-color font-semibold'>Filter</h3>
-                <p className='text-xs'>Clear all</p>
+                <button onClick={handlerClearFilter} className='text-xs'>Clear all</button>
             </div>
 
             <div className='mt-5 list-none flex flex-wrap gap-2'>
 
                 {
-                    selectedCategories.map((category, idx) => <li
+                    selectedCategories.length < 1 ? <space className="opacity-60">You have not added any categories yet!</space> :selectedCategories.map((category, idx) => <li
                         key={idx}
                         className='bg-[#EAEAEA] py-1 pl-3 pr-2 rounded-full flex items-center gap-1 text-xs xl:text-sm'
                     >
-                        {category} <HiOutlineXMark className='text-sm ' />
-                    </li>)
+                        {category} <HiOutlineXMark onClick={() => handlerRemoveFilter(category)} className='text-sm cursor-pointer' />
+                    </li>
+                    )
                 }
-                {/* <li className='bg-[#EAEAEA] py-1 px-4 rounded-full flex items-center gap-1 text-xs xl:text-sm 2xl:text-base'>Creative Composition<HiOutlineXMark className='text-sm lg:text-base 2xl:text-xl' /></li>
-                <li className='bg-[#EAEAEA] py-1 px-4 rounded-full flex items-center gap-1 text-xs xl:text-sm 2xl:text-base'>Advanced Lighting<HiOutlineXMark className='text-sm lg:text-base 2xl:text-xl' /></li>
-                <li className='bg-[#EAEAEA] py-1 px-4 rounded-full flex items-center gap-1 text-xs xl:text-sm 2xl:text-base'>Post-Processing<HiOutlineXMark className='text-sm lg:text-base 2xl:text-xl' /></li>
-                <li className='bg-[#EAEAEA] py-1 px-4 rounded-full flex items-center gap-1 text-xs xl:text-sm 2xl:text-base'>Photography Intensive<HiOutlineXMark className='text-sm lg:text-base 2xl:text-xl' /></li>
-                <li className='bg-[#EAEAEA] py-1 px-4 rounded-full flex items-center gap-1 text-xs xl:text-sm 2xl:text-base'>Commercial Photography<HiOutlineXMark className='text-sm lg:text-base 2xl:text-xl' /></li> */}
             </div>
         </div>
     );
 };
 
 Filter.propTypes = {
-    selectedCategories: PropTypes.array.isRequired
+    selectedCategories: PropTypes.array.isRequired,
+    setSelectedCategories: PropTypes.func.isRequired
 };
 
 export default Filter;

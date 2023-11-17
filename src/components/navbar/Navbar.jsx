@@ -6,6 +6,8 @@ import { AuthContext } from "../../providers/AuthProvider";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
 
+// const innerHeight = window.innerHeight === 1500
+
 const Navbar = () => {
 
     // All State are here
@@ -32,9 +34,9 @@ const Navbar = () => {
 
             {/* LOGO */}
             <div className="lg:text-xl xl:text-2xl flex items-center gap-2 text-white">
-                <div>
-                    <img src="/public/test1.svg" alt="logo" className="w-8 lg:w-12 shadow-2xl bg-white " />
-                </div>
+                <Link to={'/'}>
+                    <img src="/logoM.svg" alt="logo" className="w-8 lg:w-12 shadow-2xl bg-white" />
+                </Link>
                 <h3 className="font-bold uppercase"><Link to='/'>Snap Academy</Link></h3>
             </div>
 

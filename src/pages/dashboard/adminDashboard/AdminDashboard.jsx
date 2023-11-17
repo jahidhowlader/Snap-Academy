@@ -4,8 +4,6 @@ const AdminDashboard = () => {
 
     const { allUsers, allCourses } = useRetriveDataFromDB()
 
-    console.log('8', allCourses);
-
     return (
         <section>
             <div className='grid sm:grid-cols-2 xl:grid-cols-4 xl:items-center xl:justify-between gap-5 lg:gap-10 w-full px-5 xl:px-0 lg:mx-0 mt-5'>

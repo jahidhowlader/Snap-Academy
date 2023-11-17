@@ -74,7 +74,7 @@ const Control = ({ selectedCategories, setSelectedCategories, priceQuery, setPri
             <div className='shadow-sm border border-gray border-opacity-30 lg:col-span-2  bg-white rounded xl:rounded-md hidden sm:block' >
 
                 {/* Filtering */}
-                <Filter selectedCategories={selectedCategories} />
+                <Filter selectedCategories={selectedCategories} setSelectedCategories={setSelectedCategories} />
 
                 <hr className='my-7 border border-gray opacity-20' />
 

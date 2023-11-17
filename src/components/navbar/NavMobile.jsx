@@ -22,7 +22,7 @@ const NavMobile = ({ isOpen, setIsOpen }) => {
             {
                 isOpen && (
                     <>
-                        <motion.div variants={open} initial="initial" animate="animate" className="fixed top-0 right-0 bg-primary-color text-white h-full w-10/12 rounded-xl rounded-r-none z-[40] flex flex-col justify-start items-end">
+                        <motion.div variants={open} initial="initial" animate="animate" className="fixed top-0 right-0 bg-primary-color text-white h-full w-10/12 rounded rounded-r-none z-[40] flex flex-col justify-start items-end">
 
                             <div className="top-2 right-2 fixed">
                                 <HiOutlineXMark className='text-3xl' onClick={() => setIsOpen(false)} />
@@ -30,9 +30,9 @@ const NavMobile = ({ isOpen, setIsOpen }) => {
 
                             {/* Website Name */}
                             <div className="pt-20 pr-10 border-b flex items-center gap-2 pb-2">
-                                <div>
-                                    <img src="/logoWhite.svg" alt="logo" className="w-8 lg:w-10 " />
-                                </div>
+                                <Link to={'/'}>
+                                    <img src="/logo-white.svg" alt="logo" className="w-8 lg:w-10 bg-white" />
+                                </Link>
                                 <h3 className="font-bold uppercase text-right  text-xl">Snap Academy</h3>
                             </div>
 
@@ -41,7 +41,7 @@ const NavMobile = ({ isOpen, setIsOpen }) => {
                                 className="text-xl text-right pt-5 pr-10 space-y-2 uppercase"
                                 initial={{ x: 100, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
-                                transition={{ delay: .1, duration: 1 }}
+                                transition={{ delay: .1, duration: .6 }}
                             >
                                 {/* {navLink} */}
                                 <li><Link to='/'  >Home</Link></li>

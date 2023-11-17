@@ -21,7 +21,6 @@ const Reviews = () => {
 
     // IMPORT AUTHCONTEXT
     const { user } = useAuth()
-    console.log(user);
 
     // REACT HOOK FORM
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -32,7 +31,6 @@ const Reviews = () => {
         setSubmitLoading(true)
 
         data.rating = rating
-        console.log(data);
 
         try {
 
@@ -42,7 +40,7 @@ const Reviews = () => {
             }
 
             // USER REVEW ABOUT WEBSITE
-            await axios.post(`http://localhost:3000/reviews/${user?.email}`,
+            await axios.post(`https://snap-academy-server.vercel.app/reviews/${user?.email}`,
                 {
                     email: user?.email,
                     userName: user?.displayname,

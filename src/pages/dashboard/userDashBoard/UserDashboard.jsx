@@ -21,7 +21,7 @@ const UserDashboard = () => {
                 <title>Dashboard | Snap Academy</title>
             </Helmet>
 
-            <section>
+            <section className="p-3 lg:p-0">
                 <div className='grid sm:grid-cols-2 xl:items-center xl:justify-between gap-5 lg:gap-10 w-full px-2 lg:mx-0 mt-5'>
 
                     <div className='bg-green bg-opacity-70 w-full h-[150px] flex flex-col justify-center items-center rounded xl:rounded-md text-white uppercase'>

@@ -42,7 +42,7 @@ const Tabs = ({ course }) => {
 };
 
 Tabs.propTypes = {
-    course: PropTypes.array.isRequired
+    course: PropTypes.object.isRequired
 };
 
 export default Tabs;

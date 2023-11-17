@@ -28,7 +28,7 @@ const CourseCard = ({ course, button }) => {
                 button ? (
                     <Link to={`/course/${course._id}`}>
                         <div className=' overflow-hidden'>
-                            <img src={course.photo} alt="" className=' h-[190px] sm:h-[220px] lg:h-[180px] xl:h-[200px] 2xl:h-[180px] w-full hover:scale-125 duration-[2000ms] object-cover rounded ' />
+                            <img src={course.photo} alt="" className=' h-[190px] sm:h-[220px] lg:h-[180px] xl:h-[200px] 2xl:h-[180px] w-full hover:scale-105 duration-[2000ms] object-cover rounded ' />
                         </div>
                     </Link>
                 ) : (

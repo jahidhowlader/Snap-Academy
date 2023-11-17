@@ -17,19 +17,19 @@ const DespCourseCard = ({ course }) => {
     const { storedCart, handlerAddToCart } = useAddToCart()
 
     return (
-        <div className='bg-white rounded-xl p-[14px] md:grid md:grid-cols-5 md:items-center xl:items-start gap-5 md:gap-10 shadow-md mb-5'>
+        <div className='bg-white shadow-sm border border-gray border-opacity-30 rounded xl:rounded-md p-2 md:grid md:grid-cols-5 md:items-center xl:items-start gap-5 md:gap-10 mb-5'>
 
             {/* Card Image */}
-            <div className='rounded-xl overflow-hidden md:col-span-2 md:h-[180px] xl:h-[230px] w-full 2xl:h-[250px]'>
+            <div className='rounded xl:rounded-md overflow-hidden md:col-span-2 md:h-[180px] xl:h-[230px] w-full 2xl:h-[250px]'>
                 <Link to={`/course/${course._id}`}>
-                    <img src={course.photo} alt={course.title} className=' rounded-xl h-full w-full hover:scale-125 duration-[2000ms]' />
+                    <img src={course.photo} alt={course.title} className='rounded xl:rounded-md h-full w-full hover:scale-105 duration-[2000ms]' />
                 </Link>
             </div>
 
             {/* Card Content */}
-            <div className=' text col-span-3 mt-5 md:mt-0'>
+            <div className=' text col-span-3 mt-5 md:mt-0 xl:mt-3 2xl:mt-5'>
                 <Link to={`/course/${course._id}`}>
-                    <h5 className='font-medium  text-lg xl:text-xl sm:text-2xl hover:underline'>{course.title}</h5>
+                    <h5 className='font-medium  text-lg md:text-xl sm:text-2xl  hover:underline'>{course.title}</h5>
                 </Link>
                 <p className='text-sm pt-2 opacity-80'>{course.description.slice(0, 150)}...</p>
                 <div className=' my-2'>
@@ -39,7 +39,7 @@ const DespCourseCard = ({ course }) => {
 
                 <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className={`${storedCart.includes(course._id) ? 'bg-black' : 'bg-primary-color hover:bg-opacity-90'} px-4 sm:px-6 py-1 sm:py-2 rounded-md text-white`}
+                    className={`${storedCart.includes(course._id) ? 'bg-black' : 'bg-primary-color hover:bg-opacity-90'} px-4 sm:px-6 py-1 xl:py-2 rounded xl:rounded-md text-white`}
                     onClick={() => handlerAddToCart(course._id)}
                     disabled={storedCart.includes(course._id)}
                 >

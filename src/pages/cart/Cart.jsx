@@ -53,9 +53,9 @@ const Cart = () => {
                 <title>Cart | Snap Academy</title>
             </Helmet>
 
-            <section className="my-[60px] overflow-scroll my-container">
+            <section className="my-[60px] my-container">
 
-                <div className={`w-full ${!updatedCartList?.length ? 'lg:h-[calc(100vh-500px)]' : 'lg:h-[calc(100vh-100px)]'}`}>
+                <div className={`w-full ${!updatedCartList?.length ? 'lg:h-[calc(100vh-500px)]' : 'lg:h-[calc(100vh-200px)]'}`}>
 
                     {
                         !updatedCartList?.length ?
@@ -67,7 +67,7 @@ const Cart = () => {
                             </> :
                             (
                                 <>
-                                    <div className="overflow-x-auto h-3/4">
+                                    <div className="overflow-x-auto h-3/4 bg-primary-color bg-opacity-5">
                                         {
                                             courseLoading ? <ViewCartSkeleton /> : (
                                                 <table className="w-full" id="cart">

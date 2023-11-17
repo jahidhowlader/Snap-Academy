@@ -19,16 +19,18 @@ import EnrolledHistort from "../pages/dashboard/enrolledHistory/EnrolledHistort"
 
 
 export const router = createBrowserRouter([
-  // ERROR 404
-  {
-    path: '*',
-    element: <Error404 />
-  },
+
   // ROOT TOUTES
   {
+
     path: "/",
     element: <MainLayout />,
     children: [
+      // ERROR 404
+      {
+        path: '*',
+        element: <Error404 />
+      },
       {
         path: '/',
         element: <Home />
@@ -50,6 +52,7 @@ export const router = createBrowserRouter([
         path: 'cart',
         element: <Cart />
       },
+      // AUTHENTICATION
       {
         path: 'auth/signin',
         element: <Signin />
@@ -64,24 +67,7 @@ export const router = createBrowserRouter([
       }
     ]
   },
-  // AUTHENTICATION
-  // {
-  //   path: 'auth',
-  //   children: [
-  //     {
-  //       path: 'signin',
-  //       element: <Signin />
 
-  //     }, {
-  //       path: 'signup',
-  //       element: <Signup />
-  //     },
-  //     {
-  //       path: 'forgotPassword',
-  //       element: <ForgotPassword />
-  //     },
-  //   ]
-  // },
   // DASHBOARD ROUTES
   {
     path: 'dashboard',
@@ -115,7 +101,6 @@ export const router = createBrowserRouter([
         path: 'allUsers',
         element: <AllUser />
       }
-
     ]
   }
 ]);
