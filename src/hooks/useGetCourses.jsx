@@ -28,7 +28,7 @@ const useGetCourses = () => {
         setSortingCourses(e.target.value)
     }
 
-    return { courses, minPrice, setMinPrice, maxPrice, setMaxPrice, sortingCourses, setSortingCourses, priceQuery, setPriceQuery, courseLoading, setCourseLoading, handlerSortingCourses }
+    return { courses,setCourses, minPrice, setMinPrice, maxPrice, setMaxPrice, sortingCourses, setSortingCourses, priceQuery, setPriceQuery, courseLoading, setCourseLoading, handlerSortingCourses }
 };
 
 export default useGetCourses;

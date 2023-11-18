@@ -1,8 +1,7 @@
-import { HiBars3BottomRight, HiMiniMagnifyingGlass, HiOutlineShoppingCart, HiOutlineUser } from "react-icons/hi2";
-import { useContext, useState } from "react";
+import { HiBars3BottomRight, HiOutlineShoppingCart } from "react-icons/hi2";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import NavMobile from "./NavMobile";
-import { AuthContext } from "../../providers/AuthProvider";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
 

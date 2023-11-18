@@ -1,4 +1,3 @@
-import { space } from 'postcss/lib/list';
 import PropTypes from 'prop-types';
 import { HiOutlineXMark } from 'react-icons/hi2';
 

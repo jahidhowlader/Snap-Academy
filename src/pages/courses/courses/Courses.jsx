@@ -2,7 +2,7 @@ import './Courses.css'
 import Control from '../control/Control';
 import Refferal from '../refferal/Refferal';
 import CourseCard from '../courseCard/CourseCard';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from "framer-motion"
 import DespCourseCard from '../despCourseCard/DespCourseCard';
 import { Helmet } from 'react-helmet-async';
@@ -19,10 +19,19 @@ const Courses = () => {
 
 
     // use HOOK FOR GET ALL COURSES AND FUNCTIONALITY
-    const { courses, minPrice, setMinPrice, maxPrice, setMaxPrice, sortingCourses, setSortingCourses, priceQuery, setPriceQuery, courseLoading, setCourseLoading, handlerSortingCourses } = useGetCourses()
+    const { courses, setCourses, minPrice, maxPrice, sortingCourses, priceQuery, setPriceQuery, courseLoading, handlerSortingCourses } = useGetCourses()
 
-    const filteredCourses = courses.filter(course => selectedCategories.includes(course.category))
-    // console.log(test);
+    const filteredCourses = courses && courses.filter(course => selectedCategories.includes(course.category))
+
+    // USE
+    // useEffect(() => {
+
+    //     const updatedCourses = selectedCategories.length > 0 ? filteredCourses : courses;
+    //     setCourses(updatedCourses);
+
+    // }, [selectedCategories, filteredCourses, courses, setCourses]);
+
+    // console.log(selectedCategories >= );
 
     return (
         <>
@@ -66,7 +75,7 @@ const Courses = () => {
                                 </div>
                             </div>
 
-                            <p className='font-medium'>Total Courses: { selectedCategories.length === 0 ? courses.length : filteredCourses.length}</p>
+                            <p className='font-medium'>Total Courses: {selectedCategories?.length === 0 ? courses?.length : filteredCourses?.length}</p>
                         </div>
 
                         {/* LAYOUT VIEW */}
@@ -114,23 +123,55 @@ const Courses = () => {
                                             initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }}
                                         >
                                             {
-                                                sortingCourses == 'accending' ?
-                                                    courses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <CourseCard key={course._id} course={course} button={true} />) : sortingCourses === 'descending' ?
-                                                        courses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <CourseCard key={course._id} course={course} button={true} />) : selectedCategories.length >= 1 ?
-                                                            filteredCourses.map(course => <CourseCard key={course._id} course={course} button={true} />) :
-                                                            courses.map(course => <CourseCard key={course._id} course={course} button={true} />)
+                                                (sortingCourses === 'accending') && selectedCategories?.length < 1
+                                                    ?
+                                                    courses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <CourseCard key={course._id} course={course} button={true} />)
+                                                    :
+                                                    (sortingCourses === 'accending') && selectedCategories?.length >= 1
+                                                        ?
+                                                        filteredCourses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <CourseCard key={course._id} course={course} button={true} />)
+                                                        :
+                                                        (sortingCourses === 'descending' && selectedCategories?.length < 1)
+                                                            ?
+                                                            courses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <CourseCard key={course._id} course={course} button={true} />)
+                                                            :
+                                                            (sortingCourses === 'descending' && selectedCategories?.length >= 1)
+                                                                ?
+                                                                filteredCourses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <CourseCard key={course._id} course={course} button={true} />)
+                                                                :
+                                                                selectedCategories?.length >= 1
+                                                                    ?
+                                                                    filteredCourses.map(course => <CourseCard key={course._id} course={course} button={true} />)
+                                                                    :
+                                                                    courses.map(course => <CourseCard key={course._id} course={course} button={true} />)
                                             }
-
                                         </motion.div>
                                     </>
                                 ) : (
                                     <>
                                         <div className='space-y-5'>
                                             {
-                                                sortingCourses == 'accending' ?
-                                                    courses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <DespCourseCard key={course._id} course={course} />) : sortingCourses === 'descending' ?
-                                                        courses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <DespCourseCard key={course._id} course={course} />) :
-                                                        courses.map(course => <DespCourseCard key={course._id} course={course} />)
+                                                (sortingCourses === 'accending') && selectedCategories?.length < 1
+                                                    ?
+                                                    courses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <DespCourseCard key={course._id} course={course} button={true} />)
+                                                    :
+                                                    (sortingCourses === 'accending') && selectedCategories?.length >= 1
+                                                        ?
+                                                        filteredCourses.slice().sort((a, b) => a.title.localeCompare(b.title)).map(course => <DespCourseCard key={course._id} course={course} button={true} />)
+                                                        :
+                                                        (sortingCourses === 'descending' && selectedCategories?.length < 1)
+                                                            ?
+                                                            courses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <DespCourseCard key={course._id} course={course} button={true} />)
+                                                            :
+                                                            (sortingCourses === 'descending' && selectedCategories?.length >= 1)
+                                                                ?
+                                                                filteredCourses.slice().sort((a, b) => b.title.localeCompare(a.title)).map(course => <DespCourseCard key={course._id} course={course} button={true} />)
+                                                                :
+                                                                selectedCategories?.length >= 1
+                                                                    ?
+                                                                    filteredCourses.map(course => <DespCourseCard key={course._id} course={course} button={true} />)
+                                                                    :
+                                                                    courses.map(course => <DespCourseCard key={course._id} course={course} button={true} />)
                                             }
                                         </div>
                                     </>
