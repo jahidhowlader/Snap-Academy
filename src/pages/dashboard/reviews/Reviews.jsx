@@ -13,6 +13,16 @@ const ratingStyle = {
     inactiveFillColor: '#fbf1a9'
 }
 
+// GET TOKEN FROM LOCAL STORAGE
+const token = localStorage.getItem('access-token')
+
+const axiosConfig = {
+    headers: {
+        authorization: token
+    },
+};
+
+
 const Reviews = () => {
 
     // ALL STATE ARE HERE
@@ -49,7 +59,8 @@ const Reviews = () => {
                     suggetion: data.suggetion || '',
                     review: data.comment,
                     name: user?.displayName
-                }
+                },
+                axiosConfig
             )
             reset()
             toast.success('We Appriciate your opinion')
@@ -58,7 +69,7 @@ const Reviews = () => {
         } catch (e) {
 
             toast.error(e.code);
-            console.log(e.code);
+            console.log(e);
             setSubmitLoading(false)
         }
     }

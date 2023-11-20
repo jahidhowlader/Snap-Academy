@@ -2,6 +2,7 @@ import { createUserWithEmailAndPassword, deleteUser, FacebookAuthProvider, getAu
 import { createContext, useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import { app } from "../config/firebase.config";
+import axios from "axios";
 
 export const AuthContext = createContext(null)
 
@@ -73,8 +74,19 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
 
         const unsubscriber = onAuthStateChanged(auth, currentUser => {
-
             setUser(currentUser)
+
+            if (currentUser) {
+                axios.post('https://snap-academy-server.vercel.app/jwt', { email: currentUser.email })
+                    .then(data => {
+                        
+                        localStorage.setItem('access-token', data.data.token)
+                        setLoading(false)
+                    })
+            } else {
+                localStorage.removeItem('access-token')
+            }
+
             setLoading(false)
         })
 

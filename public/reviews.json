@@ -1,0 +1,50 @@
+[
+    {
+        "email": "johndoe@gmail.com",
+        "name": "John Doe",
+        "photo": "https://lh3.googleusercontent.com/a/ACg8ocICCX6QJI2PWoxRsp6e14yJw1JXRQIS-Q0HBHpohp4thh4=s96-c",
+        "rating": 5,
+        "suggetion": "Plz reduce your Course Price",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum commodi culpa laudantium, reiciendis suscipit deleniti molestias tempore corporis dignissimos?"
+    },
+    {
+        "email": "jessica2233@gmail.com",
+        "name": "Jesicca Yasmin",
+        "photo": "https://lh3.googleusercontent.com/a/ACg8ocICCX6QJI2PWoxRsp6e14yJw1JXRQIS-Q0HBHpohp4thh4=s96-c",
+        "rating": 5,
+        "suggetion": "Plz reduce your Course Price",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum commodi culpa laudantium, reiciendis suscipit deleniti molestias tempore corporis dignissimos?"
+    },
+    {
+        "email": "johonsmith@gmail.com",
+        "name": "John Smith",
+        "photo": "https://lh3.googleusercontent.com/a/ACg8ocICCX6QJI2PWoxRsp6e14yJw1JXRQIS-Q0HBHpohp4thh4=s96-c",
+        "rating": 5,
+        "suggetion": "Plz reduce your Course Price",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum commodi culpa laudantium, reiciendis suscipit deleniti molestias tempore corporis dignissimos?"
+    },
+    {
+        "email": "leurejs@gmail.com",
+        "name": "Leurew Hill ",
+        "photo": "https://lh3.googleusercontent.com/a/ACg8ocICCX6QJI2PWoxRsp6e14yJw1JXRQIS-Q0HBHpohp4thh4=s96-c",
+        "rating": 5,
+        "suggetion": "Plz reduce your Course Price",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum commodi culpa laudantium, reiciendis suscipit deleniti molestias tempore corporis dignissimos?"
+    },
+    {
+        "email": "Ibrahimpasha@gmail.com",
+        "name": "Ibrahim Pasha",
+        "photo": "https://lh3.googleusercontent.com/a/ACg8ocICCX6QJI2PWoxRsp6e14yJw1JXRQIS-Q0HBHpohp4thh4=s96-c",
+        "rating": 5,
+        "suggetion": "Plz reduce your Course Price",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum commodi culpa laudantium, reiciendis suscipit deleniti molestias tempore corporis dignissimos?"
+    },
+    {
+        "email": "hurramsultam@gmail.com",
+        "name": "Hurram Sultan",
+        "photo": "https://lh3.googleusercontent.com/a/ACg8ocICCX6QJI2PWoxRsp6e14yJw1JXRQIS-Q0HBHpohp4thh4=s96-c",
+        "rating": 5,
+        "suggetion": "Plz reduce your Course Price",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum commodi culpa laudantium, reiciendis suscipit deleniti molestias tempore corporis dignissimos?"
+    }
+]

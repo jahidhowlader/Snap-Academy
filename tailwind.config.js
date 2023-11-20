@@ -9,7 +9,6 @@ export default {
       'primary-color': '#0F5259',
       'black': '#111',
       'white': '#fff',
-      'green': '#1B463C',
       'light-green': '#3B8900',
       'gray': '#808080',
       'error': '#F23030'

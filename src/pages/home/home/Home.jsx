@@ -4,6 +4,7 @@ import Collection from "../collection/Collection";
 import Offer from "../offer/Offer";
 import PopularCourse from "../popularCourse/PopularCourse";
 import VideoInformation from "../videoInformation/VideoInformation";
+import Testimonial from "../testimonial/Testimonial";
 
 const Home = () => {
     return (
@@ -21,7 +22,10 @@ const Home = () => {
             <PopularCourse />
             <VideoInformation />
             {/* <Collection /> */}
+            
             {/* TODO: TESTIMONIAL */}
+            <Testimonial />
+
         </>
     );
 };

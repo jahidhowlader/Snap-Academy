@@ -27,7 +27,7 @@ const Instructor = () => {
                 <title>Instructor | Snap Academy</title>
             </Helmet>
 
-            <section className="columns-2 lg:columns-5 space-y-5 rounded xl:rounded-md gap-5 py-[40px] z-20 my-container">
+            <section className="columns-2 lg:columns-5 space-y-5 rounded xl:rounded-md gap-5 py-[40px] z-20 my-container mb-32">
                 {/* <motion.div
                 initial="hidden"
                 animate={isSlideVisible ? "visible" : "hidden"}

@@ -63,9 +63,9 @@ const Navbar = () => {
                     <HiOutlineShoppingCart className="w-6 h-6" />
                 </Link>
 
-                <Link to="/dashboard">
+                <Link to="/dashboard/profile">
                     <span className="w-6 h-6">
-                        <img src={user?.photoURL || '/user.png'} alt="profile" className='w-6 h-6 rounded-full' />
+                        <img src={user?.photoURL || '/user.png'} alt="profile" className='w-6 h-6 rounded-full object-cover' />
                     </span>
                 </Link>
 

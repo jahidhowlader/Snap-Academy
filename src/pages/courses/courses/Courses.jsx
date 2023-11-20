@@ -2,7 +2,7 @@ import './Courses.css'
 import Control from '../control/Control';
 import Refferal from '../refferal/Refferal';
 import CourseCard from '../courseCard/CourseCard';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { motion } from "framer-motion"
 import DespCourseCard from '../despCourseCard/DespCourseCard';
 import { Helmet } from 'react-helmet-async';
@@ -19,19 +19,10 @@ const Courses = () => {
 
 
     // use HOOK FOR GET ALL COURSES AND FUNCTIONALITY
-    const { courses, setCourses, minPrice, maxPrice, sortingCourses, priceQuery, setPriceQuery, courseLoading, handlerSortingCourses } = useGetCourses()
+    const { courses, minPrice, maxPrice, sortingCourses, priceQuery, setPriceQuery, courseLoading, handlerSortingCourses } = useGetCourses()
 
+    // FILTER COURSE EHEN USER SELECTED CATEGORY
     const filteredCourses = courses && courses.filter(course => selectedCategories.includes(course.category))
-
-    // USE
-    // useEffect(() => {
-
-    //     const updatedCourses = selectedCategories.length > 0 ? filteredCourses : courses;
-    //     setCourses(updatedCourses);
-
-    // }, [selectedCategories, filteredCourses, courses, setCourses]);
-
-    // console.log(selectedCategories >= );
 
     return (
         <>

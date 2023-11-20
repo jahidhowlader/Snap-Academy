@@ -71,12 +71,12 @@ const AllUser = () => {
                 <div className=" cursor-pointer">
                     <div className="relative inline">
 
-                    {/* TODO: Search Implement */}
-                    <input type="text" className="border py-1 pl-8 pr-5 rounded-md outline-primary-color w-[250px]" placeholder="Search User" />
+                        {/* TODO: Search Implement */}
+                        <input type="text" className="border py-1 pl-8 pr-5 rounded-md outline-primary-color w-[250px]" placeholder="Search User" />
 
-                    <div className="h-full absolute left-0 top-1/2 -translate-y-1/2 text ">
-                        <FiSearch className="my-auto h-full rounded-md rounded-l-none w-8 px-2" />
-                    </div>
+                        <div className="h-full absolute left-0 top-1/2 -translate-y-1/2 text ">
+                            <FiSearch className="my-auto h-full rounded-md rounded-l-none w-8 px-2" />
+                        </div>
                     </div>
                 </div>
 
@@ -104,21 +104,21 @@ const AllUser = () => {
 
                             {/* row 1 */}
                             {
-                                allUser.map((user, idx) => <tr
+                                Array.isArray(allUser) && allUser.map((user, idx) => <tr
                                     key={user._id}
                                 >
                                     <td >{idx + 1}</td>
-                                    <td className="w-1/3">{user.email}</td>
-                                    <td>{user.name}</td>
-                                    <td className="font-bold">{user.role}</td>
+                                    <td className="w-1/3">{user?.email}</td>
+                                    <td>{user?.name}</td>
+                                    <td className="font-bold">{user?.role}</td>
                                     <td className="space-x-0  lg:space-x-0 xl:space-x-2">
 
-                                        <button onClick={() => handlerChangeRoleUser(user)} className={`${user.role === 'user' ? 'bg-gray' : 'bg-black'} px-2 text-white rounded xl:rounded-md text-sm`} disabled={user.role === 'user' ? true : false}>User</button>
+                                        <button onClick={() => handlerChangeRoleUser(user)} className={`${user?.role === 'user' ? 'bg-gray' : 'bg-black'} px-2 text-white rounded xl:rounded-md text-sm`} disabled={user?.role === 'user' ? true : false}>User</button>
 
-                                        <button onClick={() => handlerChangeRoleAdmin(user)} className={`${user.role === 'admin' ? 'bg-gray' : 'bg-light-green'} px-2 text-white rounded xl:rounded-md text-sm`} disabled={user.role === 'admin' ? true : false}>Admin</button>
+                                        <button onClick={() => handlerChangeRoleAdmin(user)} className={`${user?.role === 'admin' ? 'bg-gray' : 'bg-light-green'} px-2 text-white rounded xl:rounded-md text-sm`} disabled={user?.role === 'admin' ? true : false}>Admin</button>
                                     </td>
                                     <td>
-                                        <button onClick={() => handlerUserDelete(user.email)} className="bg-error px-2 text-white rounded-md text-sm">Remove</button>
+                                        <button onClick={() => handlerUserDelete(user?.email)} className="bg-error px-2 text-white rounded-md text-sm">Remove</button>
                                     </td>
                                 </tr>)
                             }

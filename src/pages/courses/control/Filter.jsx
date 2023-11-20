@@ -24,7 +24,7 @@ const Filter = ({ selectedCategories, setSelectedCategories }) => {
             <div className='mt-5 list-none flex flex-wrap gap-2'>
 
                 {
-                    selectedCategories.length < 1 ? <space className="opacity-60">You have not added any categories yet!</space> :selectedCategories.map((category, idx) => <li
+                    selectedCategories.length < 1 ? <span className="opacity-60">You have not added any categories yet!</span> : selectedCategories.map((category, idx) => <li
                         key={idx}
                         className='bg-[#EAEAEA] py-1 pl-3 pr-2 rounded-full flex items-center gap-1 text-xs xl:text-sm'
                     >

@@ -16,13 +16,13 @@ import Reviews from "../pages/dashboard/reviews/Reviews";
 import AdminDashboard from "../pages/dashboard/adminDashboard/AdminDashboard";
 import UserDashboard from "../pages/dashboard/userDashBoard/UserDashboard";
 import EnrolledHistort from "../pages/dashboard/enrolledHistory/EnrolledHistort";
+import PrivateRoute from "./PrivateRoute";
 
 
 export const router = createBrowserRouter([
 
   // ROOT TOUTES
   {
-
     path: "/",
     element: <MainLayout />,
     children: [
@@ -71,7 +71,7 @@ export const router = createBrowserRouter([
   // DASHBOARD ROUTES
   {
     path: 'dashboard',
-    element: <DashboardLayout />,
+    element: <PrivateRoute><DashboardLayout /></PrivateRoute>,
     children: [
       {
         path: 'admin',
@@ -79,23 +79,23 @@ export const router = createBrowserRouter([
       },
       {
         path: 'user',
-        element: <UserDashboard />
+        element: <PrivateRoute><UserDashboard /></PrivateRoute>
       },
       {
         path: 'profile',
-        element: <Profile />
+        element: <PrivateRoute><Profile /></PrivateRoute>
       },
       {
         path: 'review',
-        element: <Reviews />
+        element: <PrivateRoute><Reviews /></PrivateRoute>
       },
       {
         path: 'enrolledHistory',
-        element: <EnrolledHistort />
+        element: <PrivateRoute><EnrolledHistort /></PrivateRoute>
       },
       {
         path: 'cart',
-        element: <Cart />
+        element: <PrivateRoute><Cart /></PrivateRoute>
       },
       {
         path: 'allUsers',

@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../../../components/socialLogin/SocialLogin';
 import { useForm } from 'react-hook-form';
-import { HiEye, HiEyeSlash, HiMiniHome } from 'react-icons/hi2';
+import { HiEye, HiEyeSlash } from 'react-icons/hi2';
 import { useState } from 'react';
 import '../auth.css'
 import toast from 'react-hot-toast';
@@ -38,7 +38,7 @@ const Signin = () => {
         try {
 
             await signIn(email, password)
-            toast.success('Successfully Createed Account.');
+            toast.success('Successfully Signin.');
             reset()
             navigate(from, { replace: true });
             setSubmitLoading(false)

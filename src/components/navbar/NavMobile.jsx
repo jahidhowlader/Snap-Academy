@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { HiOutlineXMark } from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import useAuth from "../../hooks/useAuth";
 
 const open = {
     initial: {
@@ -17,6 +18,22 @@ const open = {
 }
 
 const NavMobile = ({ isOpen, setIsOpen }) => {
+
+    // IMPORT USER FROM useAUTH HOOK
+    const { user, logOut } = useAuth()
+
+    // Handler Logout
+    const handlerLogout = async () => {
+
+        try {
+            await logOut()
+            toast.success('Successfully Signout')
+
+        } catch (e) {
+            toast.error(e.code);
+        }
+    }
+
     return (
         <>
             {
@@ -31,7 +48,7 @@ const NavMobile = ({ isOpen, setIsOpen }) => {
                             {/* Website Name */}
                             <div className="pt-20 pr-10 border-b flex items-center gap-2 pb-2">
                                 <Link to={'/'}>
-                                    <img src="/logo-white.svg" alt="logo" className="w-8 lg:w-10 bg-white" />
+                                    <img src="/logoM.svg" alt="logo" className="w-8 lg:w-10 bg-white" />
                                 </Link>
                                 <h3 className="font-bold uppercase text-right  text-xl">Snap Academy</h3>
                             </div>
@@ -47,7 +64,15 @@ const NavMobile = ({ isOpen, setIsOpen }) => {
                                 <li><Link to='/'  >Home</Link></li>
                                 <li><Link to='/courses'>Courses</Link></li>
                                 <li><Link to='/instructor'>Instructor</Link></li>
-                                <li><Link to='/auth/signin'>Signin</Link></li>
+                                {
+                                    user ? (
+                                        <>
+                                            <li><Link to='/dashboard/profile'>Profile</Link></li>
+                                            <li><Link to='/'><button onClick={handlerLogout} className="uppercase">Signout</button></Link></li>
+                                        </>
+                                    ) :
+                                        <li><Link to='/auth/signin'>Signin</Link></li>
+                                }
                             </motion.ul>
 
                             <div className="flex flex-col items-center justify-center absolute bottom-0 left-7">

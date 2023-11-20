@@ -37,7 +37,7 @@ const ProductDetails = ({ course }) => {
 
                 {/* PRICE */}
                 <div className="flex items-center gap-5 pb-5">
-                    <h4 className="text-primary-color font-bold 2xl:text-3xl">${course.price}</h4>
+                    <h4 className="text-primary-color font-bold 2xl:text-3xl">${course.offer === 'yes' ? course.price / 2 : course.price}</h4>
                     <h4 className=" 2xl:text-[28px] font-extralight line-through">${course.oldPrice}</h4>
                 </div>
 
@@ -80,6 +80,7 @@ ProductDetails.propTypes = {
         productCode: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
         oldPrice: PropTypes.number.isRequired,
+        offer: PropTypes.number.isRequired,
     }).isRequired,
     button: PropTypes.bool,
 };
