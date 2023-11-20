@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/home/home/Home";
 import MainLayout from "../layout/MainLayout";
 import Courses from "../pages/courses/courses/Courses";
-import Instructor from "../pages/instructor/instructor/Instructor";
 import Error404 from "../pages/home/error404/Error404";
 import SingleCourse from "../pages/singleCourse/singleCourse/SingleCourse";
 import Signin from "../pages/auth/signin/Signin";
@@ -17,6 +16,7 @@ import AdminDashboard from "../pages/dashboard/adminDashboard/AdminDashboard";
 import UserDashboard from "../pages/dashboard/userDashBoard/UserDashboard";
 import EnrolledHistort from "../pages/dashboard/enrolledHistory/EnrolledHistort";
 import PrivateRoute from "./PrivateRoute";
+import About from "../pages/about/About";
 
 
 export const router = createBrowserRouter([
@@ -45,8 +45,8 @@ export const router = createBrowserRouter([
         loader: ({ params }) => fetch(`https://snap-academy-server.vercel.app/course/${params._id}`)
       },
       {
-        path: 'instructor',
-        element: <Instructor />
+        path: 'about',
+        element: <About />
       },
       {
         path: 'cart',

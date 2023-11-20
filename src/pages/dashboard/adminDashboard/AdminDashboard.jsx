@@ -1,8 +1,12 @@
-import useRetriveDataFromDB from '../../../hooks/useRetriveDataFromDB';
+import useAllCourse from '../../../hooks/useAllCourse';
+import useAllUser from '../../../hooks/useAllUser';
 
 const AdminDashboard = () => {
 
-    const { allUsers, allCourses } = useRetriveDataFromDB()
+    const { allUser } = useAllUser()
+    const { allCourse } = useAllCourse()
+
+    console.log(allUser);
 
     return (
         <section>
@@ -11,13 +15,13 @@ const AdminDashboard = () => {
                 {/* <div className='border h-20 w-full'>
 
                 </div> */}
-                <div className='bg-green bg-opacity-70 w-full h-[150px] flex flex-col justify-center items-center rounded xl:rounded-md text-white uppercase'>
+                <div className='bg-primary-color bg-opacity-70 w-full h-[150px] flex flex-col justify-center items-center rounded xl:rounded-md text-white uppercase'>
                     <h5>User</h5>
-                    <h4 className='text-4xl font-bold'>{allUsers?.length}</h4>
+                    <h4 className='text-4xl font-bold'>{allUser?.length}</h4>
                 </div>
                 <div className=' bg-light-green bg-opacity-70  h-[150px] flex flex-col justify-center items-center rounded xl:rounded-md text-white uppercase p-5'>
                     <h5>Courses</h5>
-                    <h4 className='text-4xl font-bold'> {allCourses?.length}</h4>
+                    <h4 className='text-4xl font-bold'> {allCourse?.length}</h4>
                 </div>
                 <div className='  bg-black uppercase bg-opacity-70 h-[150px] flex flex-col justify-center items-center rounded xl:rounded-md text-white'>
                     <h5>Instructor</h5>
@@ -25,7 +29,7 @@ const AdminDashboard = () => {
                 </div>
                 <div className='bg-error bg-opacity-60 h-[150px] flex flex-col justify-center items-center rounded xl:rounded-md text-white uppercase'>
                     <h5>Enrolled</h5>
-                    <h4 className='text-4xl font-bold'> {allCourses && allCourses.reduce((acc, cur) => acc + cur.enrolled, 0)}</h4>
+                    <h4 className='text-4xl font-bold'> {allCourse && allCourse?.reduce((acc, cur) => acc + cur?.enrolled, 0)}</h4>
                 </div>
 
             </div>

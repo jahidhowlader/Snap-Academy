@@ -5,6 +5,9 @@ import toast from "react-hot-toast";
 
 const AllUser = () => {
 
+    // GET TOKEN FROM LOCAL STORAGE
+    const token = localStorage.getItem('access-token')
+
     const { allUser, refetch } = useAllUser()
 
     // HANDLER USER ROLE EDIT
@@ -13,7 +16,8 @@ const AllUser = () => {
         fetch(`https://snap-academy-server.vercel.app/allusers/admin/${user.email}`, {
             method: "PATCH",
             headers: {
-                "content-type": "application/json"
+                "content-type": "application/json",
+                authorization: token
             },
             body: JSON.stringify({ role: 'user' })
         })
@@ -29,7 +33,8 @@ const AllUser = () => {
         fetch(`https://snap-academy-server.vercel.app/allusers/admin/${user.email}`, {
             method: "PATCH",
             headers: {
-                "content-type": "application/json"
+                "content-type": "application/json",
+                authorization: token
             },
             body: JSON.stringify({ role: 'admin' })
         })
@@ -50,7 +55,10 @@ const AllUser = () => {
             // await deleteUserData(user)
 
             await fetch(`https://snap-academy-server.vercel.app/allUsers?email=${email}`, {
-                method: "DELETE"
+                method: "DELETE",
+                headers: {
+                    authorization: token
+                }
             })
                 .then(res => res.json())
                 .then(data => {

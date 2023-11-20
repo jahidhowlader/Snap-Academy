@@ -9,8 +9,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+
 html {
   scroll-behavior: smooth;
+  transition-duration: 5s;
+  transition-delay: 2s;
 }
 
 .my-container {

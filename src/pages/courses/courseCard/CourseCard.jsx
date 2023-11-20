@@ -28,13 +28,13 @@ const CourseCard = ({ course, button }) => {
                 button ? (
                     <Link to={`/course/${course._id}`}>
                         <div className=' overflow-hidden'>
-                            <img src={course.photo} alt="" className=' h-[190px] sm:h-[220px] lg:h-[180px] xl:h-[200px] 2xl:h-[180px] w-full hover:scale-105 duration-[2000ms] object-cover rounded ' />
+                            <img src={course.photo} alt="" className=' h-[190px] sm:h-[220px] lg:h-[150px] xl:h-[150px] 2xl:h-[150px] w-full hover:scale-105 duration-[2000ms] object-cover rounded ' />
                         </div>
                     </Link>
                 ) : (
                     <Link to={`/course/${course._id}`}>
                         <div className=' overflow-hidden'>
-                            <img src={course.photo} alt={course.title} className='  h-[190px] sm:h-[220px] xl:h-[190px] 2xl:h-[220px] w-full hover:scale-105 duration-[2000ms] object-cover rounded ' />
+                            <img src={course.photo} alt={course.title} className='h-[190px] sm:h-[220px] lg:h-[180px] xl:h-[200px] 2xl:h-[150px] w-full hover:scale-105 duration-[2000ms] object-cover rounded' />
                         </div>
                     </Link>
 
@@ -44,7 +44,7 @@ const CourseCard = ({ course, button }) => {
             {/* Card Content */}
             <div className='py-5 text-center'>
                 <Link to={`/course/${course._id}`}>
-                    <h5 className='font-medium  text-lg xl:text-xl hover:underline'>{course.title.slice(0, 45)}...</h5>
+                    <h5 className='font-medium  text-lg hover:underline hyphens-auto'>{course.title.slice(0, 45)}...</h5>
                 </Link>
                 <div className='flex justify-center my-2'>
                     <Rating style={{ maxWidth: 100 }} value={courseReview / course.review.length} itemStyles={ratingStyle} readOnly />
@@ -54,7 +54,7 @@ const CourseCard = ({ course, button }) => {
                 {
                     button && <motion.button
                         whileTap={{ scale: 0.95 }}
-                        className={`${storedCart.includes(course._id) ? 'bg-black' : 'bg-primary-color hover:bg-opacity-90'} px-4 sm:px-6 py-1 sm:py-2 rounded-md text-white`}
+                        className={`${storedCart.includes(course._id) ? 'bg-black' : 'bg-primary-color hover:bg-opacity-90'} px-4 sm:px-6 py-1 sm:py-2 rounded-md text-white text-sm`}
                         onClick={() => handlerAddToCart(course._id)}
                         disabled={storedCart.includes(course._id)}
                     >

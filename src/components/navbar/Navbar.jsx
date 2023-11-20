@@ -44,7 +44,7 @@ const Navbar = () => {
                 <ul className="hidden md:flex items-center gap-5 lg:gap-10 xl:gap-20 xl:text-[18px] 2xl:text-xl text-white">
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/courses'>Courses</Link></li>
-                    <li><Link to='/instructor'>Instructor</Link></li>
+                    <li><Link to='/about'>About Us</Link></li>
                     {
                         user ?
                             <li onClick={handlerLogout}><Link to='/'>Signout</Link></li> :

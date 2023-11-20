@@ -13,8 +13,8 @@ const Sidebar = () => {
     const { logOut } = useAuth()
 
     // IMPORT isADMIN FOR CHECK ADMIN HAS EXIST
-    // const { isAdmin } = useAdmin()
-    const isAdmin = 'user'
+    const { isAdmin } = useAdmin()
+    // const isAdmin = 'user'
 
     // Handler Logout
     const handlerLogout = async () => {

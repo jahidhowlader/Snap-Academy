@@ -37,7 +37,7 @@
         background-image: url('/home/banner.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 80px 40px;
+        padding: 80px 0px;
     }
 }
 

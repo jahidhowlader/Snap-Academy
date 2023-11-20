@@ -1,10 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import Banner from "../banner/Banner";
-import Collection from "../collection/Collection";
 import Offer from "../offer/Offer";
 import PopularCourse from "../popularCourse/PopularCourse";
 import VideoInformation from "../videoInformation/VideoInformation";
 import Testimonial from "../testimonial/Testimonial";
+import Instructor from "../instructor/Instructor";
 
 const Home = () => {
     return (
@@ -20,6 +20,7 @@ const Home = () => {
             <Banner />
             <Offer />
             <PopularCourse />
+            <Instructor />
             <VideoInformation />
             {/* <Collection /> */}
             

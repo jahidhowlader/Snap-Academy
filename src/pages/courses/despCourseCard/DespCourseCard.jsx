@@ -39,7 +39,7 @@ const DespCourseCard = ({ course }) => {
 
                 <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className={`${storedCart.includes(course._id) ? 'bg-black' : 'bg-primary-color hover:bg-opacity-90'} px-4 sm:px-6 py-1 xl:py-2 rounded xl:rounded-md text-white`}
+                    className={`${storedCart.includes(course._id) ? 'bg-black' : 'bg-primary-color hover:bg-opacity-90'} text-sm px-4 sm:px-6 py-1 xl:py-2 rounded xl:rounded-md text-white`}
                     onClick={() => handlerAddToCart(course._id)}
                     disabled={storedCart.includes(course._id)}
                 >

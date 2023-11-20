@@ -12,7 +12,7 @@ const Offer = () => {
 
     return (
         <section className='my-container sm:my-16 xl:my-24 2xl:my-32'>
-            <h3 className='text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold text-primary-color pb-3 lg:pb-8'>Special Offer</h3>
+            <h3 className='text-2xl md:text-3xl lg:text-4xl font-bold text-primary-color pb-3 lg:pb-8'>Special Offer</h3>
 
             <div className='grid md:grid-cols-2 gap-5 '>
 

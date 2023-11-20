@@ -16,14 +16,12 @@ const Testimonial = () => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3000/reviews')
+        fetch('https://snap-academy-server.vercel.app/reviews')
             .then(res => res.json())
             .then(data => {
                 setReviews(data)
             })
     }, [])
-
-    console.log(reviews);
 
     const settings = {
         className: "center",
@@ -59,13 +57,14 @@ const Testimonial = () => {
 
         <>
 
-            <section className="my-container my-28 2xl:my-52">
+            <section className="my-container my-28 xl:my-52">
 
-                <div className=" text-center mb-10">
-                    <h2 className='text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold text-primary-color pb-3 lg:pb-8'>What Our Customers Are Saying</h2>
+                <div className=" text-center mb-10 px-5">
+                    <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-primary-color pb-3 lg:pb-8'>What Our Customers Are Saying</h2>
                     <p className="w-full sm:w-3/4 mx-auto">But I must explain to you how all this mistaken idea of denouncing pleasure and praising
                         pain was born and I will give you a complete.</p>
                 </div>
+
                 <Slider {...settings}>
                     {
                         reviews.map(review => <div

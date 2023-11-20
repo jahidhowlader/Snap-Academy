@@ -16,10 +16,11 @@ const ratingStyle = {
 // GET TOKEN FROM LOCAL STORAGE
 const token = localStorage.getItem('access-token')
 
+// INJECT HEADER IN FETCH
 const axiosConfig = {
     headers: {
         authorization: token
-    },
+    }
 };
 
 

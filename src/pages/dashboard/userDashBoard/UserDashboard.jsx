@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { HiOutlineInformationCircle } from "react-icons/hi2";
 import useAuth from "../../../hooks/useAuth";
 import { Helmet } from "react-helmet-async";
@@ -24,7 +23,7 @@ const UserDashboard = () => {
             <section className="p-3 lg:p-0">
                 <div className='grid sm:grid-cols-2 xl:items-center xl:justify-between gap-5 lg:gap-10 w-full px-2 lg:mx-0 mt-5'>
 
-                    <div className='bg-green bg-opacity-70 w-full h-[150px] flex flex-col justify-center items-center rounded xl:rounded-md text-white uppercase'>
+                    <div className='bg-primary-color bg-opacity-70 w-full h-[150px] flex flex-col justify-center items-center rounded xl:rounded-md text-white uppercase'>
                         <h5>Enrolled</h5>
                         <h4 className='text-4xl font-bold'>0</h4>
                     </div>

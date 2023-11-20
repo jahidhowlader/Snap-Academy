@@ -7,7 +7,7 @@ const Banner = () => {
     return (
         <section id='banner'
             className=''>
-            <div className='my-container flex flex-col md:flex-row justify-between items-center pb-16 md:pt-12 lg:pt-0 2xl:pt-10  lg:text-white lg:px-10 2xl:px-20 lg:pb-0 lg:my-2'>
+            <div className='my-container flex flex-col md:flex-row justify-between items-center pb-16 md:pt-12 lg:pt-0 2xl:pt-10  lg:text-white  lg:pb-0 lg:my-2'>
 
                 {/* Banner Content */}
                 <div className='flex-1 space-y-5 order-2 md:order-1'>

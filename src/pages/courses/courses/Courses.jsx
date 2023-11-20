@@ -8,8 +8,10 @@ import DespCourseCard from '../despCourseCard/DespCourseCard';
 import { Helmet } from 'react-helmet-async';
 import useGetCourses from '../../../hooks/useGetCourses';
 import ViewCourseCardSkeleton from '../../../components/skeleton/courseCardSkeleton/ViewCourseCardSkeleton';
-import { BiSolidDashboard } from 'react-icons/bi';
+import { BiGridAlt, BiSolidDashboard } from 'react-icons/bi';
 import { HiBars3BottomLeft } from 'react-icons/hi2';
+import { RiServerFill, RiServerLine } from "react-icons/ri";
+
 
 const Courses = () => {
 
@@ -70,17 +72,35 @@ const Courses = () => {
                         </div>
 
                         {/* LAYOUT VIEW */}
-                        <div className='flex items-center gap-2 sm:gap-5  '>
+                        <div className='flex items-center gap-2 '>
                             <div>
-                                <button onClick={() => setLayout(true)}>
-                                    <BiSolidDashboard size={20} className='text-primary-color' />
-                                </button>
+                                {
+                                    layout ? (
+                                        <button onClick={() => setLayout(true)}>
+                                            <BiSolidDashboard size={20} className='text-primary-color' />
+                                        </button>
+                                    ) : (
+                                        <button onClick={() => setLayout(true)}>
+                                            <BiGridAlt size={20} className='text-primary-color' />
+                                        </button>
+                                    )
+                                }
+
                             </div>
 
                             <div>
-                                <button onClick={() => setLayout(false)}>
-                                    <img src="/courses/1grid.svg" alt="grid1" className='w-4 cursor-pointer' />
-                                </button>
+                                {
+                                    layout ? (
+                                        <button onClick={() => setLayout(false)}>
+                                            <RiServerLine size={20} className='text-primary-color' />
+                                        </button>
+                                    ) : (
+                                        <button onClick={() => setLayout(false)}>
+                                            <RiServerFill size={20} className='text-primary-color' />
+                                        </button>
+                                    )
+                                }
+
                             </div>
                         </div>
                     </div>
@@ -104,13 +124,13 @@ const Courses = () => {
                         {
                             courseLoading ?
                                 <div
-                                    className='grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5'>
+                                    className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>
                                     <ViewCourseCardSkeleton />
                                 </div>
                                 : layout ? (
                                     <>
                                         <motion.div
-                                            className='grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5'
+                                            className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'
                                             initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }}
                                         >
                                             {
