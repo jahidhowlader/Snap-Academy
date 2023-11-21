@@ -14,10 +14,6 @@
             {
                 "day": "sat, Mon, Tue",
                 "time": "1:00 PM - 3:00 PM"
-            },
-            {
-                "day": "sat, Mon, Tue",
-                "time": "4:00 PM - 6:00 PM"
             }
         ],
         "price": 400,
@@ -60,10 +56,6 @@
             {
                 "day": "sat, Mon, Tue",
                 "time": "1:00 PM - 3:00 PM"
-            },
-            {
-                "day": "sat, Mon, Tue",
-                "time": "4:00 PM - 6:00 PM"
             }
         ],
         "price": 400,
@@ -106,10 +98,6 @@
             {
                 "day": "sat, Mon, Tue",
                 "time": "1:00 PM - 3:00 PM"
-            },
-            {
-                "day": "sat, Mon, Tue",
-                "time": "4:00 PM - 6:00 PM"
             }
         ],
         "price": 400,
@@ -152,10 +140,6 @@
             {
                 "day": "sat, Mon, Tue",
                 "time": "1:00 PM - 3:00 PM"
-            },
-            {
-                "day": "sat, Mon, Tue",
-                "time": "4:00 PM - 6:00 PM"
             }
         ],
         "price": 400,
@@ -198,10 +182,6 @@
             {
                 "day": "sat, Mon, Tue",
                 "time": "1:00 PM - 3:00 PM"
-            },
-            {
-                "day": "sat, Mon, Tue",
-                "time": "4:00 PM - 6:00 PM"
             }
         ],
         "price": 400,
@@ -244,10 +224,6 @@
             {
                 "day": "Mon, Wed, Fri",
                 "time": "2:00 PM - 4:00 PM"
-            },
-            {
-                "day": "Tue, Thu",
-                "time": "6:00 PM - 8:00 PM"
             }
         ],
         "price": 500,
@@ -290,10 +266,6 @@
             {
                 "day": "Tue, Thu",
                 "time": "3:00 PM - 5:00 PM"
-            },
-            {
-                "day": "Sat",
-                "time": "10:00 AM - 12:00 PM"
             }
         ],
         "price": 550,
@@ -336,10 +308,6 @@
             {
                 "day": "Mon, Wed",
                 "time": "4:00 PM - 6:00 PM"
-            },
-            {
-                "day": "Sat",
-                "time": "1:00 PM - 3:00 PM"
             }
         ],
         "price": 450,
@@ -382,10 +350,6 @@
             {
                 "day": "Tue, Thu",
                 "time": "6:00 PM - 8:00 PM"
-            },
-            {
-                "day": "Sat",
-                "time": "2:00 PM - 4:00 PM"
             }
         ],
         "price": 480,
@@ -428,10 +392,6 @@
             {
                 "day": "Mon, Wed",
                 "time": "3:00 PM - 5:00 PM"
-            },
-            {
-                "day": "Sat",
-                "time": "10:00 AM - 12:00 PM"
             }
         ],
         "price": 450,
@@ -474,10 +434,6 @@
             {
                 "day": "Tue, Thu",
                 "time": "6:00 PM - 8:00 PM"
-            },
-            {
-                "day": "Sat",
-                "time": "2:00 PM - 4:00 PM"
             }
         ],
         "price": 380,
@@ -520,10 +476,6 @@
             {
                 "day": "Mon, Wed, Fri",
                 "time": "4:00 PM - 6:00 PM"
-            },
-            {
-                "day": "Sat",
-                "time": "1:00 PM - 3:00 PM"
             }
         ],
         "price": 500,
@@ -566,10 +518,6 @@
             {
                 "day": "Tue, Thu",
                 "time": "3:00 PM - 5:00 PM"
-            },
-            {
-                "day": "Sat",
-                "time": "10:00 AM - 12:00 PM"
             }
         ],
         "price": 550,
@@ -612,10 +560,6 @@
             {
                 "day": "Mon, Wed, Fri",
                 "time": "4:00 PM - 6:00 PM"
-            },
-            {
-                "day": "Sat",
-                "time": "1:00 PM - 3:00 PM"
             }
         ],
         "price": 500,
@@ -658,10 +602,6 @@
             {
                 "day": "Tue, Thu",
                 "time": "3:00 PM - 5:00 PM"
-            },
-            {
-                "day": "Sat",
-                "time": "10:00 AM - 12:00 PM"
             }
         ],
         "price": 550,
@@ -704,10 +644,6 @@
             {
                 "day": "Mon, Wed, Fri",
                 "time": "4:00 PM - 6:00 PM"
-            },
-            {
-                "day": "Sat",
-                "time": "1:00 PM - 3:00 PM"
             }
         ],
         "price": 500,
@@ -750,10 +686,6 @@
             {
                 "day": "Tue, Thu",
                 "time": "3:00 PM - 5:00 PM"
-            },
-            {
-                "day": "Sat",
-                "time": "10:00 AM - 12:00 PM"
             }
         ],
         "price": 550,

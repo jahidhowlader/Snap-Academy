@@ -1,29 +1,60 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import ProductDetails from "../courseDetails/CourseDetails";
 import Tabs from "../tabs/Tabs";
 import { Helmet } from "react-helmet-async";
+import { useState } from "react";
+import { useEffect } from "react";
+import { HiOutlineInformationCircle } from "react-icons/hi2";
+import Error404 from "../../error404/Error404";
+import Loader from "../../../components/loader/Loader";
 
 const SingleCourse = () => {
 
-    const course = useLoaderData()
+    const [course, setCourse] = useState(null)
+
+    const { _id } = useParams()
+
+    useEffect(() => {
+        fetch(`https://snap-academy-server.vercel.app/course/${_id}`)
+            .then(res => res.json())
+            .then(data => {
+
+                setCourse(data);
+                console.log('data', data);
+            });
+    }, [_id])
+
+    // console.log('paramns', _id);
+
+    // const course = useLoaderData()
+
+    console.log('10', course);
 
     return (
         <>
-            {/* Ttile */}
-            <Helmet>
-                <title>{course.title} | Snap Academy</title>
-            </Helmet>
+            {
+                course ? (
+                    <>
+                        {/* Ttile */}
+                        <Helmet>
+                            <title>{course.title} | Snap Academy</title>
+                        </Helmet>
 
-            <section className="2xl:py-[40px] my-container">
+                        <section className="2xl:py-[40px] my-container">
 
-                {/* Poduct Details */}
-                <ProductDetails course={course} />
+                            {/* Poduct Details */}
+                            <ProductDetails course={course} />
 
-                {/* DETAILS && ADITION INFORMATION && REVIEW*/}
-                {/* USE REACT TABS */}
+                            {/* DETAILS && ADITION INFORMATION && REVIEW*/}
+                            {/* USE REACT TABS */}
 
-                <Tabs course={course} />
-            </section>
+                            <Tabs course={course} />
+                        </section>
+                    </>
+                ) : (
+                    <Loader />
+                )
+            }
         </>
 
     );

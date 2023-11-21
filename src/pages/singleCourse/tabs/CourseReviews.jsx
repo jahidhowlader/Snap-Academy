@@ -41,7 +41,7 @@ const CourseReviews = ({ review }) => {
 
 
             {/* ADD YOUR REVIEW */}
-            <div className='pt-[100px]'>
+            {/* <div className='pt-[100px]'>
                 <div>
                     <h5 className='text-primary-color font-bold text-xl text-center'>Add your review</h5>
 
@@ -69,7 +69,7 @@ const CourseReviews = ({ review }) => {
                         <button className='bg-primary-color text-white px-9 py-2 rounded xl:rounded-md '>Submit</button>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
 
     );

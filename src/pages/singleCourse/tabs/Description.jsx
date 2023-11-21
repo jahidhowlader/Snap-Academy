@@ -1,7 +1,7 @@
 
 const Description = ({description}) => {
     return (
-        <p className="text-center">{description}</p>
+        <p className="text-cente">{description}</p>
     );
 };
 

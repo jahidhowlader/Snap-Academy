@@ -24,7 +24,6 @@ const Home = () => {
             <VideoInformation />
             {/* <Collection /> */}
             
-            {/* TODO: TESTIMONIAL */}
             <Testimonial />
 
         </>

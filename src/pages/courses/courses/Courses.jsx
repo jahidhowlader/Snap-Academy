@@ -11,6 +11,7 @@ import ViewCourseCardSkeleton from '../../../components/skeleton/courseCardSkele
 import { BiGridAlt, BiSolidDashboard } from 'react-icons/bi';
 import { HiBars3BottomLeft, HiMiniMagnifyingGlass } from 'react-icons/hi2';
 import { RiServerFill, RiServerLine } from "react-icons/ri";
+import SearchCourse from './SearchCourse';
 
 
 const Courses = () => {
@@ -19,12 +20,13 @@ const Courses = () => {
     const [layout, setLayout] = useState(true)
     const [selectedCategories, setSelectedCategories] = useState([]);
 
-
     // use HOOK FOR GET ALL COURSES AND FUNCTIONALITY
-    const { courses, minPrice, maxPrice, sortingCourses, priceQuery, setPriceQuery, courseLoading, handlerSortingCourses } = useGetCourses()
+    const { courses, minPrice, maxPrice, sortingCourses, priceQuery, setPriceQuery, courseLoading, handlerSortingCourses, searchQuery, setSearchQuery } = useGetCourses()
 
     // FILTER COURSE EHEN USER SELECTED CATEGORY
     const filteredCourses = courses && courses.filter(course => selectedCategories.includes(course.category))
+
+    console.log('29', searchQuery);
 
     return (
         <>
@@ -39,13 +41,13 @@ const Courses = () => {
 
                     {/* TODO: SEARCH FOR RESULT */}
                     <div className='lg:col-span-2 flex'>
-                        <p className='xl:pl-1 opacity-70'>Search result for <span className='text-primary-color opacity-100 font-semibold'>‘TODO: Search’</span></p>
+                        <SearchCourse searchQuery={searchQuery} setSearchQuery={setSearchQuery} courses={courses} />
                     </div>
 
-                    <div className='lg:col-span-7 flex justify-between items-center'>
+                    <div className='lg:col-span-7 flex justify-between items-end my-5 lg:my-0'>
 
                         {/* SHORTING */}
-                        <div className='flex flex-col sm:flex-row sm:items-center gap-2'>
+                        <div className='flex flex-col sm:flex-row sm:items-center gap-2 xl:gap-10'>
                             <div className='flex items-center gap-2'>
                                 <div>
                                     <HiBars3BottomLeft size={20} className='text-primary-color' />
@@ -68,12 +70,10 @@ const Courses = () => {
                                 </div>
                             </div>
 
-                            <p className='font-medium'>Total Courses: {selectedCategories?.length === 0 ? courses?.length : filteredCourses?.length}</p>
+                            <p className='font-medium'>Total Courses: <span className='font-bold'>{selectedCategories?.length === 0 ? courses?.length : filteredCourses?.length}</span></p>
 
-                            <div className='relative'>
-                                <input type="text" className='shadow-sm border border-gray border-opacity-30'/>
-                                <HiMiniMagnifyingGlass className='absolute top-1/2 right-1 -translate-y-1/2'/>
-                            </div>
+                            <p className='xl:pl-1 opacity-70'>Search result for <span className='text-primary-color opacity-100 font-semibold'>{searchQuery.length > 0 ? `‘${searchQuery}’` : '‘Search’'} </span></p>
+
                         </div>
 
                         {/* LAYOUT VIEW */}

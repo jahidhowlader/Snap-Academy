@@ -5,7 +5,6 @@ import ViewOfferSkeleton from '../../../components/skeleton/offerSkeleton/ViewOf
 
 const Offer = () => {
 
-    // TODO: NEED OFFER COURSE
     const { courses, courseLoading } = useGetCourses()
 
     const offerCourse = courses.filter(course => course.offer === 'yes')

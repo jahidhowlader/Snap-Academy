@@ -80,7 +80,7 @@ ProductDetails.propTypes = {
         productCode: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
         oldPrice: PropTypes.number.isRequired,
-        offer: PropTypes.number.isRequired,
+        offer: PropTypes.string.isRequired,
     }).isRequired,
     button: PropTypes.bool,
 };

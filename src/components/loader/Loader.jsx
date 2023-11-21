@@ -1,9 +1,9 @@
 import Lottie from "lottie-react";
-import loader from '../../../public/loader.json'
+import loader from '../../../public/camera.json'
 
 const Loader = () => {
     return (
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex justify-center items-center h-screen -z-10">
             <Lottie animationData={loader} loop={true} className="animation" />
         </div>
     );

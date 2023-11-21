@@ -15,7 +15,7 @@ const PriceRange = ({ priceQuery, setPriceQuery, minPrice, maxPrice }) => {
                 className='w-full cursor-pointer mt-3 volume-slider' />
 
             <div className='flex justify-between items-center px-1 text-xs xl:text-sm 2xl:text-base'>
-                <p>${priceQuery ? priceQuery : 0}</p>
+                <p>${priceQuery ? priceQuery : minPrice}</p>
                 <p>${maxPrice}</p>
             </div>
         </div>

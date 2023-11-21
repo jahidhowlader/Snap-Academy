@@ -43,7 +43,7 @@ export const router = createBrowserRouter([
       {
         path: 'course/:_id',
         element: <SingleCourse />,
-        loader: ({ params }) => fetch(`https://snap-academy-server.vercel.app/course/${params._id}`)
+        // loader: ({ params }) => fetch(`https://snap-academy-server.vercel.app/course/${params._id}`)
       },
       {
         path: 'about',
