@@ -1,0 +1,3 @@
+.navAnimation {
+    @apply hover:ml-1 duration-1000 hover:font-semibold
+}

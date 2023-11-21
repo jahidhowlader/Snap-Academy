@@ -6,6 +6,7 @@ import { MdAddToPhotos } from "react-icons/md";
 import useAdmin from "../../../hooks/useAdmin";
 import toast from "react-hot-toast";
 import useAuth from "../../../hooks/useAuth";
+import './Sidebar.css'
 
 const Sidebar = () => {
 
@@ -46,27 +47,27 @@ const Sidebar = () => {
                 {/* COMMON LINK */}
                 <Link to={`/`} className="flex items-center gap-2">
                     <HiMiniHome size={24} />
-                    <li className="hover:ml-2 duration-300 "> Home</li>
+                    <li className="navAnimation"> Home</li>
                 </Link>
 
                 {
                     isAdmin === 'admin' ? (<>
                         <Link to={`/dashboard/admin`} className="flex items-center gap-2">
                             <BiSolidDashboard size={24} />
-                            <li className="hover:ml-2 duration-300 "> Dashboard</li>
+                            <li className="navAnimation"> Dashboard</li>
                         </Link>
                         <Link to={`/dashboard/addCourses`} className="flex items-center gap-2">
                             <MdAddToPhotos size={24} />
-                            <li className="hover:ml-2 duration-300 "> Add Courses</li>
+                            <li className="navAnimation"> Add Courses</li>
                         </Link>
 
                         <Link to={`/dashboard/allCourses`} className="flex items-center gap-2">
                             <HiMiniPencilSquare size={24} />
-                            <li className="hover:ml-2 duration-300 "> Courses Manage</li>
+                            <li className="navAnimation"> Courses Manage</li>
                         </Link>
                         <Link to={'/dashboard/allUsers'} className="flex items-center gap-2">
                             <HiMiniUsers size={24} />
-                            <li className="hover:ml-2 duration-300 "> User Manage</li>
+                            <li className="navAnimation"> User Manage</li>
                         </Link>
 
                     </>)
@@ -74,19 +75,19 @@ const Sidebar = () => {
                             (<>
                                 <Link to={`/dashboard/user`} className="flex items-center gap-2">
                                     <BiSolidDashboard size={24} />
-                                    <li className="hover:ml-2 duration-300 "> Dashboard</li>
+                                    <li className="navAnimation"> Dashboard</li>
                                 </Link>
                                 <Link to={`/dashboard/review`} className="flex items-center gap-2">
                                     <MdAddToPhotos size={24} />
-                                    <li className="hover:ml-2 duration-300 "> Add Reviews</li>
+                                    <li className="navAnimation"> Add Reviews</li>
                                 </Link>
                                 <Link to={`/dashboard/enrolledHistory`} className="flex items-center gap-2">
                                     <BiHistory size={24} />
-                                    <li className="hover:ml-2 duration-300 "> Enrolled History</li>
+                                    <li className="navAnimation"> Enrolled History</li>
                                 </Link>
                                 <Link to={'/dashboard/cart'} className="flex items-center gap-2">
                                     <HiMiniShoppingCart size={24} />
-                                    <li className="hover:ml-2 duration-300 "> Cart</li>
+                                    <li className="navAnimation"> Cart</li>
                                 </Link>
                             </>) : ''
                 }
@@ -94,12 +95,12 @@ const Sidebar = () => {
                 {/* COMMON LINK */}
                 <Link to={`/dashboard/profile`} className="flex items-center gap-2">
                     <HiMiniUser size={24} />
-                    <li className="hover:ml-2 duration-300 "> Profile</li>
+                    <li className="navAnimation"> Profile</li>
                 </Link>
 
                 <Link to={`/`} className="flex items-center gap-2">
                     <FiLogOut size={24} />
-                    <li className="hover:ml-2 duration-300 "><button onClick={handlerLogout} className="uppercase">Signout</button></li>
+                    <li className="navAnimation"><button onClick={handlerLogout} className="uppercase">Signout</button></li>
                 </Link>
             </ul>
         </div>

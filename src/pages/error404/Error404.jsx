@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 // import error404 from '../../../../public/404.json'
-import one from '../../../../public/404.json'
+import one from '../../../public/404.json'
 // import two from '../../../../public/2.json'
 import './Error404.css'
 

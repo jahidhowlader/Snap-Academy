@@ -61,7 +61,7 @@ const About = () => {
                     <VisibilitySensor onChange={handleVisibilityChange}>
                         <div className='text-center'>
                             {
-                                countingStarted && <h1 className="text-6xl font-semibold"><CountUp end={13} />k+</h1>
+                                countingStarted && <h1 className="text-6xl font-semibold"><CountUp end={13} duration={3}/>k+</h1>
                             }
 
                             <p>Learners</p>
@@ -72,7 +72,7 @@ const About = () => {
                     <VisibilitySensor onChange={handleVisibilityChange}>
                         <div className='text-center'>
                             {
-                                countingStarted && <h1 className="text-6xl font-semibold"><CountUp end={2} />k+</h1>
+                                countingStarted && <h1 className="text-6xl font-semibold"><CountUp end={2} duration={3}/>k+</h1>
                             }
 
                             <p>Instructors</p>
@@ -83,7 +83,7 @@ const About = () => {
                     <VisibilitySensor onChange={handleVisibilityChange}>
                         <div className='text-center'>
                             {
-                                countingStarted && <h1 className="text-6xl font-semibold"><CountUp end={17} />k+</h1>
+                                countingStarted && <h1 className="text-6xl font-semibold"><CountUp end={17} duration={3}/>k+</h1>
                             }
 
                             <p>Courses</p>
@@ -94,7 +94,7 @@ const About = () => {
                     <VisibilitySensor onChange={handleVisibilityChange}>
                         <div className='text-center'>
                             {
-                                countingStarted && <h1 className="text-6xl font-semibold"><CountUp end={377} />k+</h1>
+                                countingStarted && <h1 className="text-6xl font-semibold"><CountUp end={377} duration={3}/>k+</h1>
                             }
 
                             <p>Enrolled</p>
@@ -108,7 +108,7 @@ const About = () => {
                     <VisibilitySensor onChange={handleVisibilityChange}>
                         <div className='text-center'>
                             {
-                                countingStarted && <h1 className="text-6xl font-semibold"><CountUp end={10} /></h1>
+                                countingStarted && <h1 className="text-6xl font-semibold"><CountUp end={10} duration={3}/></h1>
                             }
 
                             <p>Language</p>
@@ -119,7 +119,7 @@ const About = () => {
                     <VisibilitySensor onChange={handleVisibilityChange}>
                         <div className='text-center'>
                             {
-                                countingStarted && <h1 className="text-6xl font-semibold"><CountUp end={15} />k+</h1>
+                                countingStarted && <h1 className="text-6xl font-semibold"><CountUp end={15} duration={3}/>k+</h1>
                             }
 
                             <p>Enterprise customers</p>

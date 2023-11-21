@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet-async';
 import useGetCourses from '../../../hooks/useGetCourses';
 import ViewCourseCardSkeleton from '../../../components/skeleton/courseCardSkeleton/ViewCourseCardSkeleton';
 import { BiGridAlt, BiSolidDashboard } from 'react-icons/bi';
-import { HiBars3BottomLeft } from 'react-icons/hi2';
+import { HiBars3BottomLeft, HiMiniMagnifyingGlass } from 'react-icons/hi2';
 import { RiServerFill, RiServerLine } from "react-icons/ri";
 
 
@@ -69,6 +69,11 @@ const Courses = () => {
                             </div>
 
                             <p className='font-medium'>Total Courses: {selectedCategories?.length === 0 ? courses?.length : filteredCourses?.length}</p>
+
+                            <div className='relative'>
+                                <input type="text" className='shadow-sm border border-gray border-opacity-30'/>
+                                <HiMiniMagnifyingGlass className='absolute top-1/2 right-1 -translate-y-1/2'/>
+                            </div>
                         </div>
 
                         {/* LAYOUT VIEW */}

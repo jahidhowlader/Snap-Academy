@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/home/home/Home";
 import MainLayout from "../layout/MainLayout";
 import Courses from "../pages/courses/courses/Courses";
-import Error404 from "../pages/home/error404/Error404";
 import SingleCourse from "../pages/singleCourse/singleCourse/SingleCourse";
 import Signin from "../pages/auth/signin/Signin";
 import Signup from "../pages/auth/signup/Signup";
@@ -17,6 +16,8 @@ import UserDashboard from "../pages/dashboard/userDashBoard/UserDashboard";
 import EnrolledHistort from "../pages/dashboard/enrolledHistory/EnrolledHistort";
 import PrivateRoute from "./PrivateRoute";
 import About from "../pages/about/About";
+import AdminRoute from "./AdminRoute";
+import Error404 from "../pages/error404/Error404";
 
 
 export const router = createBrowserRouter([
@@ -75,7 +76,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: 'admin',
-        element: <AdminDashboard />
+        element: <AdminRoute><AdminDashboard /></AdminRoute>
       },
       {
         path: 'user',
@@ -99,7 +100,7 @@ export const router = createBrowserRouter([
       },
       {
         path: 'allUsers',
-        element: <AllUser />
+        element: <AdminRoute><AllUser /></AdminRoute>
       }
     ]
   }

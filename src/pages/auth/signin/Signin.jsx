@@ -20,10 +20,10 @@ const Signin = () => {
     // useNAVIGATE USE FOR REDIRECT USER AFTER LOGIN AND useLOCATION USE FOR TRACK URL PATH
     const navigate = useNavigate();
     const location = useLocation();
-    const from = location.state?.from?.pathname || "/";
+    const from = location.state?.from?.pathname === '/dashboard/profile' ? '/dashboard/profile' : '/';
 
     // IMPORT AUTHCONTEXT
-    const {signIn} = useAuth()
+    const { signIn } = useAuth()
 
     // REACT HOOK FORM
     const { register, handleSubmit, reset, formState: { errors }, } = useForm()
@@ -129,7 +129,9 @@ const Signin = () => {
                         <input type="submit" value={submitLoading ? 'Processing...' : 'SIgn In'} className={`bg-primary-color text-white py-2 rounded-md w-full ${submitLoading ? 'cursor-progress' : 'cursor-pointer'}`} disabled={submitLoading ? true : false} />
                     </form>
 
-                    <p className='mt-7 mb-16 opacity-100 font-bold text-primary-color'><span className=' font-normal text-black'>Don’t have an account? </span> <Link to={'/auth/signup'}>SignUp</Link></p>
+                    <p className='mt-7 mb-16 opacity-100 font-bold text-primary-color'><span className=' font-normal text-black'>Don’t have an account? </span>
+                        <Link to={'/auth/signup'} state={location.state}>SignUp</Link>
+                    </p>
 
 
                     {/* Social Login */}

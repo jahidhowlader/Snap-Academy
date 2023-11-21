@@ -1,33 +1,35 @@
 import PropTypes from 'prop-types';
-import { Navigate, useLocation } from "react-router-dom";
-import useAuth from "../hooks/useAuth";
+import { Navigate, useLocation } from 'react-router-dom';
+import useAuth from '../hooks/useAuth';
 import useAdmin from '../hooks/useAdmin';
 import Loader from '../components/loader/Loader';
 
-const PrivateRoute = ({ children }) => {
+const AdminRoute = ({ children }) => {
 
-    const { user, loading } = useAuth()
+    const { user, loading, logOut } = useAuth()
 
     // IMPORT isADMIN FOR CHECK ADMIN HAS EXIST
-    const { isLoading } = useAdmin()
+    const { isAdmin, isLoading } = useAdmin()
 
     // TRACK ON LOCATION
     const location = useLocation()
 
-    if (loading) {
+    if (loading || isLoading) {
         return <Loader />
     }
 
-    if (user) {
+    if (user && isAdmin === 'admin') {
         return children
     }
+
+    localStorage.removeItem('access-token')
+    logOut()
 
     return <Navigate to={'/auth/signin'} state={{ from: location }} replace />
 };
 
-PrivateRoute.propTypes = {
+AdminRoute.propTypes = {
     children: PropTypes.node.isRequired,
 }
 
-
-export default PrivateRoute;
+export default AdminRoute;

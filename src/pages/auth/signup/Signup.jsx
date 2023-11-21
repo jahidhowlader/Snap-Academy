@@ -19,7 +19,7 @@ const Signup = () => {
     // useNAVIGATE USE FOR REDIRECT USER AFTER LOGIN AND useLOCATION USE FOR TRACK URL PATH
     const navigate = useNavigate();
     const location = useLocation();
-    const from = location.state?.from?.pathname || "/";
+    const from = location.state?.from?.pathname === '/dashboard/profile' ? '/dashboard/profile' : '/';
 
     // IMPORT AUTHCONTEXT
     const { signUp, updateUser } = useAuth()
