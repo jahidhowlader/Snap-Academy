@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../../../components/socialLogin/SocialLogin';
 import { useForm } from 'react-hook-form';
-import { HiEye, HiEyeSlash, HiMiniHome } from 'react-icons/hi2';
+import { HiEye, HiEyeSlash } from 'react-icons/hi2';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { Helmet } from 'react-helmet-async';

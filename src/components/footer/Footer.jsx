@@ -1,4 +1,3 @@
-import React from 'react';
 import Subscribation from '../../pages/home/subscribation/Subscribation';
 
 const Footer = () => {

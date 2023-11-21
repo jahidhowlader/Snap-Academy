@@ -13,7 +13,7 @@ const SocialLogin = () => {
     const from = location.state?.from?.pathname === '/dashboard/profile' ? '/dashboard/profile' : '/';
 
     // IMPORT AUTHCONTEXT
-    const { user, googleSignin, facebookSignin } = useAuth()
+    const { googleSignin, facebookSignin } = useAuth()
 
     // handler Google signin
     const handlerGoogleSignin = async () => {

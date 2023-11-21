@@ -6,18 +6,7 @@ import ViewInstructorSkeleton from "../../../components/skeleton/instructorSkele
 
 const Instructor = () => {
 
-    // const [isSlideVisible, setSlideVisible] = useState(false);
-
     const { courses, courseLoading } = useGetCourses()
-
-    // const variants = {
-    //     hidden: { x: -400 },
-    //     visible: { x: 0 },
-    // };
-
-    // const toggleSlide = () => {
-    //     setSlideVisible(!isSlideVisible);
-    // };
 
     return (
         <>
@@ -34,17 +23,6 @@ const Instructor = () => {
             </div>
 
             <section className="columns-2 lg:columns-5 space-y-5 rounded xl:rounded-md gap-5 py-[40px] z-20 my-container mb-20 xl:mb-32">
-                {/* <motion.div
-                initial="hidden"
-                animate={isSlideVisible ? "visible" : "hidden"}
-                variants={variants}
-                transition={{ duration: .6, stiffness: 300 }}
-                style={{ width: "100%", height: "100%", background: "lightblue" }}
-            >
-                <h1>This is sliding content</h1>
-            </motion.div>
-
-            <button onClick={toggleSlide}>Toggle Slide</button> */}
 
                 {
                     courses.map(course => courseLoading ? <ViewInstructorSkeleton key={course._id} /> : (

@@ -1,16 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import useAuth from "./useAuth";
 import axios from "axios";
-import toast from "react-hot-toast";
-
-
-
-// INJECT HEADER IN FETCH
-// const axiosConfig = {
-//     headers: {
-//         authorization: token
-//     }
-// };
+// import toast from "react-hot-toast";
 
 const useAdmin = () => {
 
@@ -39,8 +30,6 @@ const useAdmin = () => {
             }
         }
     })
-
-    console.log('37', isAdmin);
 
     return { isAdmin, isLoading }
 }

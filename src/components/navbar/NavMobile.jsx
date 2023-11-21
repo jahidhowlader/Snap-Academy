@@ -4,6 +4,7 @@ import { HiOutlineXMark } from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import useAuth from "../../hooks/useAuth";
+import toast from "react-hot-toast";
 
 const open = {
     initial: {
