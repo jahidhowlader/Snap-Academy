@@ -10,9 +10,9 @@ const Footer = () => {
                 <div className='max-w-[1520px] mx-auto '>
                     <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-5'>
                         <div>
-                            <h5 className='uppercase text-xl lg:pb-5'>Contact Us</h5>
+                            <h5 className='uppercase text-xl pb-1 lg:pb-5'>Contact Us</h5>
 
-                            <ul className='lg:space-y-5'>
+                            <ul className='lg:space-y-5 text-sm sm:text-base'>
                                 <li>32 East Bashabo, Dhaka - 1214</li>
                                 <li>01625 405959</li>
                                 <li>jahidhowlader.info@gmail.com</li>
@@ -30,8 +30,8 @@ const Footer = () => {
                         </div>
 
                         <div>
-                            <h5 className='uppercase text-xl lg:pb-5'>INFORMATION</h5>
-                            <ul className='lg:space-y-5'>
+                            <h5 className='uppercase text-xl pb-1 lg:pb-5'>INFORMATION</h5>
+                            <ul className='lg:space-y-5 text-sm sm:text-base'>
                                 <li>About us</li>
                                 <li>Delivery Information</li>
                                 <li>Privacy Policy</li>
@@ -41,8 +41,8 @@ const Footer = () => {
                         </div>
 
                         <div>
-                            <h5 className='uppercase text-xl lg:pb-5'>MY ACCOUNT</h5>
-                            <ul className='lg:space-y-5'>
+                            <h5 className='uppercase text-xl pb-1 lg:pb-5'>MY ACCOUNT</h5>
+                            <ul className='lg:space-y-5 text-sm sm:text-base'>
                                 <li>My Account</li>
                                 <li>Order History</li>
                                 <li>Wish List</li>
@@ -51,8 +51,8 @@ const Footer = () => {
                         </div>
 
                         <div>
-                            <h5 className='uppercase text-xl lg:pb-5'>CUSTOMER SERVICE</h5>
-                            <ul className='lg:space-y-5'>
+                            <h5 className='uppercase text-xl pb-1 lg:pb-5'>CUSTOMER SERVICE</h5>
+                            <ul className='lg:space-y-5 text-sm sm:text-base'>
                                 <li>Contact Us</li>
                                 <li>Site Map</li>
                                 <li>Gift Certificates</li>

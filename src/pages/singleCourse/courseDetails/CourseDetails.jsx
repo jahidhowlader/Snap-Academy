@@ -23,20 +23,20 @@ const ProductDetails = ({ course }) => {
 
             {/* Product Information */}
             <div className="space-y-2">
-                <h3 className="text-3xl font-semibold">{course.title}</h3>
+                <h3 className="text-2xl md:text-3xl font-bold pb-3 lg:pb-8">{course.title}</h3>
                 <div className="flex items-center gap-4">
 
                     {/* REVIEW */}
                     <Rating style={{ maxWidth: 100 }} value={4} itemStyles={ratingStyle} readOnly />
-                    <p className="opacity-60">(Customer review)</p>
+                    <p className="opacity-60 italic">(Customer review)</p>
                 </div>
                 <p>{course.description}</p>
 
-                <p><span className="text-primary-color font-semibold uppercase">instructor:</span> {course.instructor}</p>
-                <p><span className="text-primary-color font-semibold uppercase">Course Code:</span> {course.productCode}</p>
+                <p><span className="text-primary-color font-semibold uppercase text-sm sm:text-base">instructor:</span> {course.instructor}</p>
+                <p><span className="text-primary-color font-semibold uppercase text-sm sm:text-base">Course Code:</span> {course.productCode}</p>
 
                 {/* PRICE */}
-                <div className="flex items-center gap-5 pb-5">
+                <div className="flex items-center gap-5 sm:pb-5">
                     <h4 className="text-primary-color font-bold 2xl:text-3xl">${course.offer === 'yes' ? course.price / 2 : course.price}</h4>
                     <h4 className=" 2xl:text-[28px] font-extralight line-through">${course.oldPrice}</h4>
                 </div>

@@ -6,10 +6,13 @@ import { useState } from 'react';
 import ViewCartSkeleton from '../../components/skeleton/cartSkeleton/ViewCartSkeleton';
 import CartSkeleton from '../../components/skeleton/cartSkeleton/CartSkeleton';
 import toast from 'react-hot-toast';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Cart = () => {
 
+    // IMPORT NAVIGATE FROM RRD FOR REDIECT NEW URL
+    const navigate = useNavigate()
 
     // GET CARD LIST FROM LOCAL STORAGE
     const myCartList = JSON.parse(localStorage.getItem('cart'))
@@ -34,9 +37,19 @@ const Cart = () => {
     }
 
     // HANDLER COURSE PURCHEH
-    const handlerCoursePurchase = (id) => {
+    const handlerCoursePurchase = async (id) => {
 
-        toast('This feature is under construction, please wait!!')
+        try {
+            const { data } = await axios.post(`http://localhost:3000/api/bkash/payment/create`, { amount: 4500, orderId: 1 }, { withCredentials: true })
+
+            console.log(data.bkashURL);
+
+            window.location.href = data.bkashURL
+            // navigate(data.bkashURL)
+
+        } catch (e) {
+            console.log(e.response.data);
+        }
 
 
     }

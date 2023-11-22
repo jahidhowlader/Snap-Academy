@@ -1,11 +1,9 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ProductDetails from "../courseDetails/CourseDetails";
 import Tabs from "../tabs/Tabs";
 import { Helmet } from "react-helmet-async";
 import { useState } from "react";
 import { useEffect } from "react";
-import { HiOutlineInformationCircle } from "react-icons/hi2";
-import Error404 from "../../error404/Error404";
 import Loader from "../../../components/loader/Loader";
 
 const SingleCourse = () => {

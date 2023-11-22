@@ -18,6 +18,8 @@ import PrivateRoute from "./PrivateRoute";
 import About from "../pages/about/About";
 import AdminRoute from "./AdminRoute";
 import Error404 from "../pages/error404/Error404";
+import PaymentError from "../pages/dashboard/payment/paymentError/PaymentError";
+import PaymentSuccess from "../pages/dashboard/payment/paymentSuccess/PaymentSuccess";
 
 
 export const router = createBrowserRouter([
@@ -37,13 +39,20 @@ export const router = createBrowserRouter([
         element: <Home />
       },
       {
+        path: '/error?',
+        element: <PaymentError />
+      },
+      {
+        path: '/success',
+        element: <PaymentSuccess />
+      },
+      {
         path: 'courses',
         element: <Courses />
       },
       {
         path: 'course/:_id',
         element: <SingleCourse />,
-        // loader: ({ params }) => fetch(`https://snap-academy-server.vercel.app/course/${params._id}`)
       },
       {
         path: 'about',

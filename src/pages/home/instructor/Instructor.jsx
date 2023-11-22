@@ -31,7 +31,7 @@ const Instructor = () => {
                             className="relative group overflow-hidden cursor-pointer"
                         >
                             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5, delay: .5 }}>
-                                <img src={course.instructorImage} alt="insructor" className="w-full h-auto  cover rounded-md object-cover" />
+                                <img src={course.instructorImage} alt="insructor" className="w-full h-auto cover rounded-md object-cover" />
                             </motion.div>
                             <div className="absolute bottom-0 left-0 w-full h-0 bg-primary-color bg-opacity-80 text-white group-hover:h-full transition-height duration-700 flex justify-center items-center rounded-md">
                                 <div className="hidden group-hover:block p-2">

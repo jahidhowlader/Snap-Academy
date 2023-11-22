@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import PropTypes from 'prop-types';
+import { useEffect, useState } from "react";
 import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 
@@ -40,7 +40,6 @@ const SearchCourse = ({ courses, searchQuery, setSearchQuery }) => {
                     className='shadow-sm border border-gray border-opacity-30 rounded-md px-5 w-full'
                     placeholder="Search courses"
                     onChange={handlerSearchCourse}
-
                 />
                 <HiMiniMagnifyingGlass className='absolute top-1/2 right-1 -translate-y-1/2' />
 
@@ -55,7 +54,7 @@ const SearchCourse = ({ courses, searchQuery, setSearchQuery }) => {
                                         <>
                                             <div className="space">
                                                 <div className="shadow-sm border border-gray border-opacity-30 p-2 rounded xl:rounded-md mb-1">
-                                                    <Link to={`/course/655c9794e82b9a9897477c20`} className="hover:underline">Advertising Photography Essentials <span className="text-xs font-bold">by Christopher Parker</span></Link>
+                                                    <Link to={`/course/655c9794e82b9a9897477c20`} className="hover:underline">Advertising Photography Essentials by<span className="text-xs font-bold"> Christopher Parker</span></Link>
                                                 </div>
                                                 <div className="shadow-sm border border-gray border-opacity-30 p-2 rounded xl:rounded-md">
                                                     <Link to={`/course/655c9794e82b9a9897477c21`} className="hover:underline">Corporate Headshots and Branding Photography <span className="text-xs font-bold">by Lily King</span></Link>
@@ -68,7 +67,7 @@ const SearchCourse = ({ courses, searchQuery, setSearchQuery }) => {
                                             className="shadow-sm border border-gray border-opacity-30 p-2 rounded xl:rounded-md mb-1"
                                         >
                                             <Link to={`/course/${course._id}`} className="hover:underline">
-                                                <span>{course.title} <span className="text-xs font-bold">by {course.instructor}</span></span> 
+                                                <span>{course.title} <span className="text-xs font-bold">by {course.instructor}</span></span>
                                             </Link>
                                         </div>)
                                     )
@@ -82,5 +81,12 @@ const SearchCourse = ({ courses, searchQuery, setSearchQuery }) => {
         </>
     );
 };
+
+SearchCourse.propTypes = {
+    courses: PropTypes.array.isRequired,
+    searchQuery: PropTypes.string.isRequired,
+    setSearchQuery: PropTypes.func.isRequired,
+};
+
 
 export default SearchCourse;

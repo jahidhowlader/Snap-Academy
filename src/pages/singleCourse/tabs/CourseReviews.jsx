@@ -13,15 +13,15 @@ const CourseReviews = ({ review }) => {
             {
                 review.map((StudentReview, idx) => (
                     <>
-                        <div key={idx} className="flex gap-5 ">
-                            <div className="w-[150px] h-auto">
-                                <img src={StudentReview.userImage} alt={StudentReview.userName} className="w-[70px] h-[70px] rounded-full object-cover object-cover" />
+                        <div key={idx} className="flex flex-col sm:flex-row gap-2 xl:gap-5">
+                            <div className="w-[150px] md:w-[200px] h-auto">
+                                <img src={StudentReview.userImage} alt={StudentReview.userName} className="w-12 md:w-[70px] h-12 md:h-[70px] rounded-full object-cover" />
                             </div>
 
                             {/* Content && date */}
                             <div className="relative">
 
-                                <div className="flex items-center gap-5 pb-5">
+                                <div className="flex flex-col sm:flex-row xl:items-center sm:gap-5 pb-5">
                                     <h6 className="font-semibold">{StudentReview.userName}</h6>
                                     <p className="italic font-thin  text-sm">20/12/2023</p>
                                 </div>

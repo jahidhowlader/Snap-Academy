@@ -18,7 +18,7 @@ const Offer = () => {
                 {
                     courseLoading ? <ViewOfferSkeleton /> : offerCourse.map(course => <div
                         key={course._id}
-                        className='bg-white shadow-sm border border-gray border-opacity-30 p-2 lg:p-4 xl:p-6 2xl:p-10 flex flex-col lg:flex-row items-center xl:items-start gap-3 cursor-pointer rounded xl:rounded-md'
+                        className='bg-white shadow-sm border border-gray border-opacity-30 p-2 lg:p-4 xl:p-6 2xl:p-10 flex flex-col lg:flex-row items-center xl:items-start gap-3 rounded xl:rounded-md'
                     >
                         {/* Card Content */}
                         <div className='flex-1 order-2 lg:order-1 flex flex-col justify-between gap-3 md:gap-5 h-full p-3 lg:p-0'>

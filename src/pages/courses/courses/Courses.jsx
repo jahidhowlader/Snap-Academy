@@ -26,8 +26,6 @@ const Courses = () => {
     // FILTER COURSE EHEN USER SELECTED CATEGORY
     const filteredCourses = courses && courses.filter(course => selectedCategories.includes(course.category))
 
-    console.log('29', searchQuery);
-
     return (
         <>
             {/* Ttile */}
