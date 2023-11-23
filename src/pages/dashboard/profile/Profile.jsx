@@ -11,7 +11,7 @@ const Profile = () => {
     const [imgUrl, setImgUrl] = useState(null)
 
     // IMPORT AUTHCONTEXT
-    const { user, updateUser } = useAuth()
+    const { user, updateUser, setLoading } = useAuth()
 
     // REACT HOOK FORM
     const { register, handleSubmit, reset, setValue, formState: { errors } } = useForm();
@@ -38,6 +38,7 @@ const Profile = () => {
             setValue("photo", data.data.url);
             setImgUrl(data.data.url);
             setSubmitLoading(false)
+            setLoading(false)
 
         } catch (error) {
             console.log(error);
@@ -51,7 +52,7 @@ const Profile = () => {
         const { firstname, lastname } = data
         let fullName = `${firstname} ${lastname}`
 
-        if(fullName.length <= 1 && !data?.photo){
+        if (fullName.length <= 1 && !data?.photo) {
             return toast.error('You have no change.')
         }
 
@@ -69,6 +70,7 @@ const Profile = () => {
             reset()
             toast.success('Successfully Update your Profile')
             setSubmitLoading(false)
+            setLoading(false)
 
         } catch (e) {
 

@@ -49,7 +49,7 @@ const CourseCard = ({ course, button }) => {
                 <div className='flex justify-center my-2'>
                     <Rating style={{ maxWidth: 100 }} value={courseReview / course.review.length} itemStyles={ratingStyle} readOnly />
                 </div>
-                <h5 className='font-bold text-xl  sm:text-xl 2xl:text-2xl text-primary-color pb-2'>{course.price}</h5>
+                <h5 className='font-bold text-xl  sm:text-xl 2xl:text-2xl text-primary-color pb-2'>${course.price}</h5>
 
                 {
                     button && <motion.button

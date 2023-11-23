@@ -12,7 +12,7 @@ const useGetCourses = () => {
     const [searchQuery , setSearchQuery] = useState('')
 
     useEffect(() => {
-        fetch(`https://snap-academy-server.vercel.app/courses?priceQuery=${priceQuery}&searchQuery=${searchQuery}`)
+        fetch(`http://localhost:3000/courses?priceQuery=${priceQuery}&searchQuery=${searchQuery}`)
             .then(res => res.json())
             .then(data => {
 

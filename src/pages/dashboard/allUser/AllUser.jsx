@@ -13,7 +13,7 @@ const AllUser = () => {
     // HANDLER USER ROLE EDIT
     const handlerChangeRoleUser = (user) => {
 
-        fetch(`https://snap-academy-server.vercel.app/allusers/admin/${user.email}`, {
+        fetch(`http://localhost:3000/allusers/admin/${user.email}`, {
             method: "PATCH",
             headers: {
                 "content-type": "application/json",
@@ -30,7 +30,7 @@ const AllUser = () => {
     }
 
     const handlerChangeRoleAdmin = (user) => {
-        fetch(`https://snap-academy-server.vercel.app/allusers/admin/${user.email}`, {
+        fetch(`http://localhost:3000/allusers/admin/${user.email}`, {
             method: "PATCH",
             headers: {
                 "content-type": "application/json",
@@ -54,7 +54,7 @@ const AllUser = () => {
             // Delete User From Firebase
             // await deleteUserData(user)
 
-            await fetch(`https://snap-academy-server.vercel.app/allUsers?email=${email}`, {
+            await fetch(`http://localhost:3000/allUsers?email=${email}`, {
                 method: "DELETE",
                 headers: {
                     authorization: token

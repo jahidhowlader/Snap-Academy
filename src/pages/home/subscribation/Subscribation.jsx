@@ -14,7 +14,7 @@ const Subscribation = () => {
 
         try {
 
-            await fetch('https://snap-academy-server.vercel.app/subscribation', {
+            await fetch('http://localhost:3000/subscribation', {
                 method: "POST",
                 headers: {
                     "content-type": "application/json"

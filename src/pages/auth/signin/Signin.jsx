@@ -20,7 +20,9 @@ const Signin = () => {
     // useNAVIGATE USE FOR REDIRECT USER AFTER LOGIN AND useLOCATION USE FOR TRACK URL PATH
     const navigate = useNavigate();
     const location = useLocation();
-    const from = location.state?.from?.pathname === '/dashboard/profile' ? '/dashboard/profile' : '/';
+    const from = location.state?.from?.pathname === '/dashboard/profile' || location.state?.from?.pathname === '/cart' ? '/dashboard/profile' : '/';
+
+    console.log(location);
 
     // IMPORT AUTHCONTEXT
     const { signIn } = useAuth()

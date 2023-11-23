@@ -40,11 +40,11 @@ export const router = createBrowserRouter([
       },
       {
         path: '/error?',
-        element: <PaymentError />
+        element: <PrivateRoute><PaymentError /></PrivateRoute>
       },
       {
         path: '/success',
-        element: <PaymentSuccess />
+        element: <PrivateRoute><PaymentSuccess /> </PrivateRoute>
       },
       {
         path: 'courses',

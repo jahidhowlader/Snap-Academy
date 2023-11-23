@@ -51,7 +51,7 @@ const Reviews = () => {
             }
 
             // USER REVEW ABOUT WEBSITE
-            await axios.post(`https://snap-academy-server.vercel.app/reviews/${user?.email}`,
+            await axios.post(`http://localhost:3000/reviews/${user?.email}`,
                 {
                     email: user?.email,
                     userName: user?.displayname,

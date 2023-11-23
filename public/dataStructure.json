@@ -16,8 +16,8 @@
                 "time": "1:00 PM - 3:00 PM"
             }
         ],
-        "price": 400,
-        "oldPrice": 800,
+        "price": 40,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -58,8 +58,8 @@
                 "time": "1:00 PM - 3:00 PM"
             }
         ],
-        "price": 400,
-        "oldPrice": 800,
+        "price": 40,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -100,8 +100,8 @@
                 "time": "1:00 PM - 3:00 PM"
             }
         ],
-        "price": 400,
-        "oldPrice": 800,
+        "price": 40,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -142,8 +142,8 @@
                 "time": "1:00 PM - 3:00 PM"
             }
         ],
-        "price": 400,
-        "oldPrice": 800,
+        "price": 40,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -184,8 +184,8 @@
                 "time": "1:00 PM - 3:00 PM"
             }
         ],
-        "price": 400,
-        "oldPrice": 800,
+        "price": 40,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -226,8 +226,8 @@
                 "time": "2:00 PM - 4:00 PM"
             }
         ],
-        "price": 500,
-        "oldPrice": 800,
+        "price": 50,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -268,8 +268,8 @@
                 "time": "3:00 PM - 5:00 PM"
             }
         ],
-        "price": 550,
-        "oldPrice": 800,
+        "price": 55,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -310,8 +310,8 @@
                 "time": "4:00 PM - 6:00 PM"
             }
         ],
-        "price": 450,
-        "oldPrice": 800,
+        "price": 45,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -352,8 +352,8 @@
                 "time": "6:00 PM - 8:00 PM"
             }
         ],
-        "price": 480,
-        "oldPrice": 800,
+        "price": 48,
+        "oldPrice": 80,
         "offer": "yes",
         "level": "Advanced",
         "requirements": [
@@ -394,8 +394,8 @@
                 "time": "3:00 PM - 5:00 PM"
             }
         ],
-        "price": 450,
-        "oldPrice": 800,
+        "price": 45,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -436,8 +436,8 @@
                 "time": "6:00 PM - 8:00 PM"
             }
         ],
-        "price": 380,
-        "oldPrice": 800,
+        "price": 38,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Intermediate",
         "requirements": [
@@ -478,8 +478,8 @@
                 "time": "4:00 PM - 6:00 PM"
             }
         ],
-        "price": 500,
-        "oldPrice": 800,
+        "price": 50,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -520,8 +520,8 @@
                 "time": "3:00 PM - 5:00 PM"
             }
         ],
-        "price": 550,
-        "oldPrice": 800,
+        "price": 55,
+        "oldPrice": 80,
         "offer": "yes",
         "level": "Advanced",
         "requirements": [
@@ -562,8 +562,8 @@
                 "time": "4:00 PM - 6:00 PM"
             }
         ],
-        "price": 500,
-        "oldPrice": 800,
+        "price": 50,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -604,8 +604,8 @@
                 "time": "3:00 PM - 5:00 PM"
             }
         ],
-        "price": 550,
-        "oldPrice": 800,
+        "price": 55,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -646,8 +646,8 @@
                 "time": "4:00 PM - 6:00 PM"
             }
         ],
-        "price": 500,
-        "oldPrice": 800,
+        "price": 50,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -688,8 +688,8 @@
                 "time": "3:00 PM - 5:00 PM"
             }
         ],
-        "price": 550,
-        "oldPrice": 800,
+        "price": 55,
+        "oldPrice": 80,
         "offer": "none",
         "level": "Advanced",
         "requirements": [
@@ -714,19 +714,3 @@
         "discount": "25"
     }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -16,7 +16,7 @@ const useAdmin = () => {
         queryFn: async () => {
 
             try {
-                const res = await axios(`https://snap-academy-server.vercel.app/checkRole/${user?.email}`, {
+                const res = await axios(`http://localhost:3000/checkRole/${user?.email}`, {
                     headers: {
                         authorization: token
                     }

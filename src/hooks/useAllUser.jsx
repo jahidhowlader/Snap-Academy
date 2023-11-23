@@ -15,7 +15,7 @@ const useAllUser = () => {
         queryFn: async () => {
 
             try {
-                const result = await axios('https://snap-academy-server.vercel.app/allusers', {
+                const result = await axios('http://localhost:3000/allusers', {
                     headers: {
                         authorization: token
                     }
