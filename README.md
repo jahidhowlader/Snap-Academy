@@ -11,6 +11,8 @@ A photography website that offers various courses related to photography. Users 
 * **User-Friendly Interface:** Fully responsive UI on any type of device like mobile, tablet, laptop, and desktop.
 
 * **Reviews:** Users can review on Snap Academy. Which will be added to the home page.
+  
+* **Dashboard:** The user and admin can see their own dashboard.
 
 * **Overall Performence** <br> <br> ![alt Performence](https://i.ibb.co/6BScytG/400101098-1712350299286079-8646985516422064813-n.png)
 
