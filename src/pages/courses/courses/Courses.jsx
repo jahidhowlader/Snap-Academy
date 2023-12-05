@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet-async';
 import useGetCourses from '../../../hooks/useGetCourses';
 import ViewCourseCardSkeleton from '../../../components/skeleton/courseCardSkeleton/ViewCourseCardSkeleton';
 import { BiGridAlt, BiSolidDashboard } from 'react-icons/bi';
-import { HiBars3BottomLeft, HiMiniMagnifyingGlass } from 'react-icons/hi2';
+import { HiBars3BottomLeft } from 'react-icons/hi2';
 import { RiServerFill, RiServerLine } from "react-icons/ri";
 import SearchCourse from './SearchCourse';
 

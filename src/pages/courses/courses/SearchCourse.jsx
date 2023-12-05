@@ -41,7 +41,7 @@ const SearchCourse = ({ courses, searchQuery, setSearchQuery }) => {
                     placeholder="Search courses"
                     onChange={handlerSearchCourse}
                 />
-                <HiMiniMagnifyingGlass className='absolute top-1/2 right-1 -translate-y-1/2' />
+                <HiMiniMagnifyingGlass className='absolute top-1/2 right-3 -translate-y-1/2' />
 
                 {/* POPUP SEARCH */}
                 {

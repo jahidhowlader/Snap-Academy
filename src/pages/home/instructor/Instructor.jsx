@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 // import { useEffect, useState } from "react";
 import useGetCourses from "../../../hooks/useGetCourses";
-import { Helmet } from "react-helmet-async";
 import ViewInstructorSkeleton from "../../../components/skeleton/instructorSkeleton/ViewInstructorSkeleton";
 
 const Instructor = () => {
@@ -10,12 +9,6 @@ const Instructor = () => {
 
     return (
         <>
-
-            {/* Ttile */}
-            <Helmet>
-                <title>Instructor | Snap Academy</title>
-            </Helmet>
-
             <div className=" text-center mb-10">
                 <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-primary-color pb-3 lg:pb-8'>Meet Our Instructors</h2>
                 <p className="w-full sm:w-3/4 mx-auto px-5">But I must explain to you how all this mistaken idea of denouncing pleasure and praising
