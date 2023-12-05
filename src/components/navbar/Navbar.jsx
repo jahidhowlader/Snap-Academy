@@ -1,6 +1,6 @@
 import { HiBars3BottomRight, HiOutlineShoppingCart } from "react-icons/hi2";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import NavMobile from "./NavMobile";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
@@ -42,9 +42,25 @@ const Navbar = () => {
             {/* NAVLINK */}
             <div>
                 <ul className="hidden md:flex items-center gap-5 lg:gap-10 xl:gap-20 xl:text-[18px] 2xl:text-xl text-white">
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/courses'>Courses</Link></li>
-                    <li><Link to='/about'>About Us</Link></li>
+                    <li><NavLink to='/'
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "font-medium" : "font-normal"
+                        }>
+                        Home
+                    </NavLink></li>
+
+                    <li><NavLink to='/courses'
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "font-medium" : "font-normal"
+                        }>
+                        Courses
+                    </NavLink></li>
+                    <li><NavLink to='/about'
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "font-medium" : "font-normal"
+                        }>
+                        About Us
+                    </NavLink></li>
                     {
                         user ?
                             <li onClick={handlerLogout}><Link to='/'>Signout</Link></li> :
@@ -76,7 +92,7 @@ const Navbar = () => {
                     <HiBars3BottomRight onClick={() => setIsOpen(true)} className="text-white w-6 h-6 rounded-full" />
                 </button>
 
-                <span className="hidden md:block">EN</span>
+                <span className="hidden md:block font-normal">EN</span>
             </div>
 
 
