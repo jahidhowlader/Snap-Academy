@@ -13,7 +13,7 @@ const SingleCourse = () => {
     const { _id } = useParams()
 
     useEffect(() => {
-        fetch(`http://localhost:3000/course/${_id}`)
+        fetch(`https://snap-academy-server.vercel.app/course/${_id}`)
             .then(res => res.json())
             .then(data => {
 

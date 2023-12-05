@@ -39,23 +39,25 @@ const Cart = () => {
     // HANDLER COURSE PURCHEH
     const handlerCoursePurchase = async (id) => {
 
-        try {
-            const { data } = await axios.post(`http://localhost:3000/api/bkash/payment/create`, { amount: 4500, orderId: 1 }, { withCredentials: true })
+        // try {
+        //     const { data } = await axios.post(`https://snap-academy-server.vercel.app/api/bkash/payment/create`, { amount: 4500, orderId: 1 }, { withCredentials: true })
 
-            console.log(data.bkashURL);
+        //     console.log(data.bkashURL);
 
-            window.location.href = data.bkashURL
-            // navigate(data.bkashURL)
+        //     window.location.href = data.bkashURL
+        //     // navigate(data.bkashURL)
 
-        } catch (e) {
-            console.log(e.response.data);
-        }
+        // } catch (e) {
+        //     console.log(e.response.data);
+        // }
 
+        toast('This Feature is under the construction')
 
     }
 
     // Handler Purchase All
     const handlerPurchaseAll = (id) => {
+
         toast('This feature is under construction, please wait!!')
     }
 

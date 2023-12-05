@@ -54,10 +54,10 @@ const SearchCourse = ({ courses, searchQuery, setSearchQuery }) => {
                                         <>
                                             <div className="space">
                                                 <div className="shadow-sm border border-gray border-opacity-30 p-2 rounded xl:rounded-md mb-1">
-                                                    <Link to={`/course/655c9794e82b9a9897477c20`} className="hover:underline">Advertising Photography Essentials by<span className="text-xs font-bold"> Christopher Parker</span></Link>
+                                                    <Link to={`/course/655ef1959100e7fc7a29d0e6`} className="hover:underline">Advertising Photography Essentials by<span className="text-xs font-bold"> Christopher Parker</span></Link>
                                                 </div>
                                                 <div className="shadow-sm border border-gray border-opacity-30 p-2 rounded xl:rounded-md">
-                                                    <Link to={`/course/655c9794e82b9a9897477c21`} className="hover:underline">Corporate Headshots and Branding Photography <span className="text-xs font-bold">by Lily King</span></Link>
+                                                    <Link to={`/course/655ef1959100e7fc7a29d0e7`} className="hover:underline">Corporate Headshots and Branding Photography <span className="text-xs font-bold">by Lily King</span></Link>
                                                 </div>
                                             </div>
                                         </>

@@ -13,18 +13,11 @@ const ratingStyle = {
     inactiveFillColor: '#fbf1a9'
 }
 
-// GET TOKEN FROM LOCAL STORAGE
-const token = localStorage.getItem('access-token')
-
-// INJECT HEADER IN FETCH
-const axiosConfig = {
-    headers: {
-        authorization: token
-    }
-};
-
-
 const Reviews = () => {
+
+
+    // GET TOKEN FROM LOCAL STORAGE
+    const token = localStorage.getItem('access-token')
 
     // ALL STATE ARE HERE
     const [submitLoading, setSubmitLoading] = useState(false)
@@ -51,7 +44,7 @@ const Reviews = () => {
             }
 
             // USER REVEW ABOUT WEBSITE
-            await axios.post(`http://localhost:3000/reviews/${user?.email}`,
+            await axios.post(`https://snap-academy-server.vercel.app/reviews/${user?.email}`,
                 {
                     email: user?.email,
                     userName: user?.displayname,
@@ -60,8 +53,11 @@ const Reviews = () => {
                     suggetion: data.suggetion || '',
                     review: data.comment,
                     name: user?.displayName
-                },
-                axiosConfig
+                }, {
+                headers: {
+                    authorization: token
+                }
+            }
             )
             reset()
             toast.success('We Appriciate your opinion')

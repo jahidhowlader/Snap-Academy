@@ -26,7 +26,7 @@ const SocialLogin = () => {
                     const loggedInUser = result.user;
 
                     // STORE USER DATA ON MongoDB
-                    await fetch('http://localhost:3000/allUsers', {
+                    await fetch('https://snap-academy-server.vercel.app/allUsers', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

@@ -16,7 +16,7 @@ const Testimonial = () => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3000/reviews')
+        fetch('https://snap-academy-server.vercel.app/reviews')
             .then(res => res.json())
             .then(data => {
                 setReviews(data)
@@ -91,19 +91,6 @@ const Testimonial = () => {
                             <p className="p-5 text-xs opacity-90 tracking-wide">{review.review}</p>
                         </div>)
                     }
-
-                    {/* <div>
-                        <h3>3</h3>
-                    </div>
-                    <div>
-                        <h3>4</h3>
-                    </div>
-                    <div>
-                        <h3>5</h3>
-                    </div>
-                    <div>
-                        <h3>6</h3>
-                    </div> */}
                 </Slider>
             </section>
         </>
